@@ -1,0 +1,1 @@
+﻿DELETE FROM mantis_user_table where email = "jair_melo@hotmail.com";

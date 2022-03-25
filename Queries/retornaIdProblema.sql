@@ -1,0 +1,3 @@
+﻿SELECT ID FROM mantis_bug_table
+ORDER BY ID DESC
+LIMIT 1

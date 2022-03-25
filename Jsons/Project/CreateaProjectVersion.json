@@ -1,0 +1,7 @@
+﻿{
+  "name": "$name",
+  "description": "Major new version",
+  "released": true,
+  "obsolete": false,
+  "timestamp": "2020-02-20"
+}
