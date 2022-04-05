@@ -1,0 +1,1825 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Extent Framework</title>
+  <link rel="apple-touch-icon" href="https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png">
+  <link rel="shortcut icon" href="https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png">
+  <link href="https://cdn.rawgit.com/extent-framework/extent-github-cdn/cd00a5e/spark/css/style.css" rel="stylesheet" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style> </style>
+</head>
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+
+
+<body class="test-view  standard">
+    <div class="app header-dark side-nav-folded">
+        <div class="layout">
+            <div class="header navbar">
+    <div class="header-container">
+        <div class="nav-logo">
+          <a href="index.html">
+            <div class="logo logo-dark" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+            <div class="logo logo-white" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+          </a>
+        </div>
+        <ul class="nav-left">
+          <li>
+            <a class="sidenav-fold-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a class="sidenav-expand-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+          <li class="search-box">
+            <a class="search-toggle" href="javascript:void(0);">
+              <i class="search-icon fa fa-search"></i>
+              <i class="search-icon-close fa fa-close"></i>
+            </a>
+          </li>
+          <li class="search-input">
+            <input id="search-tests" class="form-control" type="text" placeholder="Type to search...">
+          </li>
+        </ul>
+        <ul class="nav-right">
+          <li class="m-r-10">
+            <a href="#">
+              <span class="badge badge-primary">Extent Framework</span>
+            </a>
+          </li>
+            <li class="m-r-10">
+                <a href="#">
+                    <span class="badge badge-primary">05/04/2022 16:31:50</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+            <div class="side-nav side-nav-folded">
+  <div class="side-nav-inner">
+    <ul class="side-nav-menu scrollable">
+      <li class="nav-item dropdown">
+        <a id="nav-test" class="dropdown-toggle" href="index.html">
+          <span class="icon-holder">
+            <i class="fa fa-align-left"></i>
+          </span>
+          <span class="title">Tests</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a id="nav-tag" class="dropdown-toggle" href="tag.html">
+          <span class="icon-holder">
+            <i class="fa fa-tag"></i>
+          </span>
+          <span class="title">Tags</span>
+        </a>
+      </li>
+            <li class="nav-item dropdown">
+        <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
+          <span class="icon-holder">
+            <i class="fa fa-bar-chart"></i>
+          </span>
+          <span class="title">Dashboard</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="side-nav-controls">
+    <ul>
+      <li>
+        <a href="#" class="lightsout" style="color:#8a8a8a;">
+          <i class="fa fa-desktop"></i>"</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+            <div class="page-container">
+                <div class="main-content">
+                    <div class="test-wrapper row">
+                        <div class="test-list">
+                            <div class="test-list-tools">
+                                <ul class="tools pull-left">
+                                    <li>
+                                        <a href="">
+                                            <span class="font-size-14">Tests</span>
+                                        </a>
+                                    </li> 
+                                </ul>
+                                <ul class="tools text-right">
+									<li class="user-profile dropdown dropdown-animated scale-left">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+											<i class="fa fa-exclamation-circle"></i>
+										</a>
+										<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a status="pass" class="dropdown-item" href="#"><span>Pass</span><span class="status success pull-right"></span></a>																																												<a status="warning" class="dropdown-item" href="#"><span>Warning</span><span class="status warning pull-right"></span></a>																						<div class="dropdown-divider"></div>
+											<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+										</ul>
+									</li>
+																		<li class="user-profile dropdown dropdown-animated scale-left">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+											<i class="fa fa-tag"></i>
+										</a>
+										<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+												<a class="dropdown-item" href="#">.CreateAnIssueNoteTest</a>
+												<a class="dropdown-item" href="#">.CreateIssueTest</a>
+												<a class="dropdown-item" href="#">.DeleteAnIssueNoteTeste</a>
+												<a class="dropdown-item" href="#">.DeleteIssueTest</a>
+												<a class="dropdown-item" href="#">.GetIssuesProject</a>
+												<a class="dropdown-item" href="#">.GetIssueTest</a>
+												<a class="dropdown-item" href="#">.MonitorAnIssueTest</a>
+												<a class="dropdown-item" href="#">.UpdateAnIssueTest</a>
+												<a class="dropdown-item" href="#">t.CreateaProjectVersionTest</a>
+												<a class="dropdown-item" href="#">t.CreateProjectTest</a>
+												<a class="dropdown-item" href="#">t.GetAprojectTest</a>
+												<a class="dropdown-item" href="#">t.UpdateAProjectTest</a>
+										</ul>
+                                    </li>
+									                                </ul>
+                            </div>
+                            <div class="test-list-wrapper scrollable">
+                                <ul class="test-list-item">
+										<li class="test-item" status="warning" author="" device="" tag=".CreateAnIssueNoteTest"> 
+											<div class="status-avatar warning-bg">
+												<i class="fa fa-warning text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">AddNameViewInvalido</p> 
+													<p class="duration text-sm">0h:0m:0s+307ms</p> 
+													<span class="datetime">16:31:50 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-warning">AddNameViewInvalido</h5>
+															<span class='badge badge-success'>05/04/2022 16:31:50</span>
+															<span class='badge badge-danger'>05/04/2022 16:31:51</span>
+															<span class='badge badge-default'>0h:0m:0s+307ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> .CreateAnIssueNoteTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-warning text-warning"></i></td>
+				<td>16:31:51</td>
+				<td>
+Test Result: Warning<pre>Message:   A consulta do banco de dados não retornou nenhum registro
+  Expected: True
+  But was:  False
+</pre><pre>Stack Trace:    at RestSharpNetCoreTemplate.Helpers.DBHelpers.RetornaDadosQuery(String query) in C:\Users\leandroMatias\Desktop\DesafioBase2\Helpers\DBHelpers.cs:line 252
+   at RestSharpNetCoreTemplate.DBSteps.SolicitacaoDBSteps.RetornaIdProblemaDB() in C:\Users\leandroMatias\Desktop\DesafioBase2\DBSteps\SolicitacaoDBSteps.cs:line 22
+   at RestSharpNetCoreTemplate.Issues.CreateAnIssueNoteTest.AddNameViewInvalido() in C:\Users\leandroMatias\Desktop\DesafioBase2\Tests\Issues\CreateAnIssueNoteTest.cs:line 100
+</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+											</div>
+										</li>
+										<li class="test-item" status="warning" author="" device="" tag=".CreateAnIssueNoteTest"> 
+											<div class="status-avatar warning-bg">
+												<i class="fa fa-warning text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">AddNoteInvalido</p> 
+													<p class="duration text-sm">0h:0m:0s+009ms</p> 
+													<span class="datetime">16:31:51 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-warning">AddNoteInvalido</h5>
+															<span class='badge badge-success'>05/04/2022 16:31:51</span>
+															<span class='badge badge-danger'>05/04/2022 16:31:51</span>
+															<span class='badge badge-default'>0h:0m:0s+009ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> .CreateAnIssueNoteTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-warning text-warning"></i></td>
+				<td>16:31:51</td>
+				<td>
+Test Result: Warning<pre>Message:   A consulta do banco de dados não retornou nenhum registro
+  Expected: True
+  But was:  False
+</pre><pre>Stack Trace:    at RestSharpNetCoreTemplate.Helpers.DBHelpers.RetornaDadosQuery(String query) in C:\Users\leandroMatias\Desktop\DesafioBase2\Helpers\DBHelpers.cs:line 252
+   at RestSharpNetCoreTemplate.DBSteps.SolicitacaoDBSteps.RetornaIdProblemaDB() in C:\Users\leandroMatias\Desktop\DesafioBase2\DBSteps\SolicitacaoDBSteps.cs:line 22
+   at RestSharpNetCoreTemplate.Issues.CreateAnIssueNoteTest.AddNoteInvalido(ArrayList testData) in C:\Users\leandroMatias\Desktop\DesafioBase2\Tests\Issues\CreateAnIssueNoteTest.cs:line 48
+</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+											</div>
+										</li>
+										<li class="test-item" status="warning" author="" device="" tag=".CreateAnIssueNoteTest"> 
+											<div class="status-avatar warning-bg">
+												<i class="fa fa-warning text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">AddNoteissueValido</p> 
+													<p class="duration text-sm">0h:0m:0s+008ms</p> 
+													<span class="datetime">16:31:51 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-warning">AddNoteissueValido</h5>
+															<span class='badge badge-success'>05/04/2022 16:31:51</span>
+															<span class='badge badge-danger'>05/04/2022 16:31:51</span>
+															<span class='badge badge-default'>0h:0m:0s+008ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> .CreateAnIssueNoteTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-warning text-warning"></i></td>
+				<td>16:31:51</td>
+				<td>
+Test Result: Warning<pre>Message:   A consulta do banco de dados não retornou nenhum registro
+  Expected: True
+  But was:  False
+</pre><pre>Stack Trace:    at RestSharpNetCoreTemplate.Helpers.DBHelpers.RetornaDadosQuery(String query) in C:\Users\leandroMatias\Desktop\DesafioBase2\Helpers\DBHelpers.cs:line 252
+   at RestSharpNetCoreTemplate.DBSteps.SolicitacaoDBSteps.RetornaIdProblemaDB() in C:\Users\leandroMatias\Desktop\DesafioBase2\DBSteps\SolicitacaoDBSteps.cs:line 22
+   at RestSharpNetCoreTemplate.Issues.CreateAnIssueNoteTest.AddNoteissueValido(ArrayList testData) in C:\Users\leandroMatias\Desktop\DesafioBase2\Tests\Issues\CreateAnIssueNoteTest.cs:line 28
+</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+											</div>
+										</li>
+										<li class="test-item" status="warning" author="" device="" tag=".CreateAnIssueNoteTest"> 
+											<div class="status-avatar warning-bg">
+												<i class="fa fa-warning text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">AddTextInvalido</p> 
+													<p class="duration text-sm">0h:0m:0s+007ms</p> 
+													<span class="datetime">16:31:51 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-warning">AddTextInvalido</h5>
+															<span class='badge badge-success'>05/04/2022 16:31:51</span>
+															<span class='badge badge-danger'>05/04/2022 16:31:51</span>
+															<span class='badge badge-default'>0h:0m:0s+007ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> .CreateAnIssueNoteTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-warning text-warning"></i></td>
+				<td>16:31:51</td>
+				<td>
+Test Result: Warning<pre>Message:   A consulta do banco de dados não retornou nenhum registro
+  Expected: True
+  But was:  False
+</pre><pre>Stack Trace:    at RestSharpNetCoreTemplate.Helpers.DBHelpers.RetornaDadosQuery(String query) in C:\Users\leandroMatias\Desktop\DesafioBase2\Helpers\DBHelpers.cs:line 252
+   at RestSharpNetCoreTemplate.DBSteps.SolicitacaoDBSteps.RetornaIdProblemaDB() in C:\Users\leandroMatias\Desktop\DesafioBase2\DBSteps\SolicitacaoDBSteps.cs:line 22
+   at RestSharpNetCoreTemplate.Issues.CreateAnIssueNoteTest.AddTextInvalido() in C:\Users\leandroMatias\Desktop\DesafioBase2\Tests\Issues\CreateAnIssueNoteTest.cs:line 117
+</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag=".CreateIssueTest"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">CreateNewIssueValid</p> 
+													<p class="duration text-sm">0h:0m:0s+369ms</p> 
+													<span class="datetime">16:31:55 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">CreateNewIssueValid</h5>
+															<span class='badge badge-success'>05/04/2022 16:31:55</span>
+															<span class='badge badge-danger'>05/04/2022 16:31:55</span>
+															<span class='badge badge-default'>0h:0m:0s+369ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> .CreateIssueTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:31:55</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<div class="mt-4">
+	
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - POST - /api/rest/issues/</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:55</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:55</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/issues/</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:55</td>
+				<td>
+<pre><b>METHOD: </b>POST</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:55</td>
+				<td>
+<pre><b>JSON BODY: </b>
+{
+  "summary": "Tela Login",
+  "description": "Erro ao editar dados de entrada",
+  "category": {
+    "name": "$name"
+  },
+  "project": {
+    "name": "teste"
+  }
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:55</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:55</td>
+				<td>
+<pre><b>STATUS CODE: </b>201 - Created</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:55</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Apr 2022 19:31:55 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=1fc0b2d3fd61a067b72e72e254e174e3; path=/; HttpOnly
+Cache-Control=no-store, must-revalidate, no-cache, max-age=0
+X-Mantis-Username=administrator
+X-Mantis-LoginMethod=api-token
+X-Mantis-Version=2.22.1
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=858
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:55</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "issue": {
+        "id": 21,
+        "summary": "Tela Login",
+        "description": "Erro ao editar dados de entrada",
+        "project": {
+            "id": 27,
+            "name": "teste"
+        },
+        "category": {
+            "id": 1,
+            "name": "General"
+        },
+        "reporter": {
+            "id": 1,
+            "name": "administrator",
+            "email": "root@localhost"
+        },
+        "status": {
+            "id": 10,
+            "name": "new",
+            "label": "new",
+            "color": "#fcbdbd"
+        },
+        "resolution": {
+            "id": 10,
+            "name": "open",
+            "label": "open"
+        },
+        "view_state": {
+            "id": 10,
+            "name": "public",
+            "label": "public"
+        },
+        "priority": {
+            "id": 30,
+            "name": "normal",
+            "label": "normal"
+        },
+        "severity": {
+            "id": 50,
+            "name": "minor",
+            "label": "minor"
+        },
+        "reproducibility": {
+            "id": 70,
+            "name": "have not tried",
+            "label": "have not tried"
+        },
+        "sticky": false,
+        "created_at": "2022-04-06T03:31:55+08:00",
+        "updated_at": "2022-04-06T03:31:55+08:00",
+        "history": [
+            {
+                "created_at": "2022-04-06T03:31:55+08:00",
+                "user": {
+                    "id": 1,
+                    "name": "administrator",
+                    "email": "root@localhost"
+                },
+                "type": {
+                    "id": 1,
+                    "name": "issue-new"
+                },
+                "message": "New Issue"
+            }
+        ]
+    }
+}</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+	</div>
+
+</div>
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag=".DeleteAnIssueNoteTeste"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">DeleteAnIssueNote</p> 
+													<p class="duration text-sm">0h:0m:0s+000ms</p> 
+													<span class="datetime">16:31:55 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">DeleteAnIssueNote</h5>
+															<span class='badge badge-success'>05/04/2022 16:31:55</span>
+															<span class='badge badge-danger'>05/04/2022 16:31:55</span>
+															<span class='badge badge-default'>0h:0m:0s+000ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> .DeleteAnIssueNoteTeste</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag=".DeleteAnIssueNoteTeste"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">DeleteAnIssueInvalid</p> 
+													<p class="duration text-sm">0h:0m:0s+000ms</p> 
+													<span class="datetime">16:31:55 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">DeleteAnIssueInvalid</h5>
+															<span class='badge badge-success'>05/04/2022 16:31:55</span>
+															<span class='badge badge-danger'>05/04/2022 16:31:55</span>
+															<span class='badge badge-default'>0h:0m:0s+000ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> .DeleteAnIssueNoteTeste</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+											</div>
+										</li>
+										<li class="test-item" status="warning" author="" device="" tag=".DeleteAnIssueNoteTeste"> 
+											<div class="status-avatar warning-bg">
+												<i class="fa fa-warning text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">DeleteAnIssueInvalidNote0</p> 
+													<p class="duration text-sm">0h:0m:0s+039ms</p> 
+													<span class="datetime">16:31:55 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-warning">DeleteAnIssueInvalidNote0</h5>
+															<span class='badge badge-success'>05/04/2022 16:31:55</span>
+															<span class='badge badge-danger'>05/04/2022 16:31:55</span>
+															<span class='badge badge-default'>0h:0m:0s+039ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> .DeleteAnIssueNoteTeste</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-warning text-warning"></i></td>
+				<td>16:31:55</td>
+				<td>
+Test Result: Warning<pre>Message:   A consulta do banco de dados não retornou nenhum registro
+  Expected: True
+  But was:  False
+</pre><pre>Stack Trace:    at RestSharpNetCoreTemplate.Helpers.DBHelpers.RetornaDadosQuery(String query) in C:\Users\leandroMatias\Desktop\DesafioBase2\Helpers\DBHelpers.cs:line 252
+   at RestSharpNetCoreTemplate.DBSteps.SolicitacaoDBSteps.RetornaIdProjetoNoteDB() in C:\Users\leandroMatias\Desktop\DesafioBase2\DBSteps\SolicitacaoDBSteps.cs:line 28
+   at RestSharpNetCoreTemplate.Issues.DeleteAnIssueNoteTeste.DeleteAnIssueInvalid() in C:\Users\leandroMatias\Desktop\DesafioBase2\Tests\Issues\DeleteAnIssueNoteTeste.cs:line 35
+</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-warning text-warning"></i></td>
+				<td>16:31:55</td>
+				<td>
+Test Result: Warning<pre>Message:   A consulta do banco de dados não retornou nenhum registro
+  Expected: True
+  But was:  False
+</pre><pre>Stack Trace:    at RestSharpNetCoreTemplate.Helpers.DBHelpers.RetornaDadosQuery(String query) in C:\Users\leandroMatias\Desktop\DesafioBase2\Helpers\DBHelpers.cs:line 252
+   at RestSharpNetCoreTemplate.DBSteps.SolicitacaoDBSteps.RetornaIdProjetoNoteDB() in C:\Users\leandroMatias\Desktop\DesafioBase2\DBSteps\SolicitacaoDBSteps.cs:line 28
+   at RestSharpNetCoreTemplate.Issues.DeleteAnIssueNoteTeste.DeleteAnIssueInvalidNote0() in C:\Users\leandroMatias\Desktop\DesafioBase2\Tests\Issues\DeleteAnIssueNoteTeste.cs:line 19
+</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-warning text-warning"></i></td>
+				<td>16:31:55</td>
+				<td>
+Test Result: Warning<pre>Message:   A consulta do banco de dados não retornou nenhum registro
+  Expected: True
+  But was:  False
+</pre><pre>Stack Trace:    at RestSharpNetCoreTemplate.Helpers.DBHelpers.RetornaDadosQuery(String query) in C:\Users\leandroMatias\Desktop\DesafioBase2\Helpers\DBHelpers.cs:line 252
+   at RestSharpNetCoreTemplate.DBSteps.SolicitacaoDBSteps.RetornaIdProjetoNoteDB() in C:\Users\leandroMatias\Desktop\DesafioBase2\DBSteps\SolicitacaoDBSteps.cs:line 28
+   at RestSharpNetCoreTemplate.Issues.DeleteAnIssueNoteTeste.DeleteAnIssueNote() in C:\Users\leandroMatias\Desktop\DesafioBase2\Tests\Issues\DeleteAnIssueNoteTeste.cs:line 51
+</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag=".DeleteIssueTest"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">DadosValidos</p> 
+													<p class="duration text-sm">0h:0m:0s+203ms</p> 
+													<span class="datetime">16:31:55 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">DadosValidos</h5>
+															<span class='badge badge-success'>05/04/2022 16:31:55</span>
+															<span class='badge badge-danger'>05/04/2022 16:31:55</span>
+															<span class='badge badge-default'>0h:0m:0s+203ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> .DeleteIssueTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:31:55</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<div class="mt-4">
+	
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - DELETE - /api/rest/issues/{id_delete}</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:55</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:55</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/issues/{id_delete}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:55</td>
+				<td>
+<pre><b>METHOD: </b>DELETE</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:55</td>
+				<td>
+<pre><b>PARAMETERS: </b>
+<i>id_delete</i> = 21</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:55</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:55</td>
+				<td>
+<pre><b>STATUS CODE: </b>204 - NoContent</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:55</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Apr 2022 19:31:55 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=4b604c52140df0d4a12e5f1526e160a3; path=/; HttpOnly
+Cache-Control=no-store, must-revalidate, no-cache, max-age=0
+ETag=25e9ad8faef12e03dd3520017cae6f050db88e5b31f9ad501ebebe29e53e1a48
+X-Mantis-Username=administrator
+X-Mantis-LoginMethod=api-token
+X-Mantis-Version=2.22.1
+Vary=Accept-Encoding
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:55</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+	</div>
+
+</div>
+											</div>
+										</li>
+										<li class="test-item" status="warning" author="" device="" tag=".GetIssuesProject"> 
+											<div class="status-avatar warning-bg">
+												<i class="fa fa-warning text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">GetIssueProj</p> 
+													<p class="duration text-sm">0h:0m:0s+017ms</p> 
+													<span class="datetime">16:31:55 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-warning">GetIssueProj</h5>
+															<span class='badge badge-success'>05/04/2022 16:31:55</span>
+															<span class='badge badge-danger'>05/04/2022 16:31:56</span>
+															<span class='badge badge-default'>0h:0m:0s+017ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> .GetIssuesProject</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-warning text-warning"></i></td>
+				<td>16:31:56</td>
+				<td>
+Test Result: Warning<pre>Message:   A consulta do banco de dados não retornou nenhum registro
+  Expected: True
+  But was:  False
+</pre><pre>Stack Trace:    at RestSharpNetCoreTemplate.Helpers.DBHelpers.RetornaDadosQuery(String query) in C:\Users\leandroMatias\Desktop\DesafioBase2\Helpers\DBHelpers.cs:line 252
+   at RestSharpNetCoreTemplate.DBSteps.SolicitacaoDBSteps.RetornaIdProblemaDB() in C:\Users\leandroMatias\Desktop\DesafioBase2\DBSteps\SolicitacaoDBSteps.cs:line 22
+   at RestSharpNetCoreTemplate.Issues.GetIssuesProject.GetIssueProj() in C:\Users\leandroMatias\Desktop\DesafioBase2\Tests\Issues\GetIssuesProject.cs:line 22
+</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+											</div>
+										</li>
+										<li class="test-item" status="warning" author="" device="" tag=".GetIssueTest"> 
+											<div class="status-avatar warning-bg">
+												<i class="fa fa-warning text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">GetIssueValido</p> 
+													<p class="duration text-sm">0h:0m:0s+010ms</p> 
+													<span class="datetime">16:31:56 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-warning">GetIssueValido</h5>
+															<span class='badge badge-success'>05/04/2022 16:31:56</span>
+															<span class='badge badge-danger'>05/04/2022 16:31:56</span>
+															<span class='badge badge-default'>0h:0m:0s+010ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> .GetIssueTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-warning text-warning"></i></td>
+				<td>16:31:56</td>
+				<td>
+Test Result: Warning<pre>Message:   A consulta do banco de dados não retornou nenhum registro
+  Expected: True
+  But was:  False
+</pre><pre>Stack Trace:    at RestSharpNetCoreTemplate.Helpers.DBHelpers.RetornaDadosQuery(String query) in C:\Users\leandroMatias\Desktop\DesafioBase2\Helpers\DBHelpers.cs:line 252
+   at RestSharpNetCoreTemplate.DBSteps.SolicitacaoDBSteps.RetornaIdProblemaDB() in C:\Users\leandroMatias\Desktop\DesafioBase2\DBSteps\SolicitacaoDBSteps.cs:line 22
+   at RestSharpNetCoreTemplate.Issues.GetIssueTest.GetIssueValido() in C:\Users\leandroMatias\Desktop\DesafioBase2\Tests\Issues\GetIssueTest.cs:line 18
+</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+											</div>
+										</li>
+										<li class="test-item" status="warning" author="" device="" tag=".MonitorAnIssueTest"> 
+											<div class="status-avatar warning-bg">
+												<i class="fa fa-warning text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">DateValid</p> 
+													<p class="duration text-sm">0h:0m:0s+008ms</p> 
+													<span class="datetime">16:31:56 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-warning">DateValid</h5>
+															<span class='badge badge-success'>05/04/2022 16:31:56</span>
+															<span class='badge badge-danger'>05/04/2022 16:31:56</span>
+															<span class='badge badge-default'>0h:0m:0s+008ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> .MonitorAnIssueTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-warning text-warning"></i></td>
+				<td>16:31:56</td>
+				<td>
+Test Result: Warning<pre>Message:   A consulta do banco de dados não retornou nenhum registro
+  Expected: True
+  But was:  False
+</pre><pre>Stack Trace:    at RestSharpNetCoreTemplate.Helpers.DBHelpers.RetornaDadosQuery(String query) in C:\Users\leandroMatias\Desktop\DesafioBase2\Helpers\DBHelpers.cs:line 252
+   at RestSharpNetCoreTemplate.DBSteps.SolicitacaoDBSteps.RetornaIdProblemaDB() in C:\Users\leandroMatias\Desktop\DesafioBase2\DBSteps\SolicitacaoDBSteps.cs:line 22
+   at RestSharpNetCoreTemplate.Issues.MonitorAnIssueTest.DateValid() in C:\Users\leandroMatias\Desktop\DesafioBase2\Tests\Issues\MonitorAnIssueTest.cs:line 19
+</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+											</div>
+										</li>
+										<li class="test-item" status="warning" author="" device="" tag=".UpdateAnIssueTest"> 
+											<div class="status-avatar warning-bg">
+												<i class="fa fa-warning text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">DadosValidos</p> 
+													<p class="duration text-sm">0h:0m:0s+008ms</p> 
+													<span class="datetime">16:31:56 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-warning">DadosValidos</h5>
+															<span class='badge badge-success'>05/04/2022 16:31:56</span>
+															<span class='badge badge-danger'>05/04/2022 16:31:56</span>
+															<span class='badge badge-default'>0h:0m:0s+008ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> .UpdateAnIssueTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-warning text-warning"></i></td>
+				<td>16:31:56</td>
+				<td>
+Test Result: Warning<pre>Message:   A consulta do banco de dados não retornou nenhum registro
+  Expected: True
+  But was:  False
+</pre><pre>Stack Trace:    at RestSharpNetCoreTemplate.Helpers.DBHelpers.RetornaDadosQuery(String query) in C:\Users\leandroMatias\Desktop\DesafioBase2\Helpers\DBHelpers.cs:line 252
+   at RestSharpNetCoreTemplate.DBSteps.SolicitacaoDBSteps.RetornaIdProblemaDB() in C:\Users\leandroMatias\Desktop\DesafioBase2\DBSteps\SolicitacaoDBSteps.cs:line 22
+   at RestSharpNetCoreTemplate.Issues.UpdateAnIssueTest.DadosValidos() in C:\Users\leandroMatias\Desktop\DesafioBase2\Tests\Issues\UpdateAnIssueTest.cs:line 19
+</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="t.CreateaProjectVersionTest"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">CreateaProjectVersionValid</p> 
+													<p class="duration text-sm">0h:0m:0s+200ms</p> 
+													<span class="datetime">16:31:56 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">CreateaProjectVersionValid</h5>
+															<span class='badge badge-success'>05/04/2022 16:31:56</span>
+															<span class='badge badge-danger'>05/04/2022 16:31:56</span>
+															<span class='badge badge-default'>0h:0m:0s+200ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> t.CreateaProjectVersionTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:31:56</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<div class="mt-4">
+	
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - POST - /api/rest/projects/{project_id}/versions/</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/projects/{project_id}/versions/</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>METHOD: </b>POST</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>PARAMETERS: </b>
+<i>project_id</i> = 27</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>JSON BODY: </b>
+{
+  "name": "v.7",
+  "description": "Major new version",
+  "released": true,
+  "obsolete": false,
+  "timestamp": "2020-02-20"
+}
+</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>STATUS CODE: </b>204 - NoContent</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Apr 2022 19:31:56 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=6b8a73e22474b4e2af6defd98332a7d6; path=/; HttpOnly
+Cache-Control=no-store, must-revalidate, no-cache, max-age=0
+X-Mantis-Username=administrator
+X-Mantis-LoginMethod=api-token
+X-Mantis-Version=2.22.1
+Vary=Accept-Encoding
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+	</div>
+
+</div>
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="t.CreateProjectTest"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">CreateProjectInvalido</p> 
+													<p class="duration text-sm">0h:0m:0s+165ms</p> 
+													<span class="datetime">16:31:56 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">CreateProjectInvalido</h5>
+															<span class='badge badge-success'>05/04/2022 16:31:56</span>
+															<span class='badge badge-danger'>05/04/2022 16:31:56</span>
+															<span class='badge badge-default'>0h:0m:0s+165ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> t.CreateProjectTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:31:56</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<div class="mt-4">
+	
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - POST - /api/rest/projects/</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/projects/</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>METHOD: </b>POST</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>JSON BODY: </b>
+{
+  "id": 1,
+  "name": "teste",
+  "status": {
+    "id": 10,
+    "name": "testeStatus",
+    "label": "development"
+  },
+  "description": "Open Baking",
+  "enabled": true,
+  "file_path": "/tmp/",
+  "view_state": {
+    "id": 10,
+    "name": "testeView_state",
+    "label": "public"
+  }
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>STATUS CODE: </b>200 - OK</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Apr 2022 19:31:56 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=d87addb41bda834cbf28fc09fc11f9ec; path=/; HttpOnly
+Cache-Control=max-age=10800, private, pre-check=10800
+Vary=Accept-Encoding
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Type=text/html; charset=UTF-8</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+<br />
+<b>Fatal error</b>:   Call to undefined method RestFault: : getMessage() in <b>/var/www/html/api/soap/mc_api.php</b> on line <b>364</b><br />
+</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+	</div>
+
+</div>
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="t.GetAprojectTest"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">GetAprojectValid</p> 
+													<p class="duration text-sm">0h:0m:0s+176ms</p> 
+													<span class="datetime">16:31:56 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">GetAprojectValid</h5>
+															<span class='badge badge-success'>05/04/2022 16:31:56</span>
+															<span class='badge badge-danger'>05/04/2022 16:31:56</span>
+															<span class='badge badge-default'>0h:0m:0s+176ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> t.GetAprojectTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:31:56</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<div class="mt-4">
+	
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - GET - /api/rest/projects/{id_project}</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/projects/{id_project}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>METHOD: </b>GET</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>PARAMETERS: </b>
+<i>id_project</i> = 27</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>STATUS CODE: </b>200 - OK</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Apr 2022 19:31:56 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=eadec4a66db8500c9858e6fd593abd62; path=/; HttpOnly
+Cache-Control=no-store, must-revalidate, no-cache, max-age=0
+X-Mantis-Username=administrator
+X-Mantis-LoginMethod=api-token
+X-Mantis-Version=2.22.1
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=495
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "projects": [
+        {
+            "id": 27,
+            "name": "teste",
+            "status": {
+                "id": 10,
+                "name": "development",
+                "label": "development"
+            },
+            "description": "",
+            "enabled": true,
+            "view_state": {
+                "id": 10,
+                "name": "public",
+                "label": "public"
+            },
+            "access_level": {
+                "id": 90,
+                "name": "administrator",
+                "label": "administrator"
+            },
+            "custom_fields": [
+                
+            ],
+            "versions": [
+                {
+                    "id": 16,
+                    "name": "v.7",
+                    "description": "Major new version",
+                    "released": true,
+                    "obsolete": false,
+                    "timestamp": "2020-02-20T00:00:00+08:00"
+                }
+            ],
+            "categories": [
+                {
+                    "id": 1,
+                    "name": "General",
+                    "project": {
+                        "id": 0,
+                        "name": null
+                    }
+                }
+            ]
+        }
+    ]
+}</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+	</div>
+
+</div>
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="t.UpdateAProjectTest"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">AlterarProjetoSucesso</p> 
+													<p class="duration text-sm">0h:0m:0s+227ms</p> 
+													<span class="datetime">16:31:56 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">AlterarProjetoSucesso</h5>
+															<span class='badge badge-success'>05/04/2022 16:31:56</span>
+															<span class='badge badge-danger'>05/04/2022 16:31:56</span>
+															<span class='badge badge-default'>0h:0m:0s+227ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> t.UpdateAProjectTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:31:56</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<div class="mt-4">
+	
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - PATCH - /api/rest/projects/{project_id}</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/projects/{project_id}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>METHOD: </b>PATCH</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>PARAMETERS: </b>
+<i>project_id</i> = 27</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>JSON BODY: </b>
+{
+  "id": "27",
+  "name": "$nameProject7",
+  "enabled": true
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>STATUS CODE: </b>200 - OK</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Apr 2022 19:31:56 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=d87ca3c98d07a072db7b70bb89bc0bd9; path=/; HttpOnly
+Cache-Control=no-store, must-revalidate, no-cache, max-age=0
+X-Mantis-Username=administrator
+X-Mantis-LoginMethod=api-token
+X-Mantis-Version=2.22.1
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=502
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:31:56</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "project": {
+        "id": "27",
+        "name": "$nameProject7",
+        "status": {
+            "id": 10,
+            "name": "development",
+            "label": "development"
+        },
+        "description": "",
+        "enabled": true,
+        "view_state": {
+            "id": 10,
+            "name": "public",
+            "label": "public"
+        },
+        "access_level": {
+            "id": 90,
+            "name": "administrator",
+            "label": "administrator"
+        },
+        "custom_fields": [
+            
+        ],
+        "versions": [
+            {
+                "id": 16,
+                "name": "v.7",
+                "description": "Major new version",
+                "released": true,
+                "obsolete": false,
+                "timestamp": "2020-02-20T00:00:00+08:00"
+            }
+        ],
+        "categories": [
+            {
+                "id": 1,
+                "name": "General",
+                "project": {
+                    "id": 0,
+                    "name": null
+                }
+            }
+        ]
+    }
+}</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+	</div>
+
+</div>
+											</div>
+										</li>
+                                </ul>    
+                            </div>
+                        </div>
+                        <div class="test-content scrollable">
+                            <div class="test-content-tools">
+                                <ul>
+                                    <li>
+                                        <a class="back-to-test" href="javascript:void(0)">
+                                            <i class="fa fa-arrow-left"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="test-content-detail">
+                                <div class="detail-body"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<script type='text/javascript'>
+	
+</script>
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/f97b667/spark/js/script.js"></script>
+
+</body>
+
+</html>

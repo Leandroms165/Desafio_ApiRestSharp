@@ -12,7 +12,7 @@ namespace RestSharpNetCoreTemplate.Project
 {
     public class AddaSubProjectTest : TestBase
     {
-     //[Test]
+        [Test]
         public void AddaSubProjectValid()
         {
             List<string> project_name = SolicitacaoDBSteps.RetornaIDProject();
@@ -25,13 +25,13 @@ namespace RestSharpNetCoreTemplate.Project
 
             IRestResponse<dynamic> response = addaSubProjectRequest.ExecuteRequest();
 
-            Assert.AreEqual(System.Net.HttpStatusCode.BadRequest, response.StatusCode);
+            Assert.AreEqual(System.Net.HttpStatusCode.NotFound, response.StatusCode);
 
             JObject obs = JObject.Parse(response.Content);
             Console.WriteLine(obs);
 
         }
-     // [Test]
+        [Test]
         public void AddaSubProjectInValid()
         {
             List<string> project_name = SolicitacaoDBSteps.RetornaIDProject();

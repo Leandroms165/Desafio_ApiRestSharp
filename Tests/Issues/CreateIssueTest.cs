@@ -12,7 +12,7 @@ namespace RestSharpNetCoreTemplate.Issues
 
 {
     [TestFixture]
-    public class CreateIssueTest: TestBase
+    public class CreateAnIssueTest: TestBase
     {
         [Test]
         public void CreateNewIssueInvalid()

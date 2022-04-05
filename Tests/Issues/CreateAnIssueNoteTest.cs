@@ -13,7 +13,7 @@ using System.Text;
 namespace RestSharpNetCoreTemplate.Issues
 {
     [TestFixture]
-    public class CreateAnIssueNoteTest : TestBase
+    public class CreateIssueNoteTest : TestBase
     {
         
         public static IEnumerable CreateAnIssueNote()

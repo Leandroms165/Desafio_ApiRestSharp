@@ -1,0 +1,3019 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Extent Framework</title>
+  <link rel="apple-touch-icon" href="https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png">
+  <link rel="shortcut icon" href="https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png">
+  <link href="https://cdn.rawgit.com/extent-framework/extent-github-cdn/cd00a5e/spark/css/style.css" rel="stylesheet" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style> </style>
+</head>
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+
+
+<body class="test-view  standard">
+    <div class="app header-dark side-nav-folded">
+        <div class="layout">
+            <div class="header navbar">
+    <div class="header-container">
+        <div class="nav-logo">
+          <a href="index.html">
+            <div class="logo logo-dark" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+            <div class="logo logo-white" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+          </a>
+        </div>
+        <ul class="nav-left">
+          <li>
+            <a class="sidenav-fold-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a class="sidenav-expand-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+          <li class="search-box">
+            <a class="search-toggle" href="javascript:void(0);">
+              <i class="search-icon fa fa-search"></i>
+              <i class="search-icon-close fa fa-close"></i>
+            </a>
+          </li>
+          <li class="search-input">
+            <input id="search-tests" class="form-control" type="text" placeholder="Type to search...">
+          </li>
+        </ul>
+        <ul class="nav-right">
+          <li class="m-r-10">
+            <a href="#">
+              <span class="badge badge-primary">Extent Framework</span>
+            </a>
+          </li>
+            <li class="m-r-10">
+                <a href="#">
+                    <span class="badge badge-primary">05/04/2022 19:11:39</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+            <div class="side-nav side-nav-folded">
+  <div class="side-nav-inner">
+    <ul class="side-nav-menu scrollable">
+      <li class="nav-item dropdown">
+        <a id="nav-test" class="dropdown-toggle" href="index.html">
+          <span class="icon-holder">
+            <i class="fa fa-align-left"></i>
+          </span>
+          <span class="title">Tests</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a id="nav-tag" class="dropdown-toggle" href="tag.html">
+          <span class="icon-holder">
+            <i class="fa fa-tag"></i>
+          </span>
+          <span class="title">Tags</span>
+        </a>
+      </li>
+            <li class="nav-item dropdown">
+        <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
+          <span class="icon-holder">
+            <i class="fa fa-bar-chart"></i>
+          </span>
+          <span class="title">Dashboard</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="side-nav-controls">
+    <ul>
+      <li>
+        <a href="#" class="lightsout" style="color:#8a8a8a;">
+          <i class="fa fa-desktop"></i>"</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+            <div class="page-container">
+                <div class="main-content">
+                    <div class="test-wrapper row">
+                        <div class="test-list">
+                            <div class="test-list-tools">
+                                <ul class="tools pull-left">
+                                    <li>
+                                        <a href="">
+                                            <span class="font-size-14">Tests</span>
+                                        </a>
+                                    </li> 
+                                </ul>
+                                <ul class="tools text-right">
+									<li class="user-profile dropdown dropdown-animated scale-left">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+											<i class="fa fa-exclamation-circle"></i>
+										</a>
+										<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a status="pass" class="dropdown-item" href="#"><span>Pass</span><span class="status success pull-right"></span></a>																																																																		<div class="dropdown-divider"></div>
+											<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+										</ul>
+									</li>
+																		<li class="user-profile dropdown dropdown-animated scale-left">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+											<i class="fa fa-tag"></i>
+										</a>
+										<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+												<a class="dropdown-item" href="#">.CreateAnIssueNoteTest</a>
+												<a class="dropdown-item" href="#">.DeleteAnIssueNoteTeste</a>
+												<a class="dropdown-item" href="#">.DeleteIssueTest</a>
+												<a class="dropdown-item" href="#">.GetIssuesProject</a>
+												<a class="dropdown-item" href="#">.GetIssueTest</a>
+												<a class="dropdown-item" href="#">.MonitorAnIssueTest</a>
+												<a class="dropdown-item" href="#">.UpdateAnIssueTest</a>
+												<a class="dropdown-item" href="#">t.GetAprojectTest</a>
+												<a class="dropdown-item" href="#">t.UpdateAProjectTest</a>
+										</ul>
+                                    </li>
+									                                </ul>
+                            </div>
+                            <div class="test-list-wrapper scrollable">
+                                <ul class="test-list-item">
+										<li class="test-item" status="pass" author="" device="" tag=".CreateAnIssueNoteTest"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">AddNameViewInvalido</p> 
+													<p class="duration text-sm">0h:0m:0s+643ms</p> 
+													<span class="datetime">19:11:39 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">AddNameViewInvalido</h5>
+															<span class='badge badge-success'>05/04/2022 19:11:39</span>
+															<span class='badge badge-danger'>05/04/2022 19:11:39</span>
+															<span class='badge badge-default'>0h:0m:0s+643ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> .CreateAnIssueNoteTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>19:11:39</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<div class="mt-4">
+	
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - POST - /api/rest/issues/{issue_id}/notes</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:39</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:39</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/issues/{issue_id}/notes</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:39</td>
+				<td>
+<pre><b>METHOD: </b>POST</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:39</td>
+				<td>
+<pre><b>PARAMETERS: </b>
+<i>issue_id</i> = 34</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:39</td>
+				<td>
+<pre><b>JSON BODY: </b>
+{
+  "text": "Teste",
+  "view_state": {
+    "name": ""
+  }
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:39</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:39</td>
+				<td>
+<pre><b>STATUS CODE: </b>400 - BadRequest</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:39</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Apr 2022 22:11:39 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=9936f1fb9b6c144ec9be49ba907e9078; path=/; HttpOnly
+Cache-Control=max-age=10800, private, pre-check=10800
+Connection=close
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=181
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:39</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "message": "Invalid view state id '10'.",
+    "code": 29,
+    "localized": "Invalid value for ''"
+}<br />
+<b>Warning</b>:   300 in <b>/var/www/html/core/lang_api.php</b> on line <b>306</b><br />
+</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+	</div>
+
+</div>
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag=".CreateAnIssueNoteTest"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">AddNoteInvalido</p> 
+													<p class="duration text-sm">0h:0m:0s+143ms</p> 
+													<span class="datetime">19:11:39 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">AddNoteInvalido</h5>
+															<span class='badge badge-success'>05/04/2022 19:11:39</span>
+															<span class='badge badge-danger'>05/04/2022 19:11:40</span>
+															<span class='badge badge-default'>0h:0m:0s+143ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> .CreateAnIssueNoteTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>19:11:40</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<div class="mt-4">
+	
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - POST - /api/rest/issues/{issue_id}/notes</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:40</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:40</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/issues/{issue_id}/notes</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:40</td>
+				<td>
+<pre><b>METHOD: </b>POST</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:40</td>
+				<td>
+<pre><b>PARAMETERS: </b>
+<i>issue_id</i> = 34</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:40</td>
+				<td>
+<pre><b>JSON BODY: </b>
+{
+  "text": "Verificar acesso",
+  "view_state": {
+    "name": ""
+  }
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:40</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:40</td>
+				<td>
+<pre><b>STATUS CODE: </b>400 - BadRequest</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:40</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Apr 2022 22:11:39 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=be28f67d4d7cdb20497f6159d56994f8; path=/; HttpOnly
+Cache-Control=max-age=10800, private, pre-check=10800
+Connection=close
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=181
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:40</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "message": "Invalid view state id '10'.",
+    "code": 29,
+    "localized": "Invalid value for ''"
+}<br />
+<b>Warning</b>:   300 in <b>/var/www/html/core/lang_api.php</b> on line <b>306</b><br />
+</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+	</div>
+
+</div>
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag=".CreateAnIssueNoteTest"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">AddNoteissueValido</p> 
+													<p class="duration text-sm">0h:0m:0s+189ms</p> 
+													<span class="datetime">19:11:40 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">AddNoteissueValido</h5>
+															<span class='badge badge-success'>05/04/2022 19:11:40</span>
+															<span class='badge badge-danger'>05/04/2022 19:11:40</span>
+															<span class='badge badge-default'>0h:0m:0s+189ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> .CreateAnIssueNoteTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>19:11:40</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<div class="mt-4">
+	
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - POST - /api/rest/issues/{issue_id}/notes</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:40</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:40</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/issues/{issue_id}/notes</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:40</td>
+				<td>
+<pre><b>METHOD: </b>POST</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:40</td>
+				<td>
+<pre><b>PARAMETERS: </b>
+<i>issue_id</i> = 34</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:40</td>
+				<td>
+<pre><b>JSON BODY: </b>
+{
+  "text": "Verificar acesso",
+  "view_state": {
+    "name": "public"
+  }
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:40</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:40</td>
+				<td>
+<pre><b>STATUS CODE: </b>201 - Created</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:40</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Apr 2022 22:11:40 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=b5b27f201ed1597228bf91bd8df55154; path=/; HttpOnly
+Cache-Control=no-store, must-revalidate, no-cache, max-age=0
+X-Mantis-Username=administrator
+X-Mantis-LoginMethod=api-token
+X-Mantis-Version=2.22.1
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=1586
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:40</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "note": {
+        "id": 17,
+        "reporter": {
+            "id": 1,
+            "name": "administrator",
+            "email": "root@localhost"
+        },
+        "text": "Verificar acesso",
+        "view_state": {
+            "id": 10,
+            "name": "public",
+            "label": "public"
+        },
+        "type": "note",
+        "created_at": "2022-04-06T06:11:40+08:00",
+        "updated_at": "2022-04-06T06:11:40+08:00"
+    },
+    "issue": {
+        "id": 34,
+        "summary": "Tela Login",
+        "description": "Erro ao editar dados de entrada",
+        "project": {
+            "id": 34,
+            "name": "1Santander70"
+        },
+        "category": {
+            "id": 1,
+            "name": "General"
+        },
+        "reporter": {
+            "id": 1,
+            "name": "administrator",
+            "email": "root@localhost"
+        },
+        "status": {
+            "id": 10,
+            "name": "new",
+            "label": "new",
+            "color": "#fcbdbd"
+        },
+        "resolution": {
+            "id": 10,
+            "name": "open",
+            "label": "open"
+        },
+        "view_state": {
+            "id": 10,
+            "name": "public",
+            "label": "public"
+        },
+        "priority": {
+            "id": 30,
+            "name": "normal",
+            "label": "normal"
+        },
+        "severity": {
+            "id": 50,
+            "name": "minor",
+            "label": "minor"
+        },
+        "reproducibility": {
+            "id": 70,
+            "name": "have not tried",
+            "label": "have not tried"
+        },
+        "sticky": false,
+        "created_at": "2022-04-06T06:11:31+08:00",
+        "updated_at": "2022-04-06T06:11:40+08:00",
+        "notes": [
+            {
+                "id": 17,
+                "reporter": {
+                    "id": 1,
+                    "name": "administrator",
+                    "email": "root@localhost"
+                },
+                "text": "Verificar acesso",
+                "view_state": {
+                    "id": 10,
+                    "name": "public",
+                    "label": "public"
+                },
+                "type": "note",
+                "created_at": "2022-04-06T06:11:40+08:00",
+                "updated_at": "2022-04-06T06:11:40+08:00"
+            }
+        ],
+        "history": [
+            {
+                "created_at": "2022-04-06T06:11:31+08:00",
+                "user": {
+                    "id": 1,
+                    "name": "administrator",
+                    "email": "root@localhost"
+                },
+                "type": {
+                    "id": 1,
+                    "name": "issue-new"
+                },
+                "message": "New Issue"
+            },
+            {
+                "created_at": "2022-04-06T06:11:40+08:00",
+                "user": {
+                    "id": 1,
+                    "name": "administrator",
+                    "email": "root@localhost"
+                },
+                "type": {
+                    "id": 2,
+                    "name": "note-added"
+                },
+                "note": {
+                    "id": 17
+                },
+                "message": "Note Added: 0000017"
+            }
+        ]
+    }
+}</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+	</div>
+
+</div>
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag=".CreateAnIssueNoteTest"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">AddTextInvalido</p> 
+													<p class="duration text-sm">0h:0m:0s+136ms</p> 
+													<span class="datetime">19:11:40 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">AddTextInvalido</h5>
+															<span class='badge badge-success'>05/04/2022 19:11:40</span>
+															<span class='badge badge-danger'>05/04/2022 19:11:40</span>
+															<span class='badge badge-default'>0h:0m:0s+136ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> .CreateAnIssueNoteTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>19:11:40</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<div class="mt-4">
+	
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - POST - /api/rest/issues/{issue_id}/notes</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:40</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:40</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/issues/{issue_id}/notes</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:40</td>
+				<td>
+<pre><b>METHOD: </b>POST</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:40</td>
+				<td>
+<pre><b>PARAMETERS: </b>
+<i>issue_id</i> = 34</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:40</td>
+				<td>
+<pre><b>JSON BODY: </b>
+{
+  "text": "",
+  "view_state": {
+    "name": "public"
+  }
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:40</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:40</td>
+				<td>
+<pre><b>STATUS CODE: </b>400 - BadRequest</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:40</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Apr 2022 22:11:40 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=0e6f40002cd3c446fa64354fd173cc4a; path=/; HttpOnly
+Cache-Control=max-age=10800, private, pre-check=10800
+Connection=close
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=129
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:40</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "message": "Issue note not specified.",
+    "code": 11,
+    "localized": "A necessary field \"Note\" was empty. Please recheck your inputs."
+}</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+	</div>
+
+</div>
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag=".DeleteAnIssueNoteTeste"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">DeleteAnIssueInvalid</p> 
+													<p class="duration text-sm">0h:0m:0s+000ms</p> 
+													<span class="datetime">19:11:44 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">DeleteAnIssueInvalid</h5>
+															<span class='badge badge-success'>05/04/2022 19:11:44</span>
+															<span class='badge badge-danger'>05/04/2022 19:11:44</span>
+															<span class='badge badge-default'>0h:0m:0s+000ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> .DeleteAnIssueNoteTeste</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag=".DeleteAnIssueNoteTeste"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">DeleteAnIssueInvalidNote0</p> 
+													<p class="duration text-sm">0h:0m:0s+000ms</p> 
+													<span class="datetime">19:11:44 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">DeleteAnIssueInvalidNote0</h5>
+															<span class='badge badge-success'>05/04/2022 19:11:44</span>
+															<span class='badge badge-danger'>05/04/2022 19:11:44</span>
+															<span class='badge badge-default'>0h:0m:0s+000ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> .DeleteAnIssueNoteTeste</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag=".DeleteAnIssueNoteTeste"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">DeleteAnIssueNote</p> 
+													<p class="duration text-sm">0h:0m:0s+189ms</p> 
+													<span class="datetime">19:11:44 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">DeleteAnIssueNote</h5>
+															<span class='badge badge-success'>05/04/2022 19:11:44</span>
+															<span class='badge badge-danger'>05/04/2022 19:11:44</span>
+															<span class='badge badge-default'>0h:0m:0s+189ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> .DeleteAnIssueNoteTeste</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>19:11:44</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>19:11:44</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>19:11:44</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<div class="mt-4">
+	
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - DELETE - api/rest/issues/{issue_id}/notes/{issue_note_id}</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>REQUEST: </b>api/rest/issues/{issue_id}/notes/{issue_note_id}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>METHOD: </b>DELETE</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>PARAMETERS: </b>
+<i>issue_id</i> = 17
+<i>issue_note_id</i> = 0</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>STATUS CODE: </b>400 - BadRequest</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Apr 2022 22:11:44 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=403eb4f961fe31fc0c23caa8c35bdff0; path=/; HttpOnly
+Cache-Control=max-age=10800, private, pre-check=10800
+Connection=close
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=78
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "message": "'id' must be >= 1",
+    "code": 29,
+    "localized": "Invalid value for 'id'"
+}</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - DELETE - api/rest/issues/{issue_id}/notes/{issue_note_id}</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>REQUEST: </b>api/rest/issues/{issue_id}/notes/{issue_note_id}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>METHOD: </b>DELETE</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>PARAMETERS: </b>
+<i>issue_id</i> = 17
+<i>issue_note_id</i> = 4444444a</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>STATUS CODE: </b>404 - NotFound</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Apr 2022 22:11:44 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=9cf66bf4f8c6d58847d7f00ca0d82bf9; path=/; HttpOnly
+Cache-Control=max-age=10800, private, pre-check=10800
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=85
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "message": "Issue note #4444444a not found",
+    "code": 600,
+    "localized": "Note not found."
+}</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - DELETE - api/rest/issues/{issue_id}/notes/{issue_note_id}</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>REQUEST: </b>api/rest/issues/{issue_id}/notes/{issue_note_id}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>METHOD: </b>DELETE</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>PARAMETERS: </b>
+<i>issue_id</i> = 34
+<i>issue_note_id</i> = 17</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>STATUS CODE: </b>200 - OK</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Apr 2022 22:11:44 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=e7ddd16e2179ee5c249bb91fae11669b; path=/; HttpOnly
+Cache-Control=no-store, must-revalidate, no-cache, max-age=0
+X-Mantis-Username=administrator
+X-Mantis-LoginMethod=api-token
+X-Mantis-Version=2.22.1
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=1253
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "issue": {
+        "id": 34,
+        "summary": "Tela Login",
+        "description": "Erro ao editar dados de entrada",
+        "project": {
+            "id": 34,
+            "name": "1Santander70"
+        },
+        "category": {
+            "id": 1,
+            "name": "General"
+        },
+        "reporter": {
+            "id": 1,
+            "name": "administrator",
+            "email": "root@localhost"
+        },
+        "status": {
+            "id": 10,
+            "name": "new",
+            "label": "new",
+            "color": "#fcbdbd"
+        },
+        "resolution": {
+            "id": 10,
+            "name": "open",
+            "label": "open"
+        },
+        "view_state": {
+            "id": 10,
+            "name": "public",
+            "label": "public"
+        },
+        "priority": {
+            "id": 30,
+            "name": "normal",
+            "label": "normal"
+        },
+        "severity": {
+            "id": 50,
+            "name": "minor",
+            "label": "minor"
+        },
+        "reproducibility": {
+            "id": 70,
+            "name": "have not tried",
+            "label": "have not tried"
+        },
+        "sticky": false,
+        "created_at": "2022-04-06T06:11:31+08:00",
+        "updated_at": "2022-04-06T06:11:40+08:00",
+        "history": [
+            {
+                "created_at": "2022-04-06T06:11:31+08:00",
+                "user": {
+                    "id": 1,
+                    "name": "administrator",
+                    "email": "root@localhost"
+                },
+                "type": {
+                    "id": 1,
+                    "name": "issue-new"
+                },
+                "message": "New Issue"
+            },
+            {
+                "created_at": "2022-04-06T06:11:40+08:00",
+                "user": {
+                    "id": 1,
+                    "name": "administrator",
+                    "email": "root@localhost"
+                },
+                "type": {
+                    "id": 2,
+                    "name": "note-added"
+                },
+                "note": {
+                    "id": 17
+                },
+                "message": "Note Added: 0000017"
+            },
+            {
+                "created_at": "2022-04-06T06:11:44+08:00",
+                "user": {
+                    "id": 1,
+                    "name": "administrator",
+                    "email": "root@localhost"
+                },
+                "type": {
+                    "id": 4,
+                    "name": "note-deleted"
+                },
+                "note": {
+                    "id": 17
+                },
+                "message": "Note Deleted: 0000017"
+            }
+        ]
+    }
+}</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+	</div>
+
+</div>
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag=".DeleteIssueTest"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">DadosValidos</p> 
+													<p class="duration text-sm">0h:0m:0s+171ms</p> 
+													<span class="datetime">19:11:44 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">DadosValidos</h5>
+															<span class='badge badge-success'>05/04/2022 19:11:44</span>
+															<span class='badge badge-danger'>05/04/2022 19:11:44</span>
+															<span class='badge badge-default'>0h:0m:0s+171ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> .DeleteIssueTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>19:11:44</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<div class="mt-4">
+	
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - DELETE - /api/rest/issues/{id_delete}</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/issues/{id_delete}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>METHOD: </b>DELETE</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>PARAMETERS: </b>
+<i>id_delete</i> = 34</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>STATUS CODE: </b>204 - NoContent</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Apr 2022 22:11:44 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=5863956d9a2e2be53466573e2f1386c4; path=/; HttpOnly
+Cache-Control=no-store, must-revalidate, no-cache, max-age=0
+ETag=6d5fdad9c782a7d589f6b28332dcab1cf5ca62268f475fa260608bf2bdcca58b
+X-Mantis-Username=administrator
+X-Mantis-LoginMethod=api-token
+X-Mantis-Version=2.22.1
+Vary=Accept-Encoding
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+	</div>
+
+</div>
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag=".GetIssuesProject"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">GetIssueProj</p> 
+													<p class="duration text-sm">0h:0m:0s+189ms</p> 
+													<span class="datetime">19:11:44 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">GetIssueProj</h5>
+															<span class='badge badge-success'>05/04/2022 19:11:44</span>
+															<span class='badge badge-danger'>05/04/2022 19:11:44</span>
+															<span class='badge badge-default'>0h:0m:0s+189ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> .GetIssuesProject</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>19:11:44</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<div class="mt-4">
+	
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - GET - api/rest/issues?project_id={Id_project}</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>REQUEST: </b>api/rest/issues?project_id={Id_project}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>METHOD: </b>GET</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>PARAMETERS: </b>
+<i>Id_project</i> = 36</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>STATUS CODE: </b>200 - OK</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Apr 2022 22:11:44 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=82bcedf93a9041b1b85e516365753507; path=/; HttpOnly
+Cache-Control=no-store, must-revalidate, no-cache, max-age=0
+ETag=fd67ed0f927e61088f061c9961da0978854784d1f16e9d119f892aacc53d0c38
+X-Mantis-Username=administrator
+X-Mantis-LoginMethod=api-token
+X-Mantis-Version=2.22.1
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=2580
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:44</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "issues": [
+        {
+            "id": 33,
+            "summary": "Tela Login",
+            "description": "Erro ao editar dados de entrada",
+            "project": {
+                "id": 35,
+                "name": "1Santander73"
+            },
+            "category": {
+                "id": 1,
+                "name": "General"
+            },
+            "reporter": {
+                "id": 1,
+                "name": "administrator",
+                "email": "root@localhost"
+            },
+            "status": {
+                "id": 10,
+                "name": "new",
+                "label": "new",
+                "color": "#fcbdbd"
+            },
+            "resolution": {
+                "id": 10,
+                "name": "open",
+                "label": "open"
+            },
+            "view_state": {
+                "id": 10,
+                "name": "public",
+                "label": "public"
+            },
+            "priority": {
+                "id": 30,
+                "name": "normal",
+                "label": "normal"
+            },
+            "severity": {
+                "id": 50,
+                "name": "minor",
+                "label": "minor"
+            },
+            "reproducibility": {
+                "id": 70,
+                "name": "have not tried",
+                "label": "have not tried"
+            },
+            "sticky": false,
+            "created_at": "2022-04-06T06:11:23+08:00",
+            "updated_at": "2022-04-06T06:11:23+08:00",
+            "history": [
+                {
+                    "created_at": "2022-04-06T06:11:23+08:00",
+                    "user": {
+                        "id": 1,
+                        "name": "administrator",
+                        "email": "root@localhost"
+                    },
+                    "type": {
+                        "id": 1,
+                        "name": "issue-new"
+                    },
+                    "message": "New Issue"
+                }
+            ]
+        },
+        {
+            "id": 32,
+            "summary": "Tela Login",
+            "description": "Erro ao editar dados de entrada",
+            "project": {
+                "id": 34,
+                "name": "1Santander70"
+            },
+            "category": {
+                "id": 1,
+                "name": "General"
+            },
+            "reporter": {
+                "id": 1,
+                "name": "administrator",
+                "email": "root@localhost"
+            },
+            "status": {
+                "id": 10,
+                "name": "new",
+                "label": "new",
+                "color": "#fcbdbd"
+            },
+            "resolution": {
+                "id": 10,
+                "name": "open",
+                "label": "open"
+            },
+            "view_state": {
+                "id": 10,
+                "name": "public",
+                "label": "public"
+            },
+            "priority": {
+                "id": 30,
+                "name": "normal",
+                "label": "normal"
+            },
+            "severity": {
+                "id": 50,
+                "name": "minor",
+                "label": "minor"
+            },
+            "reproducibility": {
+                "id": 70,
+                "name": "have not tried",
+                "label": "have not tried"
+            },
+            "sticky": false,
+            "created_at": "2022-04-06T06:11:16+08:00",
+            "updated_at": "2022-04-06T06:11:16+08:00",
+            "history": [
+                {
+                    "created_at": "2022-04-06T06:11:16+08:00",
+                    "user": {
+                        "id": 1,
+                        "name": "administrator",
+                        "email": "root@localhost"
+                    },
+                    "type": {
+                        "id": 1,
+                        "name": "issue-new"
+                    },
+                    "message": "New Issue"
+                }
+            ]
+        },
+        {
+            "id": 31,
+            "summary": "Tela Login",
+            "description": "Erro ao editar dados de entrada",
+            "project": {
+                "id": 37,
+                "name": "1Santander64"
+            },
+            "category": {
+                "id": 1,
+                "name": "General"
+            },
+            "reporter": {
+                "id": 1,
+                "name": "administrator",
+                "email": "root@localhost"
+            },
+            "status": {
+                "id": 10,
+                "name": "new",
+                "label": "new",
+                "color": "#fcbdbd"
+            },
+            "resolution": {
+                "id": 10,
+                "name": "open",
+                "label": "open"
+            },
+            "view_state": {
+                "id": 10,
+                "name": "public",
+                "label": "public"
+            },
+            "priority": {
+                "id": 30,
+                "name": "normal",
+                "label": "normal"
+            },
+            "severity": {
+                "id": 50,
+                "name": "minor",
+                "label": "minor"
+            },
+            "reproducibility": {
+                "id": 70,
+                "name": "have not tried",
+                "label": "have not tried"
+            },
+            "sticky": false,
+            "created_at": "2022-04-06T06:11:05+08:00",
+            "updated_at": "2022-04-06T06:11:05+08:00",
+            "history": [
+                {
+                    "created_at": "2022-04-06T06:11:05+08:00",
+                    "user": {
+                        "id": 1,
+                        "name": "administrator",
+                        "email": "root@localhost"
+                    },
+                    "type": {
+                        "id": 1,
+                        "name": "issue-new"
+                    },
+                    "message": "New Issue"
+                }
+            ]
+        }
+    ]
+}</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+	</div>
+
+</div>
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag=".GetIssueTest"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">GetIssueValido</p> 
+													<p class="duration text-sm">0h:0m:0s+163ms</p> 
+													<span class="datetime">19:11:44 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">GetIssueValido</h5>
+															<span class='badge badge-success'>05/04/2022 19:11:44</span>
+															<span class='badge badge-danger'>05/04/2022 19:11:45</span>
+															<span class='badge badge-default'>0h:0m:0s+163ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> .GetIssueTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>19:11:45</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<div class="mt-4">
+	
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - GET - /api/rest/issues/{Id_issue}</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/issues/{Id_issue}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>METHOD: </b>GET</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>PARAMETERS: </b>
+<i>Id_issue</i> = 33</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>STATUS CODE: </b>200 - OK</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Apr 2022 22:11:44 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=8910d950ba748569a7d7dea4843b34e5; path=/; HttpOnly
+Cache-Control=no-store, must-revalidate, no-cache, max-age=0
+ETag=a7bb4d6197d7b5309ee17f2650a106447813b4846be8d104977b20fb47851d05
+X-Mantis-Username=administrator
+X-Mantis-LoginMethod=api-token
+X-Mantis-Version=2.22.1
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=868
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "issues": [
+        {
+            "id": 33,
+            "summary": "Tela Login",
+            "description": "Erro ao editar dados de entrada",
+            "project": {
+                "id": 35,
+                "name": "1Santander73"
+            },
+            "category": {
+                "id": 1,
+                "name": "General"
+            },
+            "reporter": {
+                "id": 1,
+                "name": "administrator",
+                "email": "root@localhost"
+            },
+            "status": {
+                "id": 10,
+                "name": "new",
+                "label": "new",
+                "color": "#fcbdbd"
+            },
+            "resolution": {
+                "id": 10,
+                "name": "open",
+                "label": "open"
+            },
+            "view_state": {
+                "id": 10,
+                "name": "public",
+                "label": "public"
+            },
+            "priority": {
+                "id": 30,
+                "name": "normal",
+                "label": "normal"
+            },
+            "severity": {
+                "id": 50,
+                "name": "minor",
+                "label": "minor"
+            },
+            "reproducibility": {
+                "id": 70,
+                "name": "have not tried",
+                "label": "have not tried"
+            },
+            "sticky": false,
+            "created_at": "2022-04-06T06:11:23+08:00",
+            "updated_at": "2022-04-06T06:11:23+08:00",
+            "history": [
+                {
+                    "created_at": "2022-04-06T06:11:23+08:00",
+                    "user": {
+                        "id": 1,
+                        "name": "administrator",
+                        "email": "root@localhost"
+                    },
+                    "type": {
+                        "id": 1,
+                        "name": "issue-new"
+                    },
+                    "message": "New Issue"
+                }
+            ]
+        }
+    ]
+}</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+	</div>
+
+</div>
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag=".MonitorAnIssueTest"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">DateValid</p> 
+													<p class="duration text-sm">0h:0m:0s+163ms</p> 
+													<span class="datetime">19:11:45 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">DateValid</h5>
+															<span class='badge badge-success'>05/04/2022 19:11:45</span>
+															<span class='badge badge-danger'>05/04/2022 19:11:45</span>
+															<span class='badge badge-default'>0h:0m:0s+163ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> .MonitorAnIssueTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>19:11:45</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<div class="mt-4">
+	
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - POST - /api/rest/issues/{issue_id}/monitors</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/issues/{issue_id}/monitors</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>METHOD: </b>POST</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>PARAMETERS: </b>
+<i>issue_id</i> = 33</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>STATUS CODE: </b>201 - Created</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Apr 2022 22:11:45 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=ea14669754e7ea8c8cd19fd579e91084; path=/; HttpOnly
+Cache-Control=no-store, must-revalidate, no-cache, max-age=0
+X-Mantis-Username=administrator
+X-Mantis-LoginMethod=api-token
+X-Mantis-Version=2.22.1
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=1159
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "issues": [
+        {
+            "id": 33,
+            "summary": "Tela Login",
+            "description": "Erro ao editar dados de entrada",
+            "project": {
+                "id": 35,
+                "name": "1Santander73"
+            },
+            "category": {
+                "id": 1,
+                "name": "General"
+            },
+            "reporter": {
+                "id": 1,
+                "name": "administrator",
+                "email": "root@localhost"
+            },
+            "status": {
+                "id": 10,
+                "name": "new",
+                "label": "new",
+                "color": "#fcbdbd"
+            },
+            "resolution": {
+                "id": 10,
+                "name": "open",
+                "label": "open"
+            },
+            "view_state": {
+                "id": 10,
+                "name": "public",
+                "label": "public"
+            },
+            "priority": {
+                "id": 30,
+                "name": "normal",
+                "label": "normal"
+            },
+            "severity": {
+                "id": 50,
+                "name": "minor",
+                "label": "minor"
+            },
+            "reproducibility": {
+                "id": 70,
+                "name": "have not tried",
+                "label": "have not tried"
+            },
+            "sticky": false,
+            "created_at": "2022-04-06T06:11:23+08:00",
+            "updated_at": "2022-04-06T06:11:45+08:00",
+            "monitors": [
+                {
+                    "id": 1,
+                    "name": "administrator",
+                    "email": "root@localhost"
+                }
+            ],
+            "history": [
+                {
+                    "created_at": "2022-04-06T06:11:23+08:00",
+                    "user": {
+                        "id": 1,
+                        "name": "administrator",
+                        "email": "root@localhost"
+                    },
+                    "type": {
+                        "id": 1,
+                        "name": "issue-new"
+                    },
+                    "message": "New Issue"
+                },
+                {
+                    "created_at": "2022-04-06T06:11:45+08:00",
+                    "user": {
+                        "id": 1,
+                        "name": "administrator",
+                        "email": "root@localhost"
+                    },
+                    "type": {
+                        "id": 12,
+                        "name": "monitor-added"
+                    },
+                    "old_value": "1",
+                    "new_value": "",
+                    "message": "Issue Monitored: administrator"
+                }
+            ]
+        }
+    ]
+}</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+	</div>
+
+</div>
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag=".UpdateAnIssueTest"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">DadosValidos</p> 
+													<p class="duration text-sm">0h:0m:0s+192ms</p> 
+													<span class="datetime">19:11:45 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">DadosValidos</h5>
+															<span class='badge badge-success'>05/04/2022 19:11:45</span>
+															<span class='badge badge-danger'>05/04/2022 19:11:45</span>
+															<span class='badge badge-default'>0h:0m:0s+192ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> .UpdateAnIssueTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>19:11:45</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<div class="mt-4">
+	
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - PATCH - api/rest/issues/{issue_id}</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>REQUEST: </b>api/rest/issues/{issue_id}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>METHOD: </b>PATCH</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>PARAMETERS: </b>
+<i>issue_id</i> = 33</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>JSON BODY: </b>
+{
+  "summary": "teste api",
+  "description": "novo erro encontrado"
+}
+</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>STATUS CODE: </b>200 - OK</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Apr 2022 22:11:45 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=249c3246ab883787d71ae5ebe7d7ceac; path=/; HttpOnly
+Cache-Control=no-store, must-revalidate, no-cache, max-age=0
+ETag=07b795e638b45e5316363adc188cf4a03216f9b243d192e8af2adf2f253912f6
+X-Mantis-Username=administrator
+X-Mantis-LoginMethod=api-token
+X-Mantis-Version=2.22.1
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=1632
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "issues": [
+        {
+            "id": 33,
+            "summary": "teste api",
+            "description": "novo erro encontrado",
+            "project": {
+                "id": 35,
+                "name": "1Santander73"
+            },
+            "category": {
+                "id": 1,
+                "name": "General"
+            },
+            "reporter": {
+                "id": 1,
+                "name": "administrator",
+                "email": "root@localhost"
+            },
+            "status": {
+                "id": 10,
+                "name": "new",
+                "label": "new",
+                "color": "#fcbdbd"
+            },
+            "resolution": {
+                "id": 10,
+                "name": "open",
+                "label": "open"
+            },
+            "view_state": {
+                "id": 10,
+                "name": "public",
+                "label": "public"
+            },
+            "priority": {
+                "id": 30,
+                "name": "normal",
+                "label": "normal"
+            },
+            "severity": {
+                "id": 50,
+                "name": "minor",
+                "label": "minor"
+            },
+            "reproducibility": {
+                "id": 70,
+                "name": "have not tried",
+                "label": "have not tried"
+            },
+            "sticky": false,
+            "created_at": "2022-04-06T06:11:23+08:00",
+            "updated_at": "2022-04-06T06:11:45+08:00",
+            "monitors": [
+                {
+                    "id": 1,
+                    "name": "administrator",
+                    "email": "root@localhost"
+                }
+            ],
+            "history": [
+                {
+                    "created_at": "2022-04-06T06:11:23+08:00",
+                    "user": {
+                        "id": 1,
+                        "name": "administrator",
+                        "email": "root@localhost"
+                    },
+                    "type": {
+                        "id": 1,
+                        "name": "issue-new"
+                    },
+                    "message": "New Issue"
+                },
+                {
+                    "created_at": "2022-04-06T06:11:45+08:00",
+                    "user": {
+                        "id": 1,
+                        "name": "administrator",
+                        "email": "root@localhost"
+                    },
+                    "type": {
+                        "id": 12,
+                        "name": "monitor-added"
+                    },
+                    "old_value": "1",
+                    "new_value": "",
+                    "message": "Issue Monitored: administrator"
+                },
+                {
+                    "created_at": "2022-04-06T06:11:45+08:00",
+                    "user": {
+                        "id": 1,
+                        "name": "administrator",
+                        "email": "root@localhost"
+                    },
+                    "field": {
+                        "name": "summary",
+                        "label": "Summary"
+                    },
+                    "type": {
+                        "id": 0,
+                        "name": "field-updated"
+                    },
+                    "old_value": "Tela Login",
+                    "new_value": "teste api",
+                    "message": "Summary",
+                    "change": "Tela Login => teste api"
+                },
+                {
+                    "created_at": "2022-04-06T06:11:45+08:00",
+                    "user": {
+                        "id": 1,
+                        "name": "administrator",
+                        "email": "root@localhost"
+                    },
+                    "type": {
+                        "id": 6,
+                        "name": "issue-description-updated"
+                    },
+                    "message": "Description Updated"
+                }
+            ]
+        }
+    ]
+}</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+	</div>
+
+</div>
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="t.GetAprojectTest"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">GetAprojectValid</p> 
+													<p class="duration text-sm">0h:0m:0s+134ms</p> 
+													<span class="datetime">19:11:45 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">GetAprojectValid</h5>
+															<span class='badge badge-success'>05/04/2022 19:11:45</span>
+															<span class='badge badge-danger'>05/04/2022 19:11:45</span>
+															<span class='badge badge-default'>0h:0m:0s+134ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> t.GetAprojectTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>19:11:45</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<div class="mt-4">
+	
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - GET - /api/rest/projects/{id_project}</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/projects/{id_project}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>METHOD: </b>GET</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>PARAMETERS: </b>
+<i>id_project</i> = 37</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>STATUS CODE: </b>200 - OK</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Apr 2022 22:11:45 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=87cc3b303969963f399fae5c00ae9a47; path=/; HttpOnly
+Cache-Control=no-store, must-revalidate, no-cache, max-age=0
+X-Mantis-Username=administrator
+X-Mantis-LoginMethod=api-token
+X-Mantis-Version=2.22.1
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=384
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "projects": [
+        {
+            "id": 37,
+            "name": "1Santander64",
+            "status": {
+                "id": 10,
+                "name": "development",
+                "label": "development"
+            },
+            "description": "Open Baking",
+            "enabled": true,
+            "view_state": {
+                "id": 10,
+                "name": "public",
+                "label": "public"
+            },
+            "access_level": {
+                "id": 90,
+                "name": "administrator",
+                "label": "administrator"
+            },
+            "custom_fields": [
+                
+            ],
+            "versions": [
+                
+            ],
+            "categories": [
+                {
+                    "id": 1,
+                    "name": "General",
+                    "project": {
+                        "id": 0,
+                        "name": null
+                    }
+                }
+            ]
+        }
+    ]
+}</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+	</div>
+
+</div>
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="t.UpdateAProjectTest"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">AlterarProjetoSucesso</p> 
+													<p class="duration text-sm">0h:0m:0s+145ms</p> 
+													<span class="datetime">19:11:45 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">AlterarProjetoSucesso</h5>
+															<span class='badge badge-success'>05/04/2022 19:11:45</span>
+															<span class='badge badge-danger'>05/04/2022 19:11:45</span>
+															<span class='badge badge-default'>0h:0m:0s+145ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> t.UpdateAProjectTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>19:11:45</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<div class="mt-4">
+	
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - PATCH - /api/rest/projects/{project_id}</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/projects/{project_id}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>METHOD: </b>PATCH</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>PARAMETERS: </b>
+<i>project_id</i> = 35</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>JSON BODY: </b>
+{
+  "id": "35",
+  "name": "$nameProject7",
+  "enabled": true
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>STATUS CODE: </b>200 - OK</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Apr 2022 22:11:45 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=e3c393630208b2fcaa4713ba6dfca280; path=/; HttpOnly
+Cache-Control=no-store, must-revalidate, no-cache, max-age=0
+X-Mantis-Username=administrator
+X-Mantis-LoginMethod=api-token
+X-Mantis-Version=2.22.1
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=384
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>19:11:45</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "project": {
+        "id": "35",
+        "name": "$nameProject7",
+        "status": {
+            "id": 10,
+            "name": "development",
+            "label": "development"
+        },
+        "description": "Open Baking",
+        "enabled": true,
+        "view_state": {
+            "id": 10,
+            "name": "public",
+            "label": "public"
+        },
+        "access_level": {
+            "id": 90,
+            "name": "administrator",
+            "label": "administrator"
+        },
+        "custom_fields": [
+            
+        ],
+        "versions": [
+            
+        ],
+        "categories": [
+            {
+                "id": 1,
+                "name": "General",
+                "project": {
+                    "id": 0,
+                    "name": null
+                }
+            }
+        ]
+    }
+}</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+	</div>
+
+</div>
+											</div>
+										</li>
+                                </ul>    
+                            </div>
+                        </div>
+                        <div class="test-content scrollable">
+                            <div class="test-content-tools">
+                                <ul>
+                                    <li>
+                                        <a class="back-to-test" href="javascript:void(0)">
+                                            <i class="fa fa-arrow-left"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="test-content-detail">
+                                <div class="detail-body"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<script type='text/javascript'>
+	
+</script>
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/f97b667/spark/js/script.js"></script>
+
+</body>
+
+</html>

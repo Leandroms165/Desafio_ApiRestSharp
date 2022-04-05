@@ -25,8 +25,8 @@ namespace RestSharpNetCoreTemplate.Project
             Assert.AreEqual(System.Net.HttpStatusCode.OK, response.StatusCode);
 
         }
-        [Test]
-        [Parallelizable]
+        //[Test]
+        //[Parallelizable]
         public void ValidandoExclusao()
         {
             List<string> ProjectCreate = SolicitacaoDBSteps.RetornaIDProject();
