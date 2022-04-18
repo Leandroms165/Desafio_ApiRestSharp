@@ -12,6 +12,7 @@ namespace RestSharpNetCoreTemplate.Users
     public class ResetUserPasswordTest : TestBase
     {
         [Test]
+        [Parallelizable]
         public void ResetUseraPassword()
         {
             string user_id = "25";

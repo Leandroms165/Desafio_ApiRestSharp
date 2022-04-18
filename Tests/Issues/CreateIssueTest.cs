@@ -32,11 +32,10 @@ namespace RestSharpNetCoreTemplate.Issues
             Console.WriteLine(obs);
         }
 
-        [Test]
+        [Test, Repeat(2)]
         public void CreateNewIssueValid()
         {
-           // SolicitacaoDBSteps.InserirProject();
-
+           
             List<string> name_projec = SolicitacaoDBSteps.RetornaNameProject();
             //arrange
             string summary = "Tela Login";
@@ -52,6 +51,24 @@ namespace RestSharpNetCoreTemplate.Issues
             JObject obs = JObject.Parse(response.Content);
             Console.WriteLine(obs);
         }
+        [Test]
+        public void CreateNewIssueNotDescription()
+        {
 
+            List<string> name_projec = SolicitacaoDBSteps.RetornaNameProject();
+            //arrange
+            string summary = "Tela Login";
+            string description = "";
+            string name_project = name_projec[0];
+            //actions
+            CreateIssueRequest createIssueRequest = new CreateIssueRequest();
+            createIssueRequest.SetJsonBody(summary, description, name_project);
+
+            IRestResponse<dynamic> response = createIssueRequest.ExecuteRequest();
+            Assert.AreEqual(System.Net.HttpStatusCode.BadRequest, response.StatusCode);
+
+            JObject obs = JObject.Parse(response.Content);
+            Console.WriteLine(obs);
+        }
     }
 }

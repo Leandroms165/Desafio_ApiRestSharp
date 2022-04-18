@@ -27,6 +27,7 @@ namespace RestSharpNetCoreTemplate.Issues
         }
 
         [Test]
+        [Parallelizable]
         public void DadosInvalidos()
         {
             string id_filter = "desafio785";

@@ -25,19 +25,7 @@ namespace RestSharpNetCoreTemplate.Project
             Assert.AreEqual(System.Net.HttpStatusCode.OK, response.StatusCode);
 
         }
-        //[Test]
-        //[Parallelizable]
-        public void ValidandoExclusao()
-        {
-            List<string> ProjectCreate = SolicitacaoDBSteps.RetornaIDProject();
-            string project_id = ProjectCreate[0];
-
-            DeleteProjectRequest deleteProjectRequest = new DeleteProjectRequest(project_id);
-            IRestResponse<dynamic> response = deleteProjectRequest.ExecuteRequest();
-
-            Assert.AreEqual(System.Net.HttpStatusCode.OK, response.StatusCode);
-
-        }
+       
         [Test]
         [Parallelizable]
         public void DataInvalid()

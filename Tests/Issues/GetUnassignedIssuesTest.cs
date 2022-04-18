@@ -12,6 +12,7 @@ namespace RestSharpNetCoreTemplate.Issues
     public class GetUnassignedIssuesTest : TestBase
     {
         [Test]
+        [Parallelizable]
         public void DadosValidos()
         {
             string id_filter = "unassigned";
@@ -26,6 +27,7 @@ namespace RestSharpNetCoreTemplate.Issues
         }
 
         [Test]
+        [Parallelizable]
         public void DadosInvalidos()
         {
             string id_filter = "tesste01";

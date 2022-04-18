@@ -12,6 +12,7 @@ namespace RestSharpNetCoreTemplate.Issues
     public class GetIssuesMonitoredByMeTest : TestBase
     {
         [Test]
+        [Parallelizable]
         public void GetIssuesMonitoredByMeValid()
         {
             string filter_id = "monitored";
@@ -26,6 +27,7 @@ namespace RestSharpNetCoreTemplate.Issues
         }
 
         [Test]
+        [Parallelizable]
         public void GetIssuesMonitoredByMeInValid()
         {
             string filter_id = "Testes";

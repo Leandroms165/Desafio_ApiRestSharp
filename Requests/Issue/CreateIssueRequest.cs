@@ -14,10 +14,12 @@ namespace RestSharpNetCoreTemplate.Requests
     {
         public CreateIssueRequest()
         {
-            method = Method.POST;
-            requestService = "/api/rest/issues/";
-            
+                method = Method.POST;
+                requestService = "/api/rest/issues/";
+
         }
+
+        
         public void SetJsonBody(string summary, string description, string name_project)
         {
             jsonBody = File.ReadAllText(GeneralHelpers.ReturnProjectPath() + "Jsons/Issue/CreateIssue.json", Encoding.UTF8);

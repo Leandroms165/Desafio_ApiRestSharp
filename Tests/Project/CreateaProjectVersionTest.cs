@@ -19,7 +19,7 @@ namespace RestSharpNetCoreTemplate.Project
             List<string> id_project = SolicitacaoDBSteps.RetornaIDProject();
             string project_id = id_project[0];
 
-            string nameVersion = "v." + GeneralHelpers.ReturnStringWithRandomNumbers(1);
+            string nameVersion = "v.3." + GeneralHelpers.ReturnStringWithRandomNumbers(1);
 
             CreateaProjectVersionRequest createaProjectVersionRequest = new CreateaProjectVersionRequest(project_id);
             createaProjectVersionRequest.SetJsonBody(nameVersion);

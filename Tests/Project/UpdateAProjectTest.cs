@@ -14,6 +14,7 @@ namespace RestSharpNetCoreTemplate.Project
     public class UpdateAProjectTest : TestBase
     {
         [Test]
+        [Parallelizable]
         public void AlterarProjetoSucesso()
         {
             List<string> id_prject = SolicitacaoDBSteps.RetornaIDProject();
@@ -27,11 +28,11 @@ namespace RestSharpNetCoreTemplate.Project
             IRestResponse<dynamic> response = updateAProjectRequest.ExecuteRequest();
             Assert.AreEqual(System.Net.HttpStatusCode.OK, response.StatusCode);
             //Assert.AreEqual("1", response.Data["id"].ToString());
-            JObject obs = JObject.Parse(response.Content);
-            Console.WriteLine(obs);
+            
         }
 
         [Test]
+        [Parallelizable]
         public void AlterarProjetoIdInvalid()
         {
 

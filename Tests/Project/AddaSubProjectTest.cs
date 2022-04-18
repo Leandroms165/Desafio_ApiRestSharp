@@ -13,6 +13,7 @@ namespace RestSharpNetCoreTemplate.Project
     public class AddaSubProjectTest : TestBase
     {
         [Test]
+        [Parallelizable]
         public void AddaSubProjectValid()
         {
             List<string> project_name = SolicitacaoDBSteps.RetornaIDProject();
@@ -32,6 +33,7 @@ namespace RestSharpNetCoreTemplate.Project
 
         }
         [Test]
+        [Parallelizable]
         public void AddaSubProjectInValid()
         {
             List<string> project_name = SolicitacaoDBSteps.RetornaIDProject();
