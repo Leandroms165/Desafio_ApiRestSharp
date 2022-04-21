@@ -1,0 +1,14 @@
+2022-04-21T13:48:46.2312594Z ##[section]Starting: Initialize job
+2022-04-21T13:48:46.2314938Z Agent name: 'PAT-0513'
+2022-04-21T13:48:46.2315616Z Agent machine name: 'PAT-0513'
+2022-04-21T13:48:46.2315927Z Current agent version: '2.202.0'
+2022-04-21T13:48:46.2348200Z Agent running as: 'leandroMatias'
+2022-04-21T13:48:46.2402019Z Prepare build directory.
+2022-04-21T13:48:46.2814248Z Set build variables.
+2022-04-21T13:48:46.2858877Z Download all required tasks.
+2022-04-21T13:48:46.3169258Z Checking job knob settings.
+2022-04-21T13:48:46.3179782Z Finished checking job knob settings.
+2022-04-21T13:48:46.5881756Z Plugin: 'Test Result Parser plugin' is running in background.
+2022-04-21T13:48:46.5882706Z Plugin: 'Test File Publisher plugin' is running in background.
+2022-04-21T13:48:46.5883849Z Start tracking orphan processes.
+2022-04-21T13:48:46.6131973Z ##[section]Finishing: Initialize job

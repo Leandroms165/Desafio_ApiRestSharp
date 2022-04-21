@@ -1,0 +1,21 @@
+2022-04-21T13:49:30.7710628Z ##[section]Starting: Publish Artifact
+2022-04-21T13:49:30.8064321Z ==============================================================================
+2022-04-21T13:49:30.8065212Z Task         : Publish build artifacts
+2022-04-21T13:49:30.8065666Z Description  : Publish build artifacts to Azure Pipelines or a Windows file share
+2022-04-21T13:49:30.8066093Z Version      : 1.200.0
+2022-04-21T13:49:30.8066432Z Author       : Microsoft Corporation
+2022-04-21T13:49:30.8066945Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/publish-build-artifacts
+2022-04-21T13:49:30.8067535Z ==============================================================================
+2022-04-21T13:49:31.8335311Z ##[section]Async Command Start: Upload Artifact
+2022-04-21T13:49:31.8335921Z Uploading 18 files
+2022-04-21T13:49:31.8336215Z Max dedup parallelism: 192
+2022-04-21T13:49:31.8336506Z Building file tree
+2022-04-21T13:49:32.3572710Z Uploaded 0 out of 2,029,258 bytes.
+2022-04-21T13:49:35.4368452Z Uploaded 2,029,258 out of 2,029,258 bytes.
+2022-04-21T13:49:35.4388858Z Associating files
+2022-04-21T13:49:35.4389461Z Total files: 18 ---- Associated files: 0 (0%)
+2022-04-21T13:49:36.9676481Z File upload succeed.
+2022-04-21T13:49:36.9678508Z Upload 'C:\AzureDevOpsAgents\_work\1\s\bin\Release\netcoreapp3.1\Reports' to file container: '#/18925392/drop'
+2022-04-21T13:49:37.0366131Z Associated artifact 4 with build 15
+2022-04-21T13:49:37.0367084Z ##[section]Async Command End: Upload Artifact
+2022-04-21T13:49:37.0369242Z ##[section]Finishing: Publish Artifact

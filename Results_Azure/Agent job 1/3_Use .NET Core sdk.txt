@@ -1,0 +1,10 @@
+2022-04-21T13:48:52.1632327Z ##[section]Starting: Use .NET Core sdk 
+2022-04-21T13:48:52.1972072Z ==============================================================================
+2022-04-21T13:48:52.1973027Z Task         : Use .NET Core
+2022-04-21T13:48:52.1976185Z Description  : Acquires a specific version of the .NET Core SDK from the internet or the local cache and adds it to the PATH. Use this task to change the version of .NET Core used in subsequent tasks. Additionally provides proxy support.
+2022-04-21T13:48:52.1977342Z Version      : 2.198.0
+2022-04-21T13:48:52.1977977Z Author       : Microsoft Corporation
+2022-04-21T13:48:52.1978545Z Help         : https://aka.ms/AA4xgy0
+2022-04-21T13:48:52.1979199Z ==============================================================================
+2022-04-21T13:48:52.7813804Z Creating global tool path and pre-pending to PATH.
+2022-04-21T13:48:52.7998157Z ##[section]Finishing: Use .NET Core sdk 

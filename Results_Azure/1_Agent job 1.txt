@@ -1,0 +1,23 @@
+2022-04-21T13:48:40.0696726Z ##[section]Starting: Prepare job Job_1
+2022-04-21T13:48:40.1321996Z ContinueOnError: False
+2022-04-21T13:48:40.1321996Z TimeoutInMinutes: 60
+2022-04-21T13:48:40.1321996Z CancelTimeoutInMinutes: 5
+2022-04-21T13:48:40.1321996Z Expand:
+2022-04-21T13:48:40.1321996Z   MaxConcurrency: 0
+2022-04-21T13:48:40.2106902Z   ########## System Pipeline Decorator(s) ##########
+
+2022-04-21T13:48:40.2106902Z   Begin evaluating template 'system-pre-steps.yml'
+Evaluating: eq('true', variables['system.debugContext'])
+Expanded: eq('true', Null)
+Result: False
+Evaluating: resources['repositories']['self']
+Expanded: Null
+Result: False
+Finished evaluating template 'system-pre-steps.yml'
+********************************************************************************
+Template and static variable resolution complete. Final runtime YAML document:
+steps: []
+
+
+2022-04-21T13:48:40.2106902Z   MaxConcurrency: 0
+2022-04-21T13:48:40.2259267Z ##[section]Finishing: Prepare job Job_1
