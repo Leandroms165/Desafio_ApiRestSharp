@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using RestSharpNetCoreTemplate.DBSteps;
 using RestSharpNetCoreTemplate.Helpers;
 using System;
 using System.Collections.Generic;
@@ -10,10 +11,13 @@ namespace RestSharpNetCoreTemplate.Bases
 {
     public class TestBase
     {
+        
         [OneTimeSetUp]
         public void OneTimeSetUp()
         {
+            SolicitacaoDBSteps.InsereTodosRegistrosDB();
             ExtentReportHelpers.CreateReport();
+            SolicitacaoDBSteps.DeleteDadosDB();
         }
 
         [SetUp]
@@ -26,12 +30,14 @@ namespace RestSharpNetCoreTemplate.Bases
         public void TearDown()
         {
             ExtentReportHelpers.AddTestResult();
+            
         }
 
         [OneTimeTearDown]
         public void OneTimeTearDown()
         {
             ExtentReportHelpers.GenerateReport();
+            
         }
     }
 }

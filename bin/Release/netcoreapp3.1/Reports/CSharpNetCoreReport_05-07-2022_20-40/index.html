@@ -1,0 +1,2483 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Extent Framework</title>
+  <link rel="apple-touch-icon" href="https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png">
+  <link rel="shortcut icon" href="https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png">
+  <link href="https://cdn.rawgit.com/extent-framework/extent-github-cdn/cd00a5e/spark/css/style.css" rel="stylesheet" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style> </style>
+</head>
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+
+
+<body class="test-view  standard">
+    <div class="app header-dark side-nav-folded">
+        <div class="layout">
+            <div class="header navbar">
+    <div class="header-container">
+        <div class="nav-logo">
+          <a href="index.html">
+            <div class="logo logo-dark" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+            <div class="logo logo-white" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+          </a>
+        </div>
+        <ul class="nav-left">
+          <li>
+            <a class="sidenav-fold-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a class="sidenav-expand-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+          <li class="search-box">
+            <a class="search-toggle" href="javascript:void(0);">
+              <i class="search-icon fa fa-search"></i>
+              <i class="search-icon-close fa fa-close"></i>
+            </a>
+          </li>
+          <li class="search-input">
+            <input id="search-tests" class="form-control" type="text" placeholder="Type to search...">
+          </li>
+        </ul>
+        <ul class="nav-right">
+          <li class="m-r-10">
+            <a href="#">
+              <span class="badge badge-primary">Extent Framework</span>
+            </a>
+          </li>
+            <li class="m-r-10">
+                <a href="#">
+                    <span class="badge badge-primary">05/07/2022 20:40:21</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+            <div class="side-nav side-nav-folded">
+  <div class="side-nav-inner">
+    <ul class="side-nav-menu scrollable">
+      <li class="nav-item dropdown">
+        <a id="nav-test" class="dropdown-toggle" href="index.html">
+          <span class="icon-holder">
+            <i class="fa fa-align-left"></i>
+          </span>
+          <span class="title">Tests</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a id="nav-tag" class="dropdown-toggle" href="tag.html">
+          <span class="icon-holder">
+            <i class="fa fa-tag"></i>
+          </span>
+          <span class="title">Tags</span>
+        </a>
+      </li>
+            <li class="nav-item dropdown">
+        <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
+          <span class="icon-holder">
+            <i class="fa fa-bar-chart"></i>
+          </span>
+          <span class="title">Dashboard</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="side-nav-controls">
+    <ul>
+      <li>
+        <a href="#" class="lightsout" style="color:#8a8a8a;">
+          <i class="fa fa-desktop"></i>"</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+            <div class="page-container">
+                <div class="main-content">
+                    <div class="test-wrapper row">
+                        <div class="test-list">
+                            <div class="test-list-tools">
+                                <ul class="tools pull-left">
+                                    <li>
+                                        <a href="">
+                                            <span class="font-size-14">Tests</span>
+                                        </a>
+                                    </li> 
+                                </ul>
+                                <ul class="tools text-right">
+									<li class="user-profile dropdown dropdown-animated scale-left">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+											<i class="fa fa-exclamation-circle"></i>
+										</a>
+										<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a status="pass" class="dropdown-item" href="#"><span>Pass</span><span class="status success pull-right"></span></a>																																																																		<div class="dropdown-divider"></div>
+											<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+										</ul>
+									</li>
+																		<li class="user-profile dropdown dropdown-animated scale-left">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+											<i class="fa fa-tag"></i>
+										</a>
+										<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+												<a class="dropdown-item" href="#">t.AddaSubProjectTest</a>
+												<a class="dropdown-item" href="#">t.CreateaProjectVersionTest</a>
+												<a class="dropdown-item" href="#">t.CreateProjectTest</a>
+												<a class="dropdown-item" href="#">t.DeleteProjectTest</a>
+												<a class="dropdown-item" href="#">t.GetAllProjectsTest</a>
+												<a class="dropdown-item" href="#">t.GetAprojectTest</a>
+												<a class="dropdown-item" href="#">t.UpdateAProjectTest</a>
+										</ul>
+                                    </li>
+									                                </ul>
+                            </div>
+                            <div class="test-list-wrapper scrollable">
+                                <ul class="test-list-item">
+										<li class="test-item" status="pass" author="" device="" tag="t.AddaSubProjectTest"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">AddaSubProjectInValid</p> 
+													<p class="duration text-sm">0h:0m:2s+208ms</p> 
+													<span class="datetime">20:40:22 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">AddaSubProjectInValid</h5>
+															<span class='badge badge-success'>05/07/2022 20:40:22</span>
+															<span class='badge badge-danger'>05/07/2022 20:40:24</span>
+															<span class='badge badge-default'>0h:0m:2s+208ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> t.AddaSubProjectTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:40:24</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:40:24</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<div class="mt-4">
+	
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - POST - /api/rest/projects/{project_id}/subprojects</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:24</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:24</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/projects/{project_id}/subprojects</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:24</td>
+				<td>
+<pre><b>METHOD: </b>POST</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:24</td>
+				<td>
+<pre><b>PARAMETERS: </b>
+<i>project_id</i> = 116</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:24</td>
+				<td>
+<pre><b>JSON BODY: </b>
+{
+  "project": {
+    "name": "Teste"
+  },
+  "inherit_parent": true
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:24</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:24</td>
+				<td>
+<pre><b>STATUS CODE: </b>404 - NotFound</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:24</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Jul 2022 23:40:24 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=93608121c2880b9116aedf9d8dbc0540; path=/; HttpOnly
+Cache-Control=max-age=10800, private, pre-check=10800
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=93
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:24</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "message": "Project 'Teste' not found",
+    "code": 700,
+    "localized": "Project \"Teste\" not found."
+}</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - POST - /api/rest/projects/{project_id}/subprojects</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:24</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:24</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/projects/{project_id}/subprojects</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:24</td>
+				<td>
+<pre><b>METHOD: </b>POST</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:24</td>
+				<td>
+<pre><b>PARAMETERS: </b>
+<i>project_id</i> = 116</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:24</td>
+				<td>
+<pre><b>JSON BODY: </b>
+{
+  "project": {
+    "name": "Novosub"
+  },
+  "inherit_parent": true
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:24</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:24</td>
+				<td>
+<pre><b>STATUS CODE: </b>404 - NotFound</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:24</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Jul 2022 23:40:24 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=c1624561c7d1943569054f5caf252218; path=/; HttpOnly
+Cache-Control=max-age=10800, private, pre-check=10800
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=97
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:24</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "message": "Project 'Novosub' not found",
+    "code": 700,
+    "localized": "Project \"Novosub\" not found."
+}</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+	</div>
+
+</div>
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="t.AddaSubProjectTest"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">AddaSubProjectValid</p> 
+													<p class="duration text-sm">0h:0m:0s+000ms</p> 
+													<span class="datetime">20:40:22 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">AddaSubProjectValid</h5>
+															<span class='badge badge-success'>05/07/2022 20:40:22</span>
+															<span class='badge badge-danger'>05/07/2022 20:40:22</span>
+															<span class='badge badge-default'>0h:0m:0s+000ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> t.AddaSubProjectTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="t.CreateaProjectVersionTest"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">CreateaProjectVersionInvalid</p> 
+													<p class="duration text-sm">0h:0m:0s+504ms</p> 
+													<span class="datetime">20:40:30 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">CreateaProjectVersionInvalid</h5>
+															<span class='badge badge-success'>05/07/2022 20:40:30</span>
+															<span class='badge badge-danger'>05/07/2022 20:40:30</span>
+															<span class='badge badge-default'>0h:0m:0s+504ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> t.CreateaProjectVersionTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:40:30</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<div class="mt-4">
+	
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - POST - /api/rest/projects/{project_id}/versions/</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:30</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:30</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/projects/{project_id}/versions/</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:30</td>
+				<td>
+<pre><b>METHOD: </b>POST</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:30</td>
+				<td>
+<pre><b>PARAMETERS: </b>
+<i>project_id</i> = </pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:30</td>
+				<td>
+<pre><b>JSON BODY: </b>
+{
+  "name": "",
+  "description": "Major new version",
+  "released": true,
+  "obsolete": false,
+  "timestamp": "2020-02-20"
+}
+</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:30</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:30</td>
+				<td>
+<pre><b>STATUS CODE: </b>404 - NotFound</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:30</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Jul 2022 23:40:31 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=98a226f94fa4e7776cf61613259ff33c; path=/; HttpOnly
+Cache-Control=no-store, must-revalidate, no-cache, max-age=0
+X-Mantis-Username=administrator
+X-Mantis-LoginMethod=api-token
+X-Mantis-Version=2.22.1
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=23
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:30</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "message": "Not found"
+}</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+	</div>
+
+</div>
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="t.CreateaProjectVersionTest"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">CreateaProjectVersionInvaliProject</p> 
+													<p class="duration text-sm">0h:0m:0s+346ms</p> 
+													<span class="datetime">20:40:30 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">CreateaProjectVersionInvaliProject</h5>
+															<span class='badge badge-success'>05/07/2022 20:40:30</span>
+															<span class='badge badge-danger'>05/07/2022 20:40:31</span>
+															<span class='badge badge-default'>0h:0m:0s+346ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> t.CreateaProjectVersionTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:40:31</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<div class="mt-4">
+	
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - POST - /api/rest/projects/{project_id}/versions/</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:31</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:31</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/projects/{project_id}/versions/</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:31</td>
+				<td>
+<pre><b>METHOD: </b>POST</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:31</td>
+				<td>
+<pre><b>PARAMETERS: </b>
+<i>project_id</i> = aaaa</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:31</td>
+				<td>
+<pre><b>JSON BODY: </b>
+{
+  "name": "v.5",
+  "description": "Major new version",
+  "released": true,
+  "obsolete": false,
+  "timestamp": "2020-02-20"
+}
+</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:31</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:31</td>
+				<td>
+<pre><b>STATUS CODE: </b>400 - BadRequest</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:31</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Jul 2022 23:40:32 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=c5b3b86e557a604d6c6f2a0fdd268c6f; path=/; HttpOnly
+Cache-Control=max-age=10800, private, pre-check=10800
+Connection=close
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=97
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:31</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "message": "'project_id' must be numeric",
+    "code": 29,
+    "localized": "Invalid value for 'project_id'"
+}</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+	</div>
+
+</div>
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="t.CreateaProjectVersionTest"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">CreateaProjectVersionValid</p> 
+													<p class="duration text-sm">0h:0m:0s+470ms</p> 
+													<span class="datetime">20:40:31 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">CreateaProjectVersionValid</h5>
+															<span class='badge badge-success'>05/07/2022 20:40:31</span>
+															<span class='badge badge-danger'>05/07/2022 20:40:31</span>
+															<span class='badge badge-default'>0h:0m:0s+470ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> t.CreateaProjectVersionTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:40:31</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<div class="mt-4">
+	
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - POST - /api/rest/projects/{project_id}/versions/</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:31</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:31</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/projects/{project_id}/versions/</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:31</td>
+				<td>
+<pre><b>METHOD: </b>POST</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:31</td>
+				<td>
+<pre><b>PARAMETERS: </b>
+<i>project_id</i> = 118</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:31</td>
+				<td>
+<pre><b>JSON BODY: </b>
+{
+  "name": "v.3.4",
+  "description": "Major new version",
+  "released": true,
+  "obsolete": false,
+  "timestamp": "2020-02-20"
+}
+</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:31</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:31</td>
+				<td>
+<pre><b>STATUS CODE: </b>204 - NoContent</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:31</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Jul 2022 23:40:32 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=e9bf6f55d7ea59244021a63917ae0cb7; path=/; HttpOnly
+Cache-Control=no-store, must-revalidate, no-cache, max-age=0
+X-Mantis-Username=administrator
+X-Mantis-LoginMethod=api-token
+X-Mantis-Version=2.22.1
+Vary=Accept-Encoding
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:31</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+	</div>
+
+</div>
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="t.CreateProjectTest"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">CreateProjectInvalido</p> 
+													<p class="duration text-sm">0h:0m:0s+437ms</p> 
+													<span class="datetime">20:40:31 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">CreateProjectInvalido</h5>
+															<span class='badge badge-success'>05/07/2022 20:40:31</span>
+															<span class='badge badge-danger'>05/07/2022 20:40:32</span>
+															<span class='badge badge-default'>0h:0m:0s+437ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> t.CreateProjectTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:40:32</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<div class="mt-4">
+	
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - POST - /api/rest/projects/</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/projects/</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>METHOD: </b>POST</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>JSON BODY: </b>
+{
+  "id": 1,
+  "name": "$nameProject7",
+  "status": {
+    "id": 10,
+    "name": "$nameProject7Status",
+    "label": "development"
+  },
+  "description": "Open Baking",
+  "enabled": true,
+  "file_path": "/tmp/",
+  "view_state": {
+    "id": 10,
+    "name": "$nameProject7View_state",
+    "label": "public"
+  }
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>STATUS CODE: </b>200 - OK</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Jul 2022 23:40:33 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=cefec693c2c780e6416adc30f696cca3; path=/; HttpOnly
+Cache-Control=max-age=10800, private, pre-check=10800
+Vary=Accept-Encoding
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Type=text/html; charset=UTF-8</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+<br />
+<b>Fatal error</b>:   Call to undefined method RestFault: : getMessage() in <b>/var/www/html/api/soap/mc_api.php</b> on line <b>364</b><br />
+</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+	</div>
+
+</div>
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="t.CreateProjectTest"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">CreateProjectValido</p> 
+													<p class="duration text-sm">0h:0m:0s+409ms</p> 
+													<span class="datetime">20:40:32 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">CreateProjectValido</h5>
+															<span class='badge badge-success'>05/07/2022 20:40:32</span>
+															<span class='badge badge-danger'>05/07/2022 20:40:32</span>
+															<span class='badge badge-default'>0h:0m:0s+409ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> t.CreateProjectTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:40:32</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<div class="mt-4">
+	
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - POST - /api/rest/projects/</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/projects/</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>METHOD: </b>POST</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>JSON BODY: </b>
+{
+  "id": 1,
+  "name": "1Santander16",
+  "status": {
+    "id": 10,
+    "name": "1Santander16Status",
+    "label": "development"
+  },
+  "description": "Open Baking",
+  "enabled": true,
+  "file_path": "/tmp/",
+  "view_state": {
+    "id": 10,
+    "name": "1Santander16View_state",
+    "label": "public"
+  }
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>STATUS CODE: </b>201 - Created</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Jul 2022 23:40:33 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=7eeacf084302d3ccb6659120fe9809ad; path=/; HttpOnly
+Cache-Control=no-store, must-revalidate, no-cache, max-age=0
+X-Mantis-Username=administrator
+X-Mantis-LoginMethod=api-token
+X-Mantis-Version=2.22.1
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=382
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "project": {
+        "id": 121,
+        "name": "1Santander16",
+        "status": {
+            "id": 10,
+            "name": "development",
+            "label": "development"
+        },
+        "description": "Open Baking",
+        "enabled": true,
+        "view_state": {
+            "id": 10,
+            "name": "public",
+            "label": "public"
+        },
+        "access_level": {
+            "id": 90,
+            "name": "administrator",
+            "label": "administrator"
+        },
+        "custom_fields": [
+            
+        ],
+        "versions": [
+            
+        ],
+        "categories": [
+            {
+                "id": 1,
+                "name": "General",
+                "project": {
+                    "id": 0,
+                    "name": null
+                }
+            }
+        ]
+    }
+}</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+	</div>
+
+</div>
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="t.DeleteProjectTest"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">DataInvalid</p> 
+													<p class="duration text-sm">0h:0m:0s+000ms</p> 
+													<span class="datetime">20:40:32 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">DataInvalid</h5>
+															<span class='badge badge-success'>05/07/2022 20:40:32</span>
+															<span class='badge badge-danger'>05/07/2022 20:40:32</span>
+															<span class='badge badge-default'>0h:0m:0s+000ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> t.DeleteProjectTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="t.DeleteProjectTest"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">DadosValidos</p> 
+													<p class="duration text-sm">0h:0m:0s+195ms</p> 
+													<span class="datetime">20:40:32 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">DadosValidos</h5>
+															<span class='badge badge-success'>05/07/2022 20:40:32</span>
+															<span class='badge badge-danger'>05/07/2022 20:40:32</span>
+															<span class='badge badge-default'>0h:0m:0s+195ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> t.DeleteProjectTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:40:32</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:40:32</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<div class="mt-4">
+	
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - DELETE - /api/rest/projects/{project_id}</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/projects/{project_id}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>METHOD: </b>DELETE</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>PARAMETERS: </b>
+<i>project_id</i> = A95500</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>STATUS CODE: </b>400 - BadRequest</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Jul 2022 23:40:34 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=0a9267dac16a89a0e5824586e8aaa71a; path=/; HttpOnly
+Cache-Control=no-store, must-revalidate, no-cache, max-age=0
+X-Mantis-Username=administrator
+X-Mantis-LoginMethod=api-token
+X-Mantis-Version=2.22.1
+Connection=close
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=0
+Content-Type=text/html; charset=UTF-8</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - DELETE - /api/rest/projects/{project_id}</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/projects/{project_id}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>METHOD: </b>DELETE</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>PARAMETERS: </b>
+<i>project_id</i> = 116</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>STATUS CODE: </b>200 - OK</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Jul 2022 23:40:34 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=2fed476290353d29444194432ff67b15; path=/; HttpOnly
+Cache-Control=no-store, must-revalidate, no-cache, max-age=0
+X-Mantis-Username=administrator
+X-Mantis-LoginMethod=api-token
+X-Mantis-Version=2.22.1
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=0
+Content-Type=text/html; charset=UTF-8</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+	</div>
+
+</div>
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="t.GetAllProjectsTest"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">GetAllProjects</p> 
+													<p class="duration text-sm">0h:0m:0s+149ms</p> 
+													<span class="datetime">20:40:32 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">GetAllProjects</h5>
+															<span class='badge badge-success'>05/07/2022 20:40:32</span>
+															<span class='badge badge-danger'>05/07/2022 20:40:32</span>
+															<span class='badge badge-default'>0h:0m:0s+149ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> t.GetAllProjectsTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:40:32</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<div class="mt-4">
+	
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - GET - /api/rest/projects</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/projects</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>METHOD: </b>GET</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>STATUS CODE: </b>200 - OK</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Jul 2022 23:40:34 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=8503f138618973e73b9789a8c729ae2b; path=/; HttpOnly
+Cache-Control=no-store, must-revalidate, no-cache, max-age=0
+X-Mantis-Username=administrator
+X-Mantis-LoginMethod=api-token
+X-Mantis-Version=2.22.1
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=2024
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:32</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "projects": [
+        {
+            "id": 79,
+            "name": "$nameProject7",
+            "status": {
+                "id": 10,
+                "name": "development",
+                "label": "development"
+            },
+            "description": "Open Baking",
+            "enabled": true,
+            "view_state": {
+                "id": 10,
+                "name": "public",
+                "label": "public"
+            },
+            "access_level": {
+                "id": 90,
+                "name": "administrator",
+                "label": "administrator"
+            },
+            "custom_fields": [
+                
+            ],
+            "versions": [
+                {
+                    "id": 63,
+                    "name": "v.3.6",
+                    "description": "Major new version",
+                    "released": true,
+                    "obsolete": false,
+                    "timestamp": "2020-02-20T00:00:00+08:00"
+                },
+                {
+                    "id": 64,
+                    "name": "v.3.2",
+                    "description": "Major new version",
+                    "released": true,
+                    "obsolete": false,
+                    "timestamp": "2020-02-20T00:00:00+08:00"
+                }
+            ],
+            "categories": [
+                {
+                    "id": 1,
+                    "name": "General",
+                    "project": {
+                        "id": 0,
+                        "name": null
+                    }
+                }
+            ]
+        },
+        {
+            "id": 121,
+            "name": "1Santander16",
+            "status": {
+                "id": 10,
+                "name": "development",
+                "label": "development"
+            },
+            "description": "Open Baking",
+            "enabled": true,
+            "view_state": {
+                "id": 10,
+                "name": "public",
+                "label": "public"
+            },
+            "access_level": {
+                "id": 90,
+                "name": "administrator",
+                "label": "administrator"
+            },
+            "custom_fields": [
+                
+            ],
+            "versions": [
+                
+            ],
+            "categories": [
+                {
+                    "id": 1,
+                    "name": "General",
+                    "project": {
+                        "id": 0,
+                        "name": null
+                    }
+                }
+            ]
+        },
+        {
+            "id": 118,
+            "name": "1Santander88",
+            "status": {
+                "id": 10,
+                "name": "development",
+                "label": "development"
+            },
+            "description": "Open Baking",
+            "enabled": true,
+            "view_state": {
+                "id": 10,
+                "name": "public",
+                "label": "public"
+            },
+            "access_level": {
+                "id": 90,
+                "name": "administrator",
+                "label": "administrator"
+            },
+            "custom_fields": [
+                
+            ],
+            "versions": [
+                {
+                    "id": 65,
+                    "name": "v.3.8",
+                    "description": "Major new version",
+                    "released": true,
+                    "obsolete": false,
+                    "timestamp": "2020-02-20T00:00:00+08:00"
+                },
+                {
+                    "id": 66,
+                    "name": "v.3.4",
+                    "description": "Major new version",
+                    "released": true,
+                    "obsolete": false,
+                    "timestamp": "2020-02-20T00:00:00+08:00"
+                }
+            ],
+            "categories": [
+                {
+                    "id": 1,
+                    "name": "General",
+                    "project": {
+                        "id": 0,
+                        "name": null
+                    }
+                }
+            ]
+        },
+        {
+            "id": 119,
+            "name": "1Santander94",
+            "status": {
+                "id": 10,
+                "name": "development",
+                "label": "development"
+            },
+            "description": "Open Baking",
+            "enabled": true,
+            "view_state": {
+                "id": 10,
+                "name": "public",
+                "label": "public"
+            },
+            "access_level": {
+                "id": 90,
+                "name": "administrator",
+                "label": "administrator"
+            },
+            "custom_fields": [
+                
+            ],
+            "versions": [
+                
+            ],
+            "categories": [
+                {
+                    "id": 1,
+                    "name": "General",
+                    "project": {
+                        "id": 0,
+                        "name": null
+                    }
+                }
+            ]
+        }
+    ]
+}</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+	</div>
+
+</div>
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="t.GetAprojectTest"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">GetAprojectInValid</p> 
+													<p class="duration text-sm">0h:0m:0s+209ms</p> 
+													<span class="datetime">20:40:32 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">GetAprojectInValid</h5>
+															<span class='badge badge-success'>05/07/2022 20:40:32</span>
+															<span class='badge badge-danger'>05/07/2022 20:40:33</span>
+															<span class='badge badge-default'>0h:0m:0s+209ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> t.GetAprojectTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:40:33</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:40:33</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<div class="mt-4">
+	
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - GET - /api/rest/projects/{id_project}</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/projects/{id_project}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>METHOD: </b>GET</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>PARAMETERS: </b>
+<i>id_project</i> = 0778</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>STATUS CODE: </b>404 - NotFound</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Jul 2022 23:40:34 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=8ef7dfb582869b5927fff743b7e24b5a; path=/; HttpOnly
+Cache-Control=max-age=10800, private, pre-check=10800
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=88
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "message": "Project #778 not found",
+    "code": 700,
+    "localized": "Project \"778\" not found."
+}</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - GET - /api/rest/projects/{id_project}</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/projects/{id_project}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>METHOD: </b>GET</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>PARAMETERS: </b>
+<i>id_project</i> = 119</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>STATUS CODE: </b>200 - OK</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Jul 2022 23:40:34 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=bf37dbcea363c718848d82b7100089f8; path=/; HttpOnly
+Cache-Control=no-store, must-revalidate, no-cache, max-age=0
+X-Mantis-Username=administrator
+X-Mantis-LoginMethod=api-token
+X-Mantis-Version=2.22.1
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=385
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "projects": [
+        {
+            "id": 119,
+            "name": "1Santander94",
+            "status": {
+                "id": 10,
+                "name": "development",
+                "label": "development"
+            },
+            "description": "Open Baking",
+            "enabled": true,
+            "view_state": {
+                "id": 10,
+                "name": "public",
+                "label": "public"
+            },
+            "access_level": {
+                "id": 90,
+                "name": "administrator",
+                "label": "administrator"
+            },
+            "custom_fields": [
+                
+            ],
+            "versions": [
+                
+            ],
+            "categories": [
+                {
+                    "id": 1,
+                    "name": "General",
+                    "project": {
+                        "id": 0,
+                        "name": null
+                    }
+                }
+            ]
+        }
+    ]
+}</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+	</div>
+
+</div>
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="t.GetAprojectTest"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">GetAprojectValid</p> 
+													<p class="duration text-sm">0h:0m:0s+000ms</p> 
+													<span class="datetime">20:40:32 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">GetAprojectValid</h5>
+															<span class='badge badge-success'>05/07/2022 20:40:32</span>
+															<span class='badge badge-danger'>05/07/2022 20:40:32</span>
+															<span class='badge badge-default'>0h:0m:0s+000ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> t.GetAprojectTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="t.UpdateAProjectTest"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">AlterarProjetoSucesso</p> 
+													<p class="duration text-sm">0h:0m:0s+000ms</p> 
+													<span class="datetime">20:40:33 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">AlterarProjetoSucesso</h5>
+															<span class='badge badge-success'>05/07/2022 20:40:33</span>
+															<span class='badge badge-danger'>05/07/2022 20:40:33</span>
+															<span class='badge badge-default'>0h:0m:0s+000ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> t.UpdateAProjectTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="t.UpdateAProjectTest"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">AlterarProjetoIdInvalid</p> 
+													<p class="duration text-sm">0h:0m:0s+197ms</p> 
+													<span class="datetime">20:40:33 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">AlterarProjetoIdInvalid</h5>
+															<span class='badge badge-success'>05/07/2022 20:40:33</span>
+															<span class='badge badge-danger'>05/07/2022 20:40:33</span>
+															<span class='badge badge-default'>0h:0m:0s+197ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> t.UpdateAProjectTest</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:40:33</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:40:33</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<div class="mt-4">
+	
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - PATCH - /api/rest/projects/{project_id}</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/projects/{project_id}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>METHOD: </b>PATCH</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>PARAMETERS: </b>
+<i>project_id</i> = 3659</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>JSON BODY: </b>
+{
+  "id": "3659",
+  "name": "$nameProject7",
+  "enabled": true
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>STATUS CODE: </b>404 - NotFound</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Jul 2022 23:40:34 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=c2304f9faaa3d4de9940d280aa50968e; path=/; HttpOnly
+Cache-Control=max-age=10800, private, pre-check=10800
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=90
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "message": "Project #3659 not found",
+    "code": 700,
+    "localized": "Project \"3659\" not found."
+}</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">&#128640; Request - PATCH - /api/rest/projects/{project_id}</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>URL: </b>http://127.0.0.1:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/projects/{project_id}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>METHOD: </b>PATCH</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>PARAMETERS: </b>
+<i>project_id</i> = 121</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>JSON BODY: </b>
+{
+  "id": "121",
+  "name": "$nameProject7",
+  "enabled": true
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Content-Type</i> = application/json
+<i>Authorization</i> = dbDqq2B83m0Azl3I0rigM2qwz0F1tyyX</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>STATUS CODE: </b>200 - OK</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Tue, 05 Jul 2022 23:40:34 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=87d64d1f7c51828be051b846bdee55b9; path=/; HttpOnly
+Cache-Control=max-age=10800, private, pre-check=10800
+Vary=Accept-Encoding
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Type=text/html; charset=UTF-8</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:40:33</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+<br />
+<b>Fatal error</b>:   Call to undefined method RestFault: : getMessage() in <b>/var/www/html/api/soap/mc_api.php</b> on line <b>364</b><br />
+</pre>									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+	</div>
+
+</div>
+											</div>
+										</li>
+                                </ul>    
+                            </div>
+                        </div>
+                        <div class="test-content scrollable">
+                            <div class="test-content-tools">
+                                <ul>
+                                    <li>
+                                        <a class="back-to-test" href="javascript:void(0)">
+                                            <i class="fa fa-arrow-left"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="test-content-detail">
+                                <div class="detail-body"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<script type='text/javascript'>
+	
+</script>
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/f97b667/spark/js/script.js"></script>
+
+</body>
+
+</html>

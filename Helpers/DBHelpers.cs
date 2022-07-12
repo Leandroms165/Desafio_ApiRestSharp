@@ -270,7 +270,7 @@ namespace RestSharpNetCoreTemplate.Helpers
         }
         public static void PrepararMassaDeDados()
         {
-            SolicitacaoDBSteps.DeleteUsuario();
+            SolicitacaoDBSteps.DeleteDadosDB();
             SolicitacaoDBSteps.InserirProject();
             SolicitacaoDBSteps.InsereTodosRegistrosDB();
         }

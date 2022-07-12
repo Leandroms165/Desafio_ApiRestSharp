@@ -61,9 +61,9 @@ namespace RestSharpNetCoreTemplate.DBSteps
             ExtentReportHelpers.AddTestInfo(2, "PARAMETERS: solicitacaoItemId = " + solicitacaoItemId);
         }
 
-        public static List<string> DeleteUsuario()
+        public static List<string> DeleteDadosDB()
         {
-            string query = File.ReadAllText(GeneralHelpers.ReturnProjectPath() + "Queries/Deletes/DeleteUsuuario.sql", Encoding.UTF8);
+            string query = File.ReadAllText(GeneralHelpers.ReturnProjectPath() + "Queries/Deletes/DeleteDados.sql", Encoding.UTF8);
             return DBHelpers.RetornaDadosQuery(query);
         }
         public static List<string> InserirProject()
@@ -78,7 +78,7 @@ namespace RestSharpNetCoreTemplate.DBSteps
         public static void InsereTodosRegistrosDB()
         {
             string query = File.ReadAllText(GeneralHelpers.ReturnProjectPath() + "Queries/inserirTodosRegistrosTabela.sql", Encoding.UTF8);
-            ExtentReportHelpers.AddTestInfo(2, "Insere todos registros para inciar testes ");
+          //  ExtentReportHelpers.AddTestInfo(2, "Insere todos registros para inciar testes ");
             DBHelpers.ExecuteQuery(query);
         }
     }

@@ -15,7 +15,7 @@ namespace RestSharpNetCoreTemplate.Users
         [Parallelizable]
         public void ResetUseraPassword()
         {
-            string user_id = "25";
+            string user_id = "255";
 
             ResetUserPasswordRequest resetUserPasswordRequest = new ResetUserPasswordRequest(user_id);
             IRestResponse<dynamic> response = resetUserPasswordRequest.ExecuteRequest();

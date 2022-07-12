@@ -24,8 +24,6 @@ namespace RestSharpNetCoreTemplate.Users
         [Parallelizable]
         public void CreateUserValido(ArrayList testData)
         {
-            SolicitacaoDBSteps.DeleteUsuario();
-
             string username = "Jair_Melo10" + GeneralHelpers.ReturnGeneratesAutomaticString(1);
             string password = "p@ssw0rd";
             string real_name = "jair." + GeneralHelpers.ReturnGeneratesAutomaticString(2);

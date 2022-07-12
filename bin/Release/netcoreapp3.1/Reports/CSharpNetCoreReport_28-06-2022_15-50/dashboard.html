@@ -1,0 +1,623 @@
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Extent Framework</title>
+  <link rel="apple-touch-icon" href="https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png">
+  <link rel="shortcut icon" href="https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png">
+  <link href="https://cdn.rawgit.com/extent-framework/extent-github-cdn/cd00a5e/spark/css/style.css" rel="stylesheet" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style> </style>
+</head>
+	<body class="dashboard-view standard">
+		<div class="app header-dark side-nav-folded">
+			<div class="layout">
+				<div class="header navbar">
+    <div class="header-container">
+        <div class="nav-logo">
+          <a href="index.html">
+            <div class="logo logo-dark" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+            <div class="logo logo-white" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+          </a>
+        </div>
+        <ul class="nav-left">
+          <li>
+            <a class="sidenav-fold-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a class="sidenav-expand-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+          <li class="search-box">
+            <a class="search-toggle" href="javascript:void(0);">
+              <i class="search-icon fa fa-search"></i>
+              <i class="search-icon-close fa fa-close"></i>
+            </a>
+          </li>
+          <li class="search-input">
+            <input id="search-tests" class="form-control" type="text" placeholder="Type to search...">
+          </li>
+        </ul>
+        <ul class="nav-right">
+          <li class="m-r-10">
+            <a href="#">
+              <span class="badge badge-primary">Extent Framework</span>
+            </a>
+          </li>
+            <li class="m-r-10">
+                <a href="#">
+                    <span class="badge badge-primary">28/06/2022 15:50:31</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+				<div class="side-nav side-nav-folded">
+  <div class="side-nav-inner">
+    <ul class="side-nav-menu scrollable">
+      <li class="nav-item dropdown">
+        <a id="nav-test" class="dropdown-toggle" href="index.html">
+          <span class="icon-holder">
+            <i class="fa fa-align-left"></i>
+          </span>
+          <span class="title">Tests</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a id="nav-tag" class="dropdown-toggle" href="tag.html">
+          <span class="icon-holder">
+            <i class="fa fa-tag"></i>
+          </span>
+          <span class="title">Tags</span>
+        </a>
+      </li>
+            <li class="nav-item dropdown">
+        <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
+          <span class="icon-holder">
+            <i class="fa fa-bar-chart"></i>
+          </span>
+          <span class="title">Dashboard</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="side-nav-controls">
+    <ul>
+      <li>
+        <a href="#" class="lightsout" style="color:#8a8a8a;">
+          <i class="fa fa-desktop"></i>"</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+				<div class="page-container">
+					<div class="main-content">
+						<div class="container-fluid p-4">
+							<div class="row">
+								<div class="col-sm-12 col-md-6">
+									<div class="card">
+										<div class="card-header">
+											<h6 class="card-title">Tests</h6>
+										</div>
+										<div class="card-body">
+	                                        <div class="">
+	                                            <canvas id='parent-analysis' width='115' height='90'></canvas>
+	                                        </div>
+	                                    </div>
+	                                    <div class="card-footer">
+	                                    	<div><small data-tooltip='100%'>
+	                                    		<b>53</b> tests passed
+                                    		</small></div>
+	                                    	<div>
+	                                    		<small data-tooltip='0%'><b>0</b> tests failed, 
+	                                    		<b data-tooltip='0%'>0</b> others
+	                                    		</small>
+                                    		</div>
+	                                    </div>
+									</div>
+								</div>
+								<div class="col-sm-12 col-md-6">
+									<div class="card">
+										<div class="card-header">
+											<h6 class="card-title">Steps</h6>
+										</div>
+										<div class="card-body">
+	                                        <div class="">
+	                                            <canvas id='child-analysis' width='115' height='90'></canvas>
+	                                        </div>
+	                                    </div>
+	                                    <div class="card-footer">
+	                                    	<div><small data-tooltip='100%'><b>53</b> steps passed</small></div>
+	                                    	<div>
+	                                    		<small data-tooltip='0%'><b>0</b> steps failed, 
+	                                    		<b data-tooltip='0%'>0</b> others
+	                                    		</small>
+                                    		</div>
+	                                    </div>
+									</div>
+								</div>
+															</div>
+							<div class="row">
+								<div class="col-md-3">
+									<div class="card">
+										<div class="card-body box-height-150">
+	                                        <div class="media justify-content-between">
+												<div>
+													<p class="">Tests</p>
+													<h2 class="font-size-28 font-weight-light">53</h2>
+													<span class="text-semibold text-success font-size-15">
+													<i class="ti-arrow-up font-size-11"></i> 
+														<span>100%</span>
+													</span>
+												</div>
+												<div class="align-self-end">
+													<i class="fa fa-align-left font-size-70 opacity-01"></i>
+												</div>
+											</div>
+	                                    </div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="card">
+										<div class="card-body box-height-150">
+	                                        <div class="media justify-content-between">
+												<div>
+													<p class="">Steps</p>
+													<h2 class="font-size-28 font-weight-light">53</h2>
+													<span class="text-semibold text-success font-size-15">
+													<i class="ti-arrow-up font-size-11"></i> 
+														<span>100%</span>
+													</span>
+												</div>
+												<div class="align-self-end">
+													<i class="fa fa-align-left font-size-70 opacity-01"></i>
+												</div>
+											</div>
+	                                    </div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="card">
+										<div class="card-body box-height-150">
+	                                        <div class="media justify-content-between">
+												<div>
+													<p class="">Start</p>
+													<h6 class="font-weight-light">28/06/2022 15:50:31</h6>
+													<span class="text-semibold text-success font-size-15">
+												</div>
+												<div class="align-self-end">
+													<i class="fa fa-clock-o font-size-70 text-success opacity-01"></i>
+												</div>
+											</div>
+	                                    </div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="card">
+										<div class="card-body box-height-150">
+	                                        <div class="media justify-content-between">
+												<div>
+													<p class="">End</p>
+													<h6 class="font-weight-light">28/06/2022 15:50:53</h6>
+													<span class="text-semibold text-danger font-size-15">
+												</div>
+												<div class="align-self-end">
+													<i class="fa fa-clock-o font-size-70 text-danger opacity-01"></i>
+												</div>
+											</div>
+	                                    </div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="card timeline">
+										<div class="card-header">
+											<h6 class="card-title">Timeline</h6>
+										</div>
+										<div class="card-body">
+	                                        <div class="">
+	                                            <canvas id="timeline" height="120"></canvas>
+	                                        </div>
+	                                    </div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+																<div class="col-md-6">
+									<div class="card">
+										<div class="card-header">
+											<h6 class="card-title">Tags</h6>
+										</div>
+										<div class="table-overflow">
+											<table class="table table-sm">
+												<thead>
+													<tr class="bg-gray">
+														<th>Name</th>
+														<th>Passed</th>
+														<th>Failed</th>
+														<th>Others</th>
+														<th>Passed %</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>s.GetFiltroTest</td>
+														<td>1</td>
+														<td>0</td>
+														<td>0</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>.CreateAnIssueTest</td>
+														<td>4</td>
+														<td>0</td>
+														<td>0</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>.CreateIssueNoteTest</td>
+														<td>6</td>
+														<td>0</td>
+														<td>0</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>.DeleteAnIssueNoteTeste</td>
+														<td>3</td>
+														<td>0</td>
+														<td>0</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>.DeleteIssueTest</td>
+														<td>2</td>
+														<td>0</td>
+														<td>0</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>.GetAllIssuesTest</td>
+														<td>1</td>
+														<td>0</td>
+														<td>0</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>.GetIssuesMonitoredByMeTest</td>
+														<td>2</td>
+														<td>0</td>
+														<td>0</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>.GetIssuesProject</td>
+														<td>1</td>
+														<td>0</td>
+														<td>0</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>.GetIssuesReportedByMeTest</td>
+														<td>2</td>
+														<td>0</td>
+														<td>0</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>.GetIssueTest</td>
+														<td>2</td>
+														<td>0</td>
+														<td>0</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>.GetUnassignedIssuesTest</td>
+														<td>2</td>
+														<td>0</td>
+														<td>0</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>.MonitorAnIssueTest</td>
+														<td>2</td>
+														<td>0</td>
+														<td>0</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>.UpdateAnIssueTest</td>
+														<td>2</td>
+														<td>0</td>
+														<td>0</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>etLocalizedStringTest</td>
+														<td>2</td>
+														<td>0</td>
+														<td>0</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>t.AddaSubProjectTest</td>
+														<td>2</td>
+														<td>0</td>
+														<td>0</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>t.CreateaProjectVersionTest</td>
+														<td>3</td>
+														<td>0</td>
+														<td>0</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>t.CreateProjectTest</td>
+														<td>2</td>
+														<td>0</td>
+														<td>0</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>t.DeleteProjectTest</td>
+														<td>2</td>
+														<td>0</td>
+														<td>0</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>t.GetAllProjectsTest</td>
+														<td>1</td>
+														<td>0</td>
+														<td>0</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>t.GetAprojectTest</td>
+														<td>2</td>
+														<td>0</td>
+														<td>0</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>t.UpdateAProjectTest</td>
+														<td>2</td>
+														<td>0</td>
+														<td>0</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>CreateUserTest</td>
+														<td>3</td>
+														<td>0</td>
+														<td>0</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>DeleteaUserTest</td>
+														<td>2</td>
+														<td>0</td>
+														<td>0</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>GetMyUserInfoTest</td>
+														<td>1</td>
+														<td>0</td>
+														<td>0</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>ResetUserPasswordTest</td>
+														<td>1</td>
+														<td>0</td>
+														<td>0</td>
+														<td>100%</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+																							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			var statusGroup = {
+                parentCount: 53,
+				passParent: 53,
+				failParent: 0,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 0,
+				childCount: 53,
+				passChild: 53,
+				failChild: 0,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				debugChild: 0,
+				exceptionsChild: 0,
+				grandChildCount: 0,
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				debugGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+			<script>
+				var timeline = { "GetFiltroValido":2,930666,"CreateNewIssueInvalid":0,4038344,"CreateNewIssueNotDescription":0,9220361,"CreateNewIssueValid":0,3727262,"CreateNewIssueValid":0,2352674,"AddDateInvalido":0,1817461,"AddIdIssueInvalido":0,1711533,"AddNameViewInvalido":0,1854708,"AddNoteInvalido":0,1555508,"AddNoteissueValido":0,2003946,"AddTextInvalido":0,1674216,"DeleteAnIssueInvalid":4,4E-06,"DeleteAnIssueInvalidNote0":0,2750645,"DeleteAnIssueNote":1,8E-06,"DadosValidos":5,2E-06,"DadosInvalidos":0,3630931,"DadosValidos":0,3998327,"GetIssuesMonitoredByMeInValid":3,2E-06,"GetIssuesMonitoredByMeValid":0,4188173,"GetIssueProj":0,423106,"DadosValidos":3,9E-06,"DadosInvalidos":0,4070369,"GetIssueValido":0,2149884,"GetIssueInvalido":3E-06,"DadosInvalidos":2,5E-06,"DadosValidos":0,4565,"DateValid":3,8E-06,"DataInvalid":0,2330866,"DadosValidos":2,6E-06,"DadosInvalidos":0,2676419,"GetLocalizedstringValid":0,1655656,"GetLocalizedstringInvalid":2,7E-06,"AddaSubProjectValid":3E-06,"AddaSubProjectInValid":0,2275679,"CreateaProjectVersionInvalid":0,2569022,"CreateaProjectVersionInvaliProject":0,2605469,"CreateaProjectVersionValid":0,2921919,"CreateProjectInvalido":0,1782729,"CreateProjectValido":0,1657059,"DataInvalid":3E-06,"DadosValidos":0,1955774,"GetAllProjects":0,2020144,"GetAprojectInValid":0,1988594,"GetAprojectValid":2,9E-06,"AlterarProjetoIdInvalid":1,91E-05,"AlterarProjetoSucesso":0,1858943,"CreateUserInvalido":0,213271,"CreateUserValido":0,4372589,"CreateUserExisting":0,1760282,"DeleteaUserValid":0,2016381,"DeleteUserInvalid":0,1738901,"GetMyUserInfo":0,1755654,"ResetUseraPassword":0,1517599 };
+			</script>
+		<script type='text/javascript'>
+	
+</script>
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/f97b667/spark/js/script.js"></script>
+
+		<script>
+			/* -- [ chart options ] -- */
+			var options = {
+			  responsive: true,
+			  maintainAspectRatio: false,
+			  legend: {
+				  position: "right",
+				  labels: {
+					  boxWidth: 10,
+					  fontSize: 11,
+					  lineHeight: 1,
+					  fontFamily: "Source Sans Pro",
+					  padding: 1
+				  }
+			  },
+			  cutoutPercentage: 65
+			};
+
+			function drawChart(ctx, config) {
+				ctx.width = 100;
+				ctx.height = 80;
+				new Chart(ctx, config);
+			}
+
+			/* -- [ parent chart ] -- */
+			(function drawParentChart() {
+				if (typeof statusGroup !== "undefined") {
+					var config = {
+						type: 'doughnut',
+							data: {
+								datasets: [{
+									borderColor: 'transparent',
+									data: [
+										statusGroup.passParent, statusGroup.failParent, statusGroup.fatalParent, statusGroup.errorParent, statusGroup.warningParent, statusGroup.skipParent
+									],
+									backgroundColor: [
+										"#00af00", "#F7464A", "#8b0000", "#ff6347", "#FDB45C", "#1e90ff"
+									]
+								}],
+								labels: [ "Pass", "Fail", "Fatal", "Error", "Warning", "Skip" ]
+							},
+							options: options
+						};
+
+						var ctx = document.getElementById("parent-analysis").getContext('2d');
+						drawChart(ctx, config);
+				}
+			})();
+
+			/* -- [ children chart ] -- */
+			(function drawChildChart() {
+				if (typeof statusGroup !== "undefined" && statusGroup.childCount > 0) {
+					var config = {
+						type: 'doughnut',
+						data: {
+							datasets: [{
+								borderColor: 'transparent',
+								data: [
+									statusGroup.passChild, statusGroup.failChild, statusGroup.fatalChild, statusGroup.errorChild, statusGroup.warningChild, statusGroup.skipChild,statusGroup.infoChild
+								],
+								backgroundColor: [
+									"#00af00", "#F7464A", "#8b0000", "#ff6347", "#FDB45C", "#1e90ff", "#46BFBD"
+								]
+							}],
+							labels: [ "Pass", "Fail", "Fatal", "Error", "Warning", "Skip", "Info" ]
+						},
+						options: options
+					};
+
+					var ctx = document.getElementById("child-analysis").getContext('2d');
+					drawChart(ctx, config);
+				}
+			})();
+
+			/* -- [ grand-children chart ] -- */
+			(function drawGrandChildChart() {
+				if ($('#grandchild-analysis').length > 0 && typeof statusGroup !== "undefined" && statusGroup.grandChildCount > 0) {
+					var config = {
+						type: 'doughnut',
+						data: {
+							datasets: [{
+								borderColor: 'transparent',
+								data: [
+									statusGroup.passGrandChild, statusGroup.failGrandChild, statusGroup.fatalGrandChild, statusGroup.errorGrandChild, statusGroup.warningGrandChild, statusGroup.skipGrandChild, statusGroup.infoGrandChild
+								],
+								backgroundColor: [
+									"#00af00", "#F7464A", "#8b0000", "#ff6347", "#FDB45C", "#1e90ff", "#46BFBD"
+								]
+							}],
+							labels: [ "Pass", "Fail", "Fatal", "Error", "Warning", "Skip", "Info" ]
+						},
+						options: options
+					};
+
+					var ctx = document.getElementById("grandchild-analysis").getContext('2d');
+					drawChart(ctx, config);
+				}
+			})();
+
+			/* -- [ timeline ] -- */
+			function getRandomColor() {
+				var letters = '0123456789ABCDEF';
+				var color = '#';
+				for (var i = 0; i < 6; i++) {
+				color += letters[Math.floor(Math.random() * 16)];
+				}
+				return color;
+			}
+
+			(function drawTimelineChart() {
+				if (typeof timeline !== "undefined") {
+					var datasets = [];
+					for (var key in timeline) {
+						datasets.push({ label:key, data:[timeline[key]], backgroundColor: getRandomColor(), borderWidth: 1 });
+					}
+					var ctx = document.getElementById('timeline').getContext('2d');
+
+					new Chart(ctx, {
+						type: 'horizontalBar',
+						data: {
+							datasets: datasets
+						},
+						options: {
+							responsive: true,
+							maintainAspectRatio: false,
+							tooltips: {
+								mode: 'point'
+							},
+							scales: {
+								xAxes: [{
+									stacked: true,
+									gridLines: false
+								}],
+								yAxes: [{
+									stacked: true,
+									gridLines: false,
+									barThickness: 25
+								}]
+							},
+							legend: {
+								display: false
+							}
+						}
+					});
+				}
+			})();
+		</script>
+	</body>
+</html>
