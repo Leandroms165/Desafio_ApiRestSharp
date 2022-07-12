@@ -1,0 +1,11 @@
+2022-04-21T13:49:37.5868874Z ##[section]Starting: Finalize Job
+2022-04-21T13:49:37.5903111Z TestResultLogParser: JasmineTestResultParser : Starting jasmine test result parser.
+2022-04-21T13:49:37.5903627Z TestResultLogParser: JestTestResultParser : Starting jest test result parser.
+2022-04-21T13:49:37.5904112Z TestResultLogParser: MochaTestResultParser : Starting mocha test result parser.
+2022-04-21T13:49:37.5904593Z TestResultLogParser: PythonTestResultParser : Starting python test result parser.
+2022-04-21T13:49:37.8461714Z TestResultLogParser: Waiting for log plugin to finish, pending process 2 log lines.
+2022-04-21T13:49:37.8484936Z Cleaning up task key
+2022-04-21T13:49:37.8488935Z Start cleaning up orphan processes.
+2022-04-21T13:49:37.8662648Z Terminate orphan process: pid (23068) (dotnet)
+2022-04-21T13:49:37.8684073Z Terminate orphan process: pid (16480) (conhost)
+2022-04-21T13:49:37.8689200Z ##[section]Finishing: Finalize Job

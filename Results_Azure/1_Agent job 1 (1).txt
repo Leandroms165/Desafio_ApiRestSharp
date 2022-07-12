@@ -1,0 +1,1033 @@
+2022-04-21T13:48:45.9445830Z ##[section]Starting: Agent job 1
+2022-04-21T13:48:46.2312716Z ##[section]Starting: Initialize job
+2022-04-21T13:48:46.2315120Z Agent name: 'PAT-0513'
+2022-04-21T13:48:46.2315624Z Agent machine name: 'PAT-0513'
+2022-04-21T13:48:46.2315934Z Current agent version: '2.202.0'
+2022-04-21T13:48:46.2348270Z Agent running as: 'leandroMatias'
+2022-04-21T13:48:46.2402072Z Prepare build directory.
+2022-04-21T13:48:46.2814319Z Set build variables.
+2022-04-21T13:48:46.2858956Z Download all required tasks.
+2022-04-21T13:48:46.3169299Z Checking job knob settings.
+2022-04-21T13:48:46.3179817Z Finished checking job knob settings.
+2022-04-21T13:48:46.5881882Z Plugin: 'Test Result Parser plugin' is running in background.
+2022-04-21T13:48:46.5882724Z Plugin: 'Test File Publisher plugin' is running in background.
+2022-04-21T13:48:46.5883875Z Start tracking orphan processes.
+2022-04-21T13:48:46.6132047Z ##[section]Finishing: Initialize job
+2022-04-21T13:48:46.7027897Z ##[section]Starting: Checkout Leandroms165/Desafio_ApiRestSharp@master to s
+2022-04-21T13:48:46.7926553Z ==============================================================================
+2022-04-21T13:48:46.7929056Z Task         : Get sources
+2022-04-21T13:48:46.7930464Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.
+2022-04-21T13:48:46.7931604Z Version      : 1.0.0
+2022-04-21T13:48:46.7932672Z Author       : Microsoft
+2022-04-21T13:48:46.7934237Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199)
+2022-04-21T13:48:46.7935311Z ==============================================================================
+2022-04-21T13:48:47.4982167Z Syncing repository: Leandroms165/Desafio_ApiRestSharp (GitHub)
+2022-04-21T13:48:47.4990659Z Prepending Path environment variable with directory containing 'git.exe'.
+2022-04-21T13:48:47.5001386Z ##[command]git version
+2022-04-21T13:48:47.6485859Z git version 2.30.2.windows.1
+2022-04-21T13:48:47.6517258Z ##[command]git lfs version
+2022-04-21T13:48:47.9141369Z git-lfs/2.13.3 (GitHub; windows amd64; go 1.16.2; git a5e65851)
+2022-04-21T13:48:47.9186582Z ##[command]git config --get remote.origin.url
+2022-04-21T13:48:48.0348397Z ##[command]git clean -ffdx
+2022-04-21T13:48:48.1531515Z Removing bin/Release/netcoreapp3.1/Reports/CSharpNetCoreReport_21-04-2022_10-40/
+2022-04-21T13:48:48.1608061Z ##[command]git reset --hard HEAD
+2022-04-21T13:48:48.9709362Z HEAD is now at 755f536 atualizar
+2022-04-21T13:48:48.9805407Z ##[command]git config gc.auto 0
+2022-04-21T13:48:49.0950334Z ##[command]git config --get-all http.https://github.com/Leandroms165/Desafio_ApiRestSharp.extraheader
+2022-04-21T13:48:49.1971526Z ##[command]git config --get-all http.extraheader
+2022-04-21T13:48:49.3504940Z ##[command]git config --get-regexp .*extraheader
+2022-04-21T13:48:49.5349531Z ##[command]git config --get-all http.proxy
+2022-04-21T13:48:49.6644076Z ##[command]git config http.version HTTP/1.1
+2022-04-21T13:48:49.8062331Z ##[command]git -c http.extraheader="AUTHORIZATION: basic ***" fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin
+2022-04-21T13:48:50.6920539Z ##[command]git -c http.extraheader="AUTHORIZATION: basic ***" fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin  +755f5369262d57b71b533c70ab3ecf0e2fcbb4c1
+2022-04-21T13:48:51.3044869Z From https://github.com/Leandroms165/Desafio_ApiRestSharp
+2022-04-21T13:48:51.3048888Z  * branch            755f5369262d57b71b533c70ab3ecf0e2fcbb4c1 -> FETCH_HEAD
+2022-04-21T13:48:51.3985545Z ##[command]git checkout --progress --force 755f5369262d57b71b533c70ab3ecf0e2fcbb4c1
+2022-04-21T13:48:52.1378930Z HEAD is now at 755f536 atualizar
+2022-04-21T13:48:52.1593463Z ##[section]Finishing: Checkout Leandroms165/Desafio_ApiRestSharp@master to s
+2022-04-21T13:48:52.1632365Z ##[section]Starting: Use .NET Core sdk 
+2022-04-21T13:48:52.1972117Z ==============================================================================
+2022-04-21T13:48:52.1973039Z Task         : Use .NET Core
+2022-04-21T13:48:52.1976238Z Description  : Acquires a specific version of the .NET Core SDK from the internet or the local cache and adds it to the PATH. Use this task to change the version of .NET Core used in subsequent tasks. Additionally provides proxy support.
+2022-04-21T13:48:52.1977368Z Version      : 2.198.0
+2022-04-21T13:48:52.1977996Z Author       : Microsoft Corporation
+2022-04-21T13:48:52.1978564Z Help         : https://aka.ms/AA4xgy0
+2022-04-21T13:48:52.1979218Z ==============================================================================
+2022-04-21T13:48:52.7813915Z Creating global tool path and pre-pending to PATH.
+2022-04-21T13:48:52.7998210Z ##[section]Finishing: Use .NET Core sdk 
+2022-04-21T13:48:52.8053159Z ##[section]Starting: Restore
+2022-04-21T13:48:52.8356980Z ==============================================================================
+2022-04-21T13:48:52.8357791Z Task         : .NET Core
+2022-04-21T13:48:52.8358307Z Description  : Build, test, package, or publish a dotnet application, or run a custom dotnet command
+2022-04-21T13:48:52.8358892Z Version      : 2.198.0
+2022-04-21T13:48:52.8359219Z Author       : Microsoft Corporation
+2022-04-21T13:48:52.8359693Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/build/dotnet-core-cli
+2022-04-21T13:48:52.8360324Z ==============================================================================
+2022-04-21T13:48:53.5997285Z [command]C:\Windows\system32\chcp.com 65001
+2022-04-21T13:48:53.6269474Z P�gina de c�digo ativa: 65001
+2022-04-21T13:48:53.6304751Z Info: .NET Core SDK/runtime 2.2 and 3.0 are now End of Life(EOL) and have been removed from all hosted agents. If you're using these SDK/runtimes on hosted agents, kindly upgrade to newer versions which are not EOL, or else use UseDotNet task to install the required version.
+2022-04-21T13:48:54.4243665Z [command]"C:\Program Files\dotnet\dotnet.exe" restore --configfile C:\AzureDevOpsAgents\_work\1\Nuget\tempNuGet_15.config --verbosity Detailed
+2022-04-21T13:48:55.3254578Z Compilação de 21/04/2022 10:48:55 iniciada.
+2022-04-21T13:48:55.3275486Z      0>Processo = "C:\Program Files\dotnet\dotnet.exe"
+2022-04-21T13:48:55.3287654Z        Caminho executável do MSBuild = "C:\Program Files\dotnet\sdk\5.0.400\MSBuild.dll"
+2022-04-21T13:48:55.3292765Z        Argumentos de linha de comando = ""C:\Program Files\dotnet\sdk\5.0.400\MSBuild.dll" -maxcpucount -verbosity:m -nologo -target:Restore -property:RestoreConfigFile=C:\AzureDevOpsAgents\_work\1\Nuget\tempNuGet_15.config -verbosity:Detailed "-distributedlogger:Microsoft.DotNet.Tools.MSBuild.MSBuildLogger,C:\Program Files\dotnet\sdk\5.0.400\dotnet.dll*Microsoft.DotNet.Tools.MSBuild.MSBuildForwardingLogger,C:\Program Files\dotnet\sdk\5.0.400\dotnet.dll""
+2022-04-21T13:48:55.3296992Z        Diretório atual = "C:\AzureDevOpsAgents\_work\1\s"
+2022-04-21T13:48:55.3298531Z        Versão do MSBuild = "16.11.0+0538acc04"
+2022-04-21T13:48:55.5624240Z      1>Projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.sln" no nó 1 (Restore destino(s)).
+2022-04-21T13:48:55.5626750Z      1>Compilando com a versão das ferramentas "Current".
+2022-04-21T13:48:55.5671203Z      1>Destino "ValidateSolutionConfiguration" no arquivo "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.sln.metaproj" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.sln" (ponto de entrada):
+2022-04-21T13:48:55.5674704Z        A tarefa "Error" foi ignorada devido a condição falsa; (('$(CurrentSolutionConfigurationContents)' == '') and ('$(SkipInvalidConfigurations)' != 'true')) foi avaliado como (('<SolutionConfiguration>
+2022-04-21T13:48:55.5677814Z          <ProjectConfiguration Project="{77344906-2621-4841-B9FE-3E9EF84D31A9}" AbsolutePath="C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+2022-04-21T13:48:55.5679873Z        </SolutionConfiguration>' == '') and ('' != 'true')).
+2022-04-21T13:48:55.5681787Z        A tarefa "Warning" foi ignorada devido a condição falsa; (('$(CurrentSolutionConfigurationContents)' == '') and ('$(SkipInvalidConfigurations)' == 'true')) foi avaliado como (('<SolutionConfiguration>
+2022-04-21T13:48:55.5685743Z          <ProjectConfiguration Project="{77344906-2621-4841-B9FE-3E9EF84D31A9}" AbsolutePath="C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+2022-04-21T13:48:55.5687367Z        </SolutionConfiguration>' == '') and ('' == 'true')).
+2022-04-21T13:48:55.5865349Z        Usando a tarefa "Message" do assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+2022-04-21T13:48:55.5868804Z        Tarefa "Message"
+2022-04-21T13:48:55.5952099Z          Compilando a configuração de solução "Debug|Any CPU".
+2022-04-21T13:48:55.5953561Z        Tarefa em execução pronta "Message".
+2022-04-21T13:48:55.5954985Z      1>Destino de compilação pronto"ValidateSolutionConfiguration" no projeto "RestSharpNetCoreTemplate.sln".
+2022-04-21T13:48:55.5956875Z      1>Destino "ValidateToolsVersions" no arquivo "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.sln.metaproj" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.sln" (ponto de entrada):
+2022-04-21T13:48:55.5958914Z        A tarefa "Error" foi ignorada devido a condição falsa; ('$(MSBuildToolsVersion)' == '2.0' and ('$(ProjectToolsVersion)' != '2.0' and '$(ProjectToolsVersion)' != '')) foi avaliado como ('Current' == '2.0' and ('' != '2.0' and '' != '')).
+2022-04-21T13:48:55.5960337Z      1>Destino de compilação pronto"ValidateToolsVersions" no projeto "RestSharpNetCoreTemplate.sln".
+2022-04-21T13:48:55.5961865Z      1>Destino "ValidateProjects" no arquivo "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.sln.metaproj" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.sln" (ponto de entrada):
+2022-04-21T13:48:55.5963188Z      1>Destino de compilação pronto"ValidateProjects" no projeto "RestSharpNetCoreTemplate.sln".
+2022-04-21T13:48:55.6125084Z      1>Destino "_LoadRestoreGraphEntryPoints" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\NuGet.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.sln" (o destino "_FilterRestoreGraphProjectInputItems" depende dele):
+2022-04-21T13:48:55.6127551Z        Usando a tarefa "GetRestoreSolutionProjectsTask" do assembly "C:\Program Files\dotnet\sdk\5.0.400\NuGet.Build.Tasks.dll".
+2022-04-21T13:48:55.6128770Z        Tarefa "GetRestoreSolutionProjectsTask"
+2022-04-21T13:48:55.6157718Z          (in) ProjectReferences 'C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj'
+2022-04-21T13:48:55.6160018Z          (in) SolutionFilePath 'C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.sln.metaproj'
+2022-04-21T13:48:55.6186454Z        Tarefa em execução pronta "GetRestoreSolutionProjectsTask".
+2022-04-21T13:48:55.6190743Z      1>Destino de compilação pronto"_LoadRestoreGraphEntryPoints" no projeto "RestSharpNetCoreTemplate.sln".
+2022-04-21T13:48:55.6360200Z      1>Destino "_FilterRestoreGraphProjectInputItems" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\NuGet.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.sln" (o destino "_GenerateRestoreGraph" depende dele):
+2022-04-21T13:48:55.6363844Z        Usando a tarefa "RemoveDuplicates" do assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+2022-04-21T13:48:55.6365585Z        Tarefa "RemoveDuplicates"
+2022-04-21T13:48:55.6366717Z        Tarefa em execução pronta "RemoveDuplicates".
+2022-04-21T13:48:55.6368534Z        Usando a tarefa "MSBuild" do assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+2022-04-21T13:48:55.6370008Z        Tarefa "MSBuild"
+2022-04-21T13:48:55.6382270Z          Propriedades globais:
+2022-04-21T13:48:55.6385053Z            ExcludeRestorePackageImports=true
+2022-04-21T13:48:55.6386393Z            _RestoreSolutionFileUsed=true
+2022-04-21T13:48:55.6388871Z            SolutionDir=C:\AzureDevOpsAgents\_work\1\s\
+2022-04-21T13:48:55.6391110Z            SolutionName=RestSharpNetCoreTemplate
+2022-04-21T13:48:55.6392988Z            SolutionFileName=RestSharpNetCoreTemplate.sln
+2022-04-21T13:48:55.6394922Z            SolutionPath=C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.sln
+2022-04-21T13:48:55.6396604Z            SolutionExt=.sln
+2022-04-21T13:48:55.6403803Z          Propriedades adicionais do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj":
+2022-04-21T13:48:55.6404802Z            Configuration=Debug
+2022-04-21T13:48:55.6405228Z            Platform=AnyCPU
+2022-04-21T13:48:55.6694356Z      0>Resolvendo o SDK 'Microsoft.NET.Sdk'...
+2022-04-21T13:48:55.6856552Z        Reatribuição de propriedade: $(MSBuildProjectExtensionsPath)="C:\AzureDevOpsAgents\_work\1\s\obj\" (valor anterior: "obj\") em C:\Program Files\dotnet\sdk\5.0.400\Current\Microsoft.Common.props (57,5)
+2022-04-21T13:48:55.6881130Z        A propriedade "Configuration" é global e não pode ser modificada.
+2022-04-21T13:48:55.6884350Z        A propriedade "Platform" é global e não pode ser modificada.
+2022-04-21T13:48:55.6944500Z        A propriedade "Configuration" é global e não pode ser modificada.
+2022-04-21T13:48:55.6945932Z        A propriedade "Platform" é global e não pode ser modificada.
+2022-04-21T13:48:55.7076233Z        Reatribuição de propriedade: $(TargetsForTfmSpecificContentInPackage)=";PackTool;_PackProjectToolValidation" (valor anterior: ";PackTool") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.PackProjectTool.props (15,5)
+2022-04-21T13:48:55.7106836Z        Reatribuição de propriedade: $(Configurations)="Debug;Release;desenv" (valor anterior: "Debug;Release") em C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj (5,5)
+2022-04-21T13:48:55.7146347Z        A propriedade "Configuration" é global e não pode ser modificada.
+2022-04-21T13:48:55.7147453Z        A propriedade "Platform" é global e não pode ser modificada.
+2022-04-21T13:48:55.7163334Z        Reatribuição de propriedade: $(PublishProfileImported)="false" (valor anterior: "true") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportPublishProfile.targets (28,5)
+2022-04-21T13:48:55.7309157Z        Reatribuição de propriedade: $(TargetPlatformVersion)="" (valor anterior: "0.0") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets (65,5)
+2022-04-21T13:48:55.7312750Z        Reatribuição de propriedade: $(DefaultItemExcludes)=";bin\Debug\/**;obj\Debug\/**" (valor anterior: ";bin\Debug\/**") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets (223,5)
+2022-04-21T13:48:55.7315915Z        Reatribuição de propriedade: $(IntermediateOutputPath)="obj\Debug\netcoreapp3.1\" (valor anterior: "obj\Debug\") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets (241,5)
+2022-04-21T13:48:55.7317618Z        Reatribuição de propriedade: $(OutputPath)="bin\Debug\netcoreapp3.1\" (valor anterior: "bin\Debug\") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets (242,5)
+2022-04-21T13:48:55.7358403Z        Reatribuição de propriedade: $(_FrameworkVersionForImplicitDefine)="3_1" (valor anterior: "3.1") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.BeforeCommon.targets (182,5)
+2022-04-21T13:48:55.7613204Z        Reatribuição de propriedade: $(TargetPlatformIdentifier)="Windows" (valor anterior: "") em C:\Program Files\dotnet\sdk\5.0.400\Microsoft.Common.CurrentVersion.targets (90,5)
+2022-04-21T13:48:55.7614693Z        Reatribuição de propriedade: $(TargetPlatformVersion)="7.0" (valor anterior: "") em C:\Program Files\dotnet\sdk\5.0.400\Microsoft.Common.CurrentVersion.targets (91,5)
+2022-04-21T13:48:55.7913227Z        A propriedade "Platform" é global e não pode ser modificada.
+2022-04-21T13:48:55.7914765Z        A propriedade "Configuration" é global e não pode ser modificada.
+2022-04-21T13:48:55.7916836Z        Reatribuição de propriedade: $(_DebugSymbolsProduced)="true" (valor anterior: "false") em C:\Program Files\dotnet\sdk\5.0.400\Microsoft.Common.CurrentVersion.targets (176,5)
+2022-04-21T13:48:55.7919779Z        Reatribuição de propriedade: $(_DocumentationFileProduced)="false" (valor anterior: "true") em C:\Program Files\dotnet\sdk\5.0.400\Microsoft.Common.CurrentVersion.targets (186,5)
+2022-04-21T13:48:55.7922234Z        A propriedade "SolutionName" é global e não pode ser modificada.
+2022-04-21T13:48:55.7923372Z        A propriedade "SolutionFileName" é global e não pode ser modificada.
+2022-04-21T13:48:55.7924451Z        A propriedade "SolutionPath" é global e não pode ser modificada.
+2022-04-21T13:48:55.7925479Z        A propriedade "SolutionDir" é global e não pode ser modificada.
+2022-04-21T13:48:55.7926672Z        A propriedade "SolutionExt" é global e não pode ser modificada.
+2022-04-21T13:48:55.7928345Z        Reatribuição de propriedade: $(ProcessorArchitecture)="msil" (valor anterior: "") em C:\Program Files\dotnet\sdk\5.0.400\Microsoft.Common.CurrentVersion.targets (519,5)
+2022-04-21T13:48:55.7930540Z        Reatribuição de propriedade: $(DelaySign)="" (valor anterior: "false") em C:\Program Files\dotnet\sdk\5.0.400\Microsoft.Common.CurrentVersion.targets (558,5)
+2022-04-21T13:48:55.7933194Z        Reatribuição de propriedade: $(_SGenGenerateSerializationAssembliesConfig)="Auto" (valor anterior: "") em C:\Program Files\dotnet\sdk\5.0.400\Microsoft.Common.CurrentVersion.targets (3612,5)
+2022-04-21T13:48:55.7935450Z        Reatribuição de propriedade: $(_SGenGenerateSerializationAssembliesConfig)="Off" (valor anterior: "Auto") em C:\Program Files\dotnet\sdk\5.0.400\Microsoft.Common.CurrentVersion.targets (3613,5)
+2022-04-21T13:48:55.7937111Z        Reatribuição de propriedade: $(_TargetsThatPrepareProjectReferences)="
+2022-04-21T13:48:55.7938237Z              AssignProjectConfiguration;
+2022-04-21T13:48:55.7939045Z              _SplitProjectReferencesByFileExistence
+2022-04-21T13:48:55.7940347Z            " (valor anterior: "_SplitProjectReferencesByFileExistence") em C:\Program Files\dotnet\sdk\5.0.400\Microsoft.Common.CurrentVersion.targets (4742,5)
+2022-04-21T13:48:55.8049133Z        A propriedade "_RestoreSolutionFileUsed" é global e não pode ser modificada.
+2022-04-21T13:48:55.8050887Z        Reatribuição de propriedade: $(_GenerateRestoreGraphProjectEntryInputProperties)="
+2022-04-21T13:48:55.8051889Z              ExcludeRestorePackageImports=true;
+2022-04-21T13:48:55.8052714Z              _RestoreSolutionFileUsed=true;
+2022-04-21T13:48:55.8053495Z              SolutionDir=C:\AzureDevOpsAgents\_work\1\s\;
+2022-04-21T13:48:55.8054230Z              SolutionName=RestSharpNetCoreTemplate;
+2022-04-21T13:48:55.8055628Z              SolutionFileName=RestSharpNetCoreTemplate.sln;
+2022-04-21T13:48:55.8057355Z              SolutionPath=C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.sln;
+2022-04-21T13:48:55.8058519Z              SolutionExt=.sln;
+2022-04-21T13:48:55.8060066Z            " (valor anterior: "ExcludeRestorePackageImports=true") em C:\Program Files\dotnet\sdk\5.0.400\NuGet.targets (85,5)
+2022-04-21T13:48:55.8259165Z        Reatribuição de propriedade: $(ProjectAssetsFile)="C:\AzureDevOpsAgents\_work\1\s\obj\project.assets.json" (valor anterior: "C:\AzureDevOpsAgents\_work\1\s\obj\/project.assets.json") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets (24,5)
+2022-04-21T13:48:55.8262236Z        Reatribuição de propriedade: $(ProjectAssetsCacheFile)="C:\AzureDevOpsAgents\_work\1\s\obj\Debug\netcoreapp3.1\RestSharpNetCoreTemplate.assets.cache" (valor anterior: "obj\Debug\netcoreapp3.1\RestSharpNetCoreTemplate.assets.cache") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets (29,5)
+2022-04-21T13:48:55.8266550Z        Reatribuição de propriedade: $(ResolveAssemblyReferencesDependsOn)="
+2022-04-21T13:48:55.8267602Z              
+2022-04-21T13:48:55.8268412Z              ResolveProjectReferences;
+2022-04-21T13:48:55.8269306Z              FindInvalidProjectReferences;
+2022-04-21T13:48:55.8270158Z              GetFrameworkPaths;
+2022-04-21T13:48:55.8270986Z              GetReferenceAssemblyPaths;
+2022-04-21T13:48:55.8271861Z              PrepareForBuild;
+2022-04-21T13:48:55.8272927Z              ResolveSDKReferences;
+2022-04-21T13:48:55.8273749Z              ExpandSDKReferences;
+2022-04-21T13:48:55.8274449Z            ;
+2022-04-21T13:48:55.8275758Z              ResolvePackageDependenciesForBuild;
+2022-04-21T13:48:55.8276793Z              _HandlePackageFileConflicts;
+2022-04-21T13:48:55.8277691Z            " (valor anterior: "
+2022-04-21T13:48:55.8278598Z              ResolveProjectReferences;
+2022-04-21T13:48:55.8279604Z              FindInvalidProjectReferences;
+2022-04-21T13:48:55.8280416Z              GetFrameworkPaths;
+2022-04-21T13:48:55.8281203Z              GetReferenceAssemblyPaths;
+2022-04-21T13:48:55.8281914Z              PrepareForBuild;
+2022-04-21T13:48:55.8282539Z              ResolveSDKReferences;
+2022-04-21T13:48:55.8283109Z              ExpandSDKReferences;
+2022-04-21T13:48:55.8283941Z            ") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets (71,5)
+2022-04-21T13:48:55.8284956Z        Reatribuição de propriedade: $(PrepareResourcesDependsOn)="
+2022-04-21T13:48:55.8285750Z              ResolvePackageDependenciesForBuild;
+2022-04-21T13:48:55.8286417Z              _HandlePackageFileConflicts;
+2022-04-21T13:48:55.8286898Z              
+2022-04-21T13:48:55.8287309Z              ;
+2022-04-21T13:48:55.8287779Z              PrepareResourceNames;
+2022-04-21T13:48:55.8288267Z              ResGen;
+2022-04-21T13:48:55.8288722Z              CompileLicxFiles
+2022-04-21T13:48:55.8289235Z            
+2022-04-21T13:48:55.8289678Z            " (valor anterior: "
+2022-04-21T13:48:55.8290115Z              ;
+2022-04-21T13:48:55.8290575Z              PrepareResourceNames;
+2022-04-21T13:48:55.8291024Z              ResGen;
+2022-04-21T13:48:55.8291390Z              CompileLicxFiles
+2022-04-21T13:48:55.8292155Z            ") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets (77,5)
+2022-04-21T13:48:55.8293525Z        Reatribuição de propriedade: $(DefaultItemExcludes)=";bin\Debug\/**;obj\Debug\/**;bin\/**" (valor anterior: ";bin\Debug\/**;obj\Debug\/**") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets (27,5)
+2022-04-21T13:48:55.8295196Z        Reatribuição de propriedade: $(DefaultItemExcludes)=";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**" (valor anterior: ";bin\Debug\/**;obj\Debug\/**;bin\/**") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets (29,5)
+2022-04-21T13:48:55.8296972Z        Reatribuição de propriedade: $(DefaultItemExcludes)=";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**;**/*.user" (valor anterior: ";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets (32,5)
+2022-04-21T13:48:55.8298903Z        Reatribuição de propriedade: $(DefaultItemExcludes)=";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**;**/*.user;**/*.*proj" (valor anterior: ";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**;**/*.user") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets (33,5)
+2022-04-21T13:48:55.8300832Z        Reatribuição de propriedade: $(DefaultItemExcludes)=";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln" (valor anterior: ";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**;**/*.user;**/*.*proj") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets (34,5)
+2022-04-21T13:48:55.8303348Z        Reatribuição de propriedade: $(DefaultItemExcludes)=";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln;**/*.vssscc" (valor anterior: ";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets (35,5)
+2022-04-21T13:48:55.8325999Z        Reatribuição de propriedade: $(ResolveAssemblyReferencesDependsOn)="
+2022-04-21T13:48:55.8327283Z              
+2022-04-21T13:48:55.8327861Z              
+2022-04-21T13:48:55.8329978Z              ResolveProjectReferences;
+2022-04-21T13:48:55.8330991Z              FindInvalidProjectReferences;
+2022-04-21T13:48:55.8331961Z              GetFrameworkPaths;
+2022-04-21T13:48:55.8332712Z              GetReferenceAssemblyPaths;
+2022-04-21T13:48:55.8333445Z              PrepareForBuild;
+2022-04-21T13:48:55.8334313Z              ResolveSDKReferences;
+2022-04-21T13:48:55.8335109Z              ExpandSDKReferences;
+2022-04-21T13:48:55.8335912Z            ;
+2022-04-21T13:48:55.8336810Z              ResolvePackageDependenciesForBuild;
+2022-04-21T13:48:55.8337996Z              _HandlePackageFileConflicts;
+2022-04-21T13:48:55.8339070Z            ;
+2022-04-21T13:48:55.8340256Z              ResolveTargetingPackAssets;
+2022-04-21T13:48:55.8341615Z            " (valor anterior: "
+2022-04-21T13:48:55.8342453Z              
+2022-04-21T13:48:55.8343439Z              ResolveProjectReferences;
+2022-04-21T13:48:55.8344806Z              FindInvalidProjectReferences;
+2022-04-21T13:48:55.8345978Z              GetFrameworkPaths;
+2022-04-21T13:48:55.8347181Z              GetReferenceAssemblyPaths;
+2022-04-21T13:48:55.8348333Z              PrepareForBuild;
+2022-04-21T13:48:55.8349246Z              ResolveSDKReferences;
+2022-04-21T13:48:55.8350154Z              ExpandSDKReferences;
+2022-04-21T13:48:55.8350892Z            ;
+2022-04-21T13:48:55.8351918Z              ResolvePackageDependenciesForBuild;
+2022-04-21T13:48:55.8352702Z              _HandlePackageFileConflicts;
+2022-04-21T13:48:55.8353746Z            ") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets (14,5)
+2022-04-21T13:48:55.8356339Z        Reatribuição de propriedade: $(_GenerateRuntimeConfigurationPropertyInputsCache)="C:\AzureDevOpsAgents\_work\1\s\obj\Debug\netcoreapp3.1\RestSharpNetCoreTemplate.genruntimeconfig.cache" (valor anterior: "obj\Debug\netcoreapp3.1\RestSharpNetCoreTemplate.genruntimeconfig.cache") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (39,5)
+2022-04-21T13:48:55.8359206Z        Reatribuição de propriedade: $(_DefaultUserProfileRuntimeStorePath)="C:\Users\leandroMatias" (valor anterior: "") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (61,5)
+2022-04-21T13:48:55.8361682Z        Reatribuição de propriedade: $(_DefaultUserProfileRuntimeStorePath)="C:\Users\leandroMatias\.dotnet\store" (valor anterior: "C:\Users\leandroMatias") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (62,5)
+2022-04-21T13:48:55.8363952Z        Reatribuição de propriedade: $(AvailablePlatforms)="Any CPU,x86,x64,ARM32" (valor anterior: "Any CPU,x86,x64") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (83,5)
+2022-04-21T13:48:55.8366481Z        Reatribuição de propriedade: $(AvailablePlatforms)="Any CPU,x86,x64,ARM32,ARM64" (valor anterior: "Any CPU,x86,x64,ARM32") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (87,5)
+2022-04-21T13:48:55.8368172Z        Reatribuição de propriedade: $(CoreBuildDependsOn)="
+2022-04-21T13:48:55.8368987Z              _CheckForBuildWithNoBuild;
+2022-04-21T13:48:55.8369587Z              
+2022-04-21T13:48:55.8370712Z              BuildOnlySettings;
+2022-04-21T13:48:55.8371338Z              PrepareForBuild;
+2022-04-21T13:48:55.8372261Z              PreBuildEvent;
+2022-04-21T13:48:55.8373036Z              ResolveReferences;
+2022-04-21T13:48:55.8373870Z              PrepareResources;
+2022-04-21T13:48:55.8374766Z              ResolveKeySource;
+2022-04-21T13:48:55.8375620Z              Compile;
+2022-04-21T13:48:55.8376371Z              ExportWindowsMDFile;
+2022-04-21T13:48:55.8377146Z              UnmanagedUnregistration;
+2022-04-21T13:48:55.8378025Z              GenerateSerializationAssemblies;
+2022-04-21T13:48:55.8379035Z              CreateSatelliteAssemblies;
+2022-04-21T13:48:55.8381140Z              GenerateManifests;
+2022-04-21T13:48:55.8382270Z              GetTargetPath;
+2022-04-21T13:48:55.8383252Z              PrepareForRun;
+2022-04-21T13:48:55.8384195Z              UnmanagedRegistration;
+2022-04-21T13:48:55.8384971Z              IncrementalClean;
+2022-04-21T13:48:55.8385604Z              PostBuildEvent
+2022-04-21T13:48:55.8386151Z            ;
+2022-04-21T13:48:55.8386749Z              GenerateBuildDependencyFile;
+2022-04-21T13:48:55.8387491Z              GenerateBuildRuntimeConfigurationFiles
+2022-04-21T13:48:55.8388187Z            " (valor anterior: "
+2022-04-21T13:48:55.8388798Z              BuildOnlySettings;
+2022-04-21T13:48:55.8389392Z              PrepareForBuild;
+2022-04-21T13:48:55.8389998Z              PreBuildEvent;
+2022-04-21T13:48:55.8390597Z              ResolveReferences;
+2022-04-21T13:48:55.8391212Z              PrepareResources;
+2022-04-21T13:48:55.8391996Z              ResolveKeySource;
+2022-04-21T13:48:55.8392626Z              Compile;
+2022-04-21T13:48:55.8404788Z              ExportWindowsMDFile;
+2022-04-21T13:48:55.8405834Z              UnmanagedUnregistration;
+2022-04-21T13:48:55.8406545Z              GenerateSerializationAssemblies;
+2022-04-21T13:48:55.8407245Z              CreateSatelliteAssemblies;
+2022-04-21T13:48:55.8407879Z              GenerateManifests;
+2022-04-21T13:48:55.8408472Z              GetTargetPath;
+2022-04-21T13:48:55.8409048Z              PrepareForRun;
+2022-04-21T13:48:55.8409660Z              UnmanagedRegistration;
+2022-04-21T13:48:55.8410335Z              IncrementalClean;
+2022-04-21T13:48:55.8410962Z              PostBuildEvent
+2022-04-21T13:48:55.8412219Z            ") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (91,5)
+2022-04-21T13:48:55.8413301Z        Reatribuição de propriedade: $(CoreCleanDependsOn)="
+2022-04-21T13:48:55.8413986Z              _SdkBeforeClean;
+2022-04-21T13:48:55.8414470Z              
+2022-04-21T13:48:55.8415345Z            " (valor anterior: "") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (100,5)
+2022-04-21T13:48:55.8416378Z        Reatribuição de propriedade: $(RebuildDependsOn)="
+2022-04-21T13:48:55.8417044Z              _SdkBeforeRebuild;
+2022-04-21T13:48:55.8417530Z              
+2022-04-21T13:48:55.8418095Z              BeforeRebuild;
+2022-04-21T13:48:55.8418601Z              Clean;
+2022-04-21T13:48:55.8419061Z              Build;
+2022-04-21T13:48:55.8419552Z              AfterRebuild;
+2022-04-21T13:48:55.8420029Z            
+2022-04-21T13:48:55.8420526Z            " (valor anterior: "
+2022-04-21T13:48:55.8421046Z              BeforeRebuild;
+2022-04-21T13:48:55.8421719Z              Clean;
+2022-04-21T13:48:55.8422485Z              Build;
+2022-04-21T13:48:55.8423482Z              AfterRebuild;
+2022-04-21T13:48:55.8424659Z            ") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (107,5)
+2022-04-21T13:48:55.8426089Z        Reatribuição de propriedade: $(CompileDependsOn)="
+2022-04-21T13:48:55.8426815Z              
+2022-04-21T13:48:55.8427415Z              ResolveReferences;
+2022-04-21T13:48:55.8428070Z              ResolveKeySource;
+2022-04-21T13:48:55.8428758Z              SetWin32ManifestProperties;
+2022-04-21T13:48:55.8430183Z              FindReferenceAssembliesForReferences;
+2022-04-21T13:48:55.8431104Z              _GenerateCompileInputs;
+2022-04-21T13:48:55.8431876Z              BeforeCompile;
+2022-04-21T13:48:55.8432471Z              _TimeStampBeforeCompile;
+2022-04-21T13:48:55.8433087Z              _GenerateCompileDependencyCache;
+2022-04-21T13:48:55.8433656Z              CoreCompile;
+2022-04-21T13:48:55.8434358Z              _TimeStampAfterCompile;
+2022-04-21T13:48:55.8435169Z              AfterCompile;
+2022-04-21T13:48:55.8435838Z            ;
+2022-04-21T13:48:55.8436523Z              _CreateAppHost;
+2022-04-21T13:48:55.8437192Z              _CreateComHost;
+2022-04-21T13:48:55.8438204Z              _GetIjwHostPaths;
+2022-04-21T13:48:55.8438778Z            " (valor anterior: "
+2022-04-21T13:48:55.8439374Z              ResolveReferences;
+2022-04-21T13:48:55.8439974Z              ResolveKeySource;
+2022-04-21T13:48:55.8440550Z              SetWin32ManifestProperties;
+2022-04-21T13:48:55.8441189Z              FindReferenceAssembliesForReferences;
+2022-04-21T13:48:55.8442103Z              _GenerateCompileInputs;
+2022-04-21T13:48:55.8442579Z              BeforeCompile;
+2022-04-21T13:48:55.8443024Z              _TimeStampBeforeCompile;
+2022-04-21T13:48:55.8443507Z              _GenerateCompileDependencyCache;
+2022-04-21T13:48:55.8443963Z              CoreCompile;
+2022-04-21T13:48:55.8444400Z              _TimeStampAfterCompile;
+2022-04-21T13:48:55.8444840Z              AfterCompile;
+2022-04-21T13:48:55.8445480Z            ") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (436,5)
+2022-04-21T13:48:55.8446314Z        Reatribuição de propriedade: $(CreateSatelliteAssembliesDependsOn)="
+2022-04-21T13:48:55.8446834Z              
+2022-04-21T13:48:55.8447252Z              _GenerateSatelliteAssemblyInputs;
+2022-04-21T13:48:55.8447790Z              ComputeIntermediateSatelliteAssemblies;
+2022-04-21T13:48:55.8448314Z              GenerateSatelliteAssemblies
+2022-04-21T13:48:55.8448769Z            ;
+2022-04-21T13:48:55.8449183Z              CoreGenerateSatelliteAssemblies
+2022-04-21T13:48:55.8449645Z            " (valor anterior: "
+2022-04-21T13:48:55.8450124Z              _GenerateSatelliteAssemblyInputs;
+2022-04-21T13:48:55.8450658Z              ComputeIntermediateSatelliteAssemblies;
+2022-04-21T13:48:55.8451164Z              GenerateSatelliteAssemblies
+2022-04-21T13:48:55.8451956Z            ") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (817,5)
+2022-04-21T13:48:55.8452907Z        Reatribuição de propriedade: $(DesignerRuntimeImplementationProjectOutputGroupDependsOn)="
+2022-04-21T13:48:55.8453529Z              
+2022-04-21T13:48:55.8453868Z              ;
+2022-04-21T13:48:55.8454223Z              
+2022-04-21T13:48:55.8454566Z              ;
+2022-04-21T13:48:55.8454945Z              BuildOnlySettings;
+2022-04-21T13:48:55.8455381Z              PrepareForBuild;
+2022-04-21T13:48:55.8455806Z              AssignTargetPaths;
+2022-04-21T13:48:55.8456300Z              ResolveReferences
+2022-04-21T13:48:55.8456673Z            
+2022-04-21T13:48:55.8457023Z            ;
+2022-04-21T13:48:55.8457434Z              _GenerateDesignerDepsFile;
+2022-04-21T13:48:55.8457927Z              _GenerateDesignerRuntimeConfigFile;
+2022-04-21T13:48:55.8458454Z              _GatherDesignerShadowCopyFiles;
+2022-04-21T13:48:55.8458913Z            " (valor anterior: "
+2022-04-21T13:48:55.8459299Z              ;
+2022-04-21T13:48:55.8459632Z              
+2022-04-21T13:48:55.8459975Z              ;
+2022-04-21T13:48:55.8460360Z              BuildOnlySettings;
+2022-04-21T13:48:55.8460786Z              PrepareForBuild;
+2022-04-21T13:48:55.8461224Z              AssignTargetPaths;
+2022-04-21T13:48:55.8461782Z              ResolveReferences
+2022-04-21T13:48:55.8462205Z            
+2022-04-21T13:48:55.8462837Z            ") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets (21,5)
+2022-04-21T13:48:55.8511275Z        Reatribuição de propriedade: $(PublishReadyToRunComposite)="false" (valor anterior: "true") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Publish.targets (20,5)
+2022-04-21T13:48:55.8527054Z        Reatribuição de propriedade: $(_ShimInputCacheFile)="C:\AzureDevOpsAgents\_work\1\s\obj\Debug\netcoreapp3.1\RestSharpNetCoreTemplate.shiminput.cache" (valor anterior: "obj\Debug\netcoreapp3.1\RestSharpNetCoreTemplate.shiminput.cache") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.PackTool.targets (109,5)
+2022-04-21T13:48:55.8531894Z        Reatribuição de propriedade: $(_ShimCreatedSentinelFile)="C:\AzureDevOpsAgents\_work\1\s\obj\Debug\netcoreapp3.1\RestSharpNetCoreTemplate.shimcreated.sentinel" (valor anterior: "obj\Debug\netcoreapp3.1\RestSharpNetCoreTemplate.shimcreated.sentinel") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.PackTool.targets (111,5)
+2022-04-21T13:48:55.8585643Z        Reatribuição de propriedade: $(DefineConstants)="TRACE;DEBUG" (valor anterior: "TRACE") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.CSharp.targets (31,5)
+2022-04-21T13:48:55.8588336Z        Reatribuição de propriedade: $(DefineConstants)="TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;" (valor anterior: "TRACE;DEBUG") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.CSharp.targets (34,5)
+2022-04-21T13:48:55.8599580Z        Resolvendo o SDK 'Microsoft.NET.ILLink.Tasks'...
+2022-04-21T13:48:55.8653745Z        Reatribuição de propriedade: $(SupportedOSPlatformVersion)="7.0" (valor anterior: "") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Windows.targets (44,5)
+2022-04-21T13:48:55.8656115Z        Reatribuição de propriedade: $(TargetPlatformMinVersion)="7.0" (valor anterior: "") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Windows.targets (45,5)
+2022-04-21T13:48:55.8682928Z        Reatribuição de propriedade: $(PackageDescription)="Package Description" (valor anterior: "") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\NuGet.Build.Tasks.Pack\build\NuGet.Build.Tasks.Pack.targets (35,5)
+2022-04-21T13:48:55.8686872Z        Reatribuição de propriedade: $(GenerateNuspecDependsOn)="Build;_LoadPackInputItems; _GetTargetFrameworksOutput; _WalkEachTargetPerFramework; _GetPackageFiles; " (valor anterior: "_LoadPackInputItems; _GetTargetFrameworksOutput; _WalkEachTargetPerFramework; _GetPackageFiles; ") em C:\Program Files\dotnet\sdk\5.0.400\Sdks\NuGet.Build.Tasks.Pack\build\NuGet.Build.Tasks.Pack.targets (59,5)
+2022-04-21T13:48:55.9418961Z        Substituindo o destino "GetTargetFrameworkProperties" no projeto "C:\Program Files\dotnet\sdk\5.0.400\Microsoft.Common.CurrentVersion.targets" pelo destino "GetTargetFrameworkProperties" do projeto "C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.Common.targets".
+2022-04-21T13:48:55.9434541Z        Substituindo o destino "ResolveFrameworkReferences" no projeto "C:\Program Files\dotnet\sdk\5.0.400\Microsoft.Common.CurrentVersion.targets" pelo destino "ResolveFrameworkReferences" do projeto "C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets".
+2022-04-21T13:48:55.9446405Z        Substituindo o destino "Run" no projeto "C:\Program Files\dotnet\sdk\5.0.400\Microsoft.Common.CurrentVersion.targets" pelo destino "Run" do projeto "C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets".
+2022-04-21T13:48:55.9450740Z        Substituindo o destino "GenerateSupportedTargetFrameworkAlias" no projeto "C:\Program Files\dotnet\sdk\5.0.400\Microsoft.Common.CurrentVersion.targets" pelo destino "GenerateSupportedTargetFrameworkAlias" do projeto "C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets".
+2022-04-21T13:48:55.9455452Z        Substituindo o destino "GetReferenceAssemblyPaths" no projeto "C:\Program Files\dotnet\sdk\5.0.400\Microsoft.Common.CurrentVersion.targets" pelo destino "GetReferenceAssemblyPaths" do projeto "C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DisableStandardFrameworkResolution.targets".
+2022-04-21T13:48:55.9459635Z        Substituindo o destino "GetFrameworkPaths" no projeto "C:\Program Files\dotnet\sdk\5.0.400\Microsoft.Common.CurrentVersion.targets" pelo destino "GetFrameworkPaths" do projeto "C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DisableStandardFrameworkResolution.targets".
+2022-04-21T13:48:55.9464642Z        Substituindo o destino "DesignerRuntimeImplementationProjectOutputGroup" no projeto "C:\Program Files\dotnet\sdk\5.0.400\Microsoft.Common.CurrentVersion.targets" pelo destino "DesignerRuntimeImplementationProjectOutputGroup" do projeto "C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets".
+2022-04-21T13:48:55.9467670Z        Substituindo o destino "Publish" no projeto "C:\Program Files\dotnet\sdk\5.0.400\Microsoft.Common.CurrentVersion.targets" pelo destino "Publish" do projeto "C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Publish.targets".
+2022-04-21T13:48:55.9473501Z        Substituindo o destino "GetCopyToPublishDirectoryItems" no projeto "C:\Program Files\dotnet\sdk\5.0.400\Microsoft.Common.CurrentVersion.targets" pelo destino "GetCopyToPublishDirectoryItems" do projeto "C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Publish.targets".
+2022-04-21T13:48:55.9509213Z      1>O projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.sln" (1) está compilando "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (2) no nó 1 (_IsProjectRestoreSupported destino(s)).
+2022-04-21T13:48:55.9512829Z      2>Compilando com a versão das ferramentas "Current".
+2022-04-21T13:48:55.9516386Z      2>Destino "_IsProjectRestoreSupported" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\NuGet.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (ponto de entrada):
+2022-04-21T13:48:55.9518318Z      2>Destino de compilação pronto"_IsProjectRestoreSupported" no projeto "RestSharpNetCoreTemplate.csproj".
+2022-04-21T13:48:55.9520916Z      2>Projeto de compilação pronto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (_IsProjectRestoreSupported destino(s)).
+2022-04-21T13:48:55.9607406Z      1>Tarefa em execução pronta "MSBuild".
+2022-04-21T13:48:55.9622384Z        A tarefa "MSBuild" foi ignorada devido a condição falsa; ( '$(RestoreUseSkipNonexistentTargets)' != 'true' ) foi avaliado como ( 'true' != 'true' ).
+2022-04-21T13:48:55.9624833Z        Usando a tarefa "WarnForInvalidProjectsTask" do assembly "C:\Program Files\dotnet\sdk\5.0.400\NuGet.Build.Tasks.dll".
+2022-04-21T13:48:55.9626284Z        Tarefa "WarnForInvalidProjectsTask"
+2022-04-21T13:48:55.9627625Z          (in) AllProjects 'C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj'
+2022-04-21T13:48:55.9628955Z          (in) ValidProjects 'C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj'
+2022-04-21T13:48:55.9631742Z        Tarefa em execução pronta "WarnForInvalidProjectsTask".
+2022-04-21T13:48:55.9639101Z      1>Destino de compilação pronto"_FilterRestoreGraphProjectInputItems" no projeto "RestSharpNetCoreTemplate.sln".
+2022-04-21T13:48:55.9643335Z        Destino "_FilterRestoreGraphProjectInputItems" ignorado. Compilado anteriormente com êxito.
+2022-04-21T13:48:55.9645489Z      1>Destino "_GetAllRestoreProjectPathItems" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\NuGet.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.sln" (o destino "_GenerateRestoreGraph" depende dele):
+2022-04-21T13:48:55.9647299Z        Usando a tarefa "NuGetMessageTask" do assembly "C:\Program Files\dotnet\sdk\5.0.400\NuGet.Build.Tasks.dll".
+2022-04-21T13:48:55.9648989Z        Tarefa "NuGetMessageTask"
+2022-04-21T13:48:55.9674207Z          Determinando os projetos a serem restaurados...
+2022-04-21T13:48:55.9675532Z        Tarefa em execução pronta "NuGetMessageTask".
+2022-04-21T13:48:55.9676477Z        Tarefa "MSBuild"
+2022-04-21T13:48:55.9677256Z          Propriedades globais:
+2022-04-21T13:48:55.9678095Z            ExcludeRestorePackageImports=true
+2022-04-21T13:48:55.9678854Z            _RestoreSolutionFileUsed=true
+2022-04-21T13:48:55.9679680Z            SolutionDir=C:\AzureDevOpsAgents\_work\1\s\
+2022-04-21T13:48:55.9680374Z            SolutionName=RestSharpNetCoreTemplate
+2022-04-21T13:48:55.9681241Z            SolutionFileName=RestSharpNetCoreTemplate.sln
+2022-04-21T13:48:55.9682686Z            SolutionPath=C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.sln
+2022-04-21T13:48:55.9683430Z            SolutionExt=.sln
+2022-04-21T13:48:55.9684222Z          Propriedades adicionais do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj":
+2022-04-21T13:48:55.9685180Z            Configuration=Debug
+2022-04-21T13:48:55.9685708Z            Platform=AnyCPU
+2022-04-21T13:48:55.9690425Z      1>O projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.sln" (1) está compilando "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (2:2) no nó 1 (_GenerateRestoreProjectPathWalk destino(s)).
+2022-04-21T13:48:55.9691729Z    2:2>Compilando com a versão das ferramentas "Current".
+2022-04-21T13:48:55.9692632Z        Destino "_GenerateRestoreProjectPathItemsAllFrameworks" ignorado devido à condição falsa; ( '$(TargetFrameworks)' != '' ) foi avaliado como ( '' != '' ).
+2022-04-21T13:48:55.9759459Z    2:2>Destino "_GenerateRestoreProjectPathItemsPerFramework" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\NuGet.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (o destino "_GenerateRestoreProjectPathItemsCurrentProject" depende dele):
+2022-04-21T13:48:55.9762438Z        Usando a tarefa "ConvertToAbsolutePath" do assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+2022-04-21T13:48:55.9764166Z        Tarefa "ConvertToAbsolutePath"
+2022-04-21T13:48:55.9769312Z        Tarefa em execução pronta "ConvertToAbsolutePath".
+2022-04-21T13:48:55.9771799Z    2:2>Destino de compilação pronto"_GenerateRestoreProjectPathItemsPerFramework" no projeto "RestSharpNetCoreTemplate.csproj".
+2022-04-21T13:48:55.9775787Z    2:2>Destino "_GenerateRestoreProjectPathItemsCurrentProject" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\NuGet.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (o destino "_GenerateRestoreProjectPathItems" depende dele):
+2022-04-21T13:48:55.9778109Z    2:2>Destino de compilação pronto"_GenerateRestoreProjectPathItemsCurrentProject" no projeto "RestSharpNetCoreTemplate.csproj".
+2022-04-21T13:48:55.9780227Z    2:2>Destino "_GenerateRestoreProjectPathItems" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\NuGet.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (o destino "_GenerateRestoreProjectPathWalk" depende dele):
+2022-04-21T13:48:55.9782476Z        Usando a tarefa "RemoveDuplicates" do assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+2022-04-21T13:48:55.9783627Z        Tarefa "RemoveDuplicates"
+2022-04-21T13:48:55.9784285Z        Tarefa em execução pronta "RemoveDuplicates".
+2022-04-21T13:48:55.9785079Z    2:2>Destino de compilação pronto"_GenerateRestoreProjectPathItems" no projeto "RestSharpNetCoreTemplate.csproj".
+2022-04-21T13:48:55.9786321Z    2:2>Destino "_GenerateRestoreProjectPathWalk" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\NuGet.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (ponto de entrada):
+2022-04-21T13:48:55.9787486Z        Usando a tarefa "MSBuild" do assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+2022-04-21T13:48:55.9788765Z        Tarefa "MSBuild"
+2022-04-21T13:48:55.9789483Z        Tarefa em execução pronta "MSBuild".
+2022-04-21T13:48:55.9790704Z        A tarefa "MSBuild" foi ignorada devido a condição falsa; ( '$(RestoreUseSkipNonexistentTargets)' != 'true' ) foi avaliado como ( 'true' != 'true' ).
+2022-04-21T13:48:55.9791782Z        Tarefa "RemoveDuplicates"
+2022-04-21T13:48:55.9792688Z        Tarefa em execução pronta "RemoveDuplicates".
+2022-04-21T13:48:55.9793645Z    2:2>Destino de compilação pronto"_GenerateRestoreProjectPathWalk" no projeto "RestSharpNetCoreTemplate.csproj".
+2022-04-21T13:48:55.9795380Z    2:2>Projeto de compilação pronto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (_GenerateRestoreProjectPathWalk destino(s)).
+2022-04-21T13:48:55.9796460Z      1>Tarefa em execução pronta "MSBuild".
+2022-04-21T13:48:55.9797541Z        A tarefa "MSBuild" foi ignorada devido a condição falsa; ( '$(RestoreUseSkipNonexistentTargets)' != 'true' ) foi avaliado como ( 'true' != 'true' ).
+2022-04-21T13:48:55.9798502Z        Tarefa "RemoveDuplicates"
+2022-04-21T13:48:55.9799159Z        Tarefa em execução pronta "RemoveDuplicates".
+2022-04-21T13:48:55.9799766Z        Tarefa "MSBuild"
+2022-04-21T13:48:55.9800316Z          Propriedades globais:
+2022-04-21T13:48:55.9800916Z            ExcludeRestorePackageImports=true
+2022-04-21T13:48:55.9801622Z            _RestoreSolutionFileUsed=true
+2022-04-21T13:48:55.9802303Z            SolutionDir=C:\AzureDevOpsAgents\_work\1\s\
+2022-04-21T13:48:55.9802903Z            SolutionName=RestSharpNetCoreTemplate
+2022-04-21T13:48:55.9803779Z            SolutionFileName=RestSharpNetCoreTemplate.sln
+2022-04-21T13:48:55.9804819Z            SolutionPath=C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.sln
+2022-04-21T13:48:55.9805554Z            SolutionExt=.sln
+2022-04-21T13:48:55.9806375Z          Propriedades adicionais do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj":
+2022-04-21T13:48:55.9807238Z            Configuration=Debug
+2022-04-21T13:48:55.9807795Z            Platform=AnyCPU
+2022-04-21T13:48:55.9808960Z      1>O projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.sln" (1) está compilando "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (2:3) no nó 1 (_IsProjectRestoreSupported destino(s)).
+2022-04-21T13:48:55.9810218Z    2:3>Compilando com a versão das ferramentas "Current".
+2022-04-21T13:48:55.9810980Z        Destino "_IsProjectRestoreSupported" ignorado. Compilado anteriormente com êxito.
+2022-04-21T13:48:55.9812206Z    2:3>Projeto de compilação pronto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (_IsProjectRestoreSupported destino(s)).
+2022-04-21T13:48:55.9813247Z      1>Tarefa em execução pronta "MSBuild".
+2022-04-21T13:48:55.9814149Z        A tarefa "MSBuild" foi ignorada devido a condição falsa; ( '$(RestoreUseSkipNonexistentTargets)' != 'true' ) foi avaliado como ( 'true' != 'true' ).
+2022-04-21T13:48:55.9815382Z      1>Destino de compilação pronto"_GetAllRestoreProjectPathItems" no projeto "RestSharpNetCoreTemplate.sln".
+2022-04-21T13:48:55.9816929Z      1>Destino "_GenerateRestoreGraph" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\NuGet.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.sln" (o destino "Restore" depende dele):
+2022-04-21T13:48:55.9818078Z        Tarefa "Message"
+2022-04-21T13:48:55.9818665Z          Generating dg file
+2022-04-21T13:48:55.9819319Z        Tarefa em execução pronta "Message".
+2022-04-21T13:48:55.9819853Z        Tarefa "Message"
+2022-04-21T13:48:55.9820411Z          C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj
+2022-04-21T13:48:55.9821122Z        Tarefa em execução pronta "Message".
+2022-04-21T13:48:55.9821628Z        Tarefa "MSBuild"
+2022-04-21T13:48:55.9822074Z          Propriedades globais:
+2022-04-21T13:48:55.9822644Z            ExcludeRestorePackageImports=true
+2022-04-21T13:48:55.9823194Z            _RestoreSolutionFileUsed=true
+2022-04-21T13:48:55.9824386Z            SolutionDir=C:\AzureDevOpsAgents\_work\1\s\
+2022-04-21T13:48:55.9825042Z            SolutionName=RestSharpNetCoreTemplate
+2022-04-21T13:48:55.9825716Z            SolutionFileName=RestSharpNetCoreTemplate.sln
+2022-04-21T13:48:55.9826496Z            SolutionPath=C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.sln
+2022-04-21T13:48:55.9827196Z            SolutionExt=.sln
+2022-04-21T13:48:55.9828013Z          Propriedades adicionais do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj":
+2022-04-21T13:48:55.9828862Z            Configuration=Debug
+2022-04-21T13:48:55.9829401Z            Platform=AnyCPU
+2022-04-21T13:48:55.9830964Z      1>O projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.sln" (1) está compilando "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (2:4) no nó 1 (_GenerateRestoreGraphProjectEntry destino(s)).
+2022-04-21T13:48:55.9832157Z    2:4>Compilando com a versão das ferramentas "Current".
+2022-04-21T13:48:55.9833241Z    2:4>Destino "_GetProjectJsonPath" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\NuGet.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (o destino "_GetRestoreProjectStyle" depende dele):
+2022-04-21T13:48:55.9834810Z        A tarefa "GetRestoreProjectJsonPathTask" foi ignorada devido a condição falsa; ( '$(RestoreProjectStyle)' == 'ProjectJson' OR '$(RestoreProjectStyle)' == '' ) foi avaliado como ( 'PackageReference' == 'ProjectJson' OR 'PackageReference' == '' ).
+2022-04-21T13:48:55.9836192Z    2:4>Destino de compilação pronto"_GetProjectJsonPath" no projeto "RestSharpNetCoreTemplate.csproj".
+2022-04-21T13:48:55.9838312Z        Destino "_CheckForUnsupportedTargetPlatformIdentifier" ignorado devido à condição falsa; ('$(TargetPlatformIdentifier)' != '' and '$(TargetFrameworkIdentifier)' == '.NETCoreApp' and $([MSBuild]::VersionGreaterThanOrEquals($(TargetFrameworkVersion), 5.0))) foi avaliado como ('Windows' != '' and '.NETCoreApp' == '.NETCoreApp' and False).
+2022-04-21T13:48:55.9840736Z    2:4>Destino "_CheckForUnsupportedNETCoreVersion" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (o destino "CollectPackageReferences" depende dele):
+2022-04-21T13:48:55.9842405Z        A tarefa "NETSdkError" foi ignorada devido a condição falsa; ('$(_TargetFrameworkVersionWithoutV)' > '$(NETCoreAppMaximumVersion)') foi avaliado como ('3.1' > '5.0').
+2022-04-21T13:48:55.9843541Z    2:4>Destino de compilação pronto"_CheckForUnsupportedNETCoreVersion" no projeto "RestSharpNetCoreTemplate.csproj".
+2022-04-21T13:48:55.9845365Z        Destino "_CheckForEolTargetFrameworks" ignorado devido à condição falsa; ('@(_EolNetCoreTargetFrameworkVersions->AnyHaveMetadataValue('Identity', '$(_TargetFrameworkVersionWithoutV)'))' and '$(TargetFrameworkIdentifier)' == '.NETCoreApp' and '$(CheckEolTargetFramework)' == 'true') foi avaliado como ('false' and '.NETCoreApp' == '.NETCoreApp' and 'true' == 'true').
+2022-04-21T13:48:55.9847563Z    2:4>Destino "_CheckForUnsupportedCppNETCoreVersion" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (o destino "CollectPackageReferences" depende dele):
+2022-04-21T13:48:55.9849786Z        A tarefa "NETSdkError" foi ignorada devido a condição falsa; ('$(TargetFrameworkIdentifier)' == '.NETCoreApp' and '$(_TargetFrameworkVersionWithoutV)' < '3.1' and ('$(Language)' == 'C++' and '$(_EnablePackageReferencesInVCProjects)' != 'true')) foi avaliado como ('.NETCoreApp' == '.NETCoreApp' and '3.1' < '3.1' and ('C#' == 'C++' and '' != 'true')).
+2022-04-21T13:48:55.9851361Z    2:4>Destino de compilação pronto"_CheckForUnsupportedCppNETCoreVersion" no projeto "RestSharpNetCoreTemplate.csproj".
+2022-04-21T13:48:55.9852737Z        Destino "_CheckForUnsupportedNETStandardVersion" ignorado devido à condição falsa; ('$(TargetFrameworkIdentifier)' == '.NETStandard' And '$(NETStandardMaximumVersion)' != '') foi avaliado como ('.NETCoreApp' == '.NETStandard' And '' != '').
+2022-04-21T13:48:55.9854665Z        Destino "_CheckForUnsupportedTargetFrameworkAndFeatureCombination" ignorado devido à condição falsa; ('$(TargetFrameworkIdentifier)' == '.NETFramework') foi avaliado como ('.NETCoreApp' == '.NETFramework').
+2022-04-21T13:48:55.9916174Z    2:4>Destino "UpdateAspNetToFrameworkReference" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.Shared.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (o destino "ApplyImplicitVersions" depende dele):
+2022-04-21T13:48:55.9918588Z        Usando a tarefa "CheckIfPackageReferenceShouldBeFrameworkReference" do assembly "C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\..\tools\net5.0/Microsoft.NET.Build.Tasks.dll".
+2022-04-21T13:48:55.9922048Z        Tarefa "CheckIfPackageReferenceShouldBeFrameworkReference"
+2022-04-21T13:48:55.9938628Z        Tarefa em execução pronta "CheckIfPackageReferenceShouldBeFrameworkReference".
+2022-04-21T13:48:55.9940537Z        A tarefa "NETSdkError" foi ignorada devido a condição falsa; ('$(_ShouldRemoveAspNetCoreAll)' == 'true') foi avaliado como ('False' == 'true').
+2022-04-21T13:48:55.9942141Z        Tarefa "CheckIfPackageReferenceShouldBeFrameworkReference"
+2022-04-21T13:48:55.9943145Z        Tarefa em execução pronta "CheckIfPackageReferenceShouldBeFrameworkReference".
+2022-04-21T13:48:55.9944380Z        A tarefa "NETSdkWarning" foi ignorada devido a condição falsa; ('$(_ShouldRemoveAspNetCoreApp)' == 'true') foi avaliado como ('False' == 'true').
+2022-04-21T13:48:55.9945659Z    2:4>Destino de compilação pronto"UpdateAspNetToFrameworkReference" no projeto "RestSharpNetCoreTemplate.csproj".
+2022-04-21T13:48:55.9947581Z        Destino "IncludeTargetingPackReference" ignorado devido à condição falsa; ('$(TargetFrameworkMoniker)' != '' and '$(TargetFrameworkIdentifier)' == '.NETFramework' and '$(AutomaticallyUseReferenceAssemblyPackages)' == 'true') foi avaliado como ('.NETCoreApp,Version=v3.1' != '' and '.NETCoreApp' == '.NETFramework' and 'true' == 'true').
+2022-04-21T13:48:55.9950099Z    2:4>Destino "CheckForImplicitPackageReferenceOverrides" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.Shared.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (o destino "ApplyImplicitVersions" depende dele):
+2022-04-21T13:48:55.9952207Z        Usando a tarefa "CheckForImplicitPackageReferenceOverrides" do assembly "C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\..\tools\net5.0/Microsoft.NET.Build.Tasks.dll".
+2022-04-21T13:48:55.9953349Z        Tarefa "CheckForImplicitPackageReferenceOverrides"
+2022-04-21T13:48:55.9980202Z        Tarefa em execução pronta "CheckForImplicitPackageReferenceOverrides".
+2022-04-21T13:48:55.9982901Z    2:4>Destino de compilação pronto"CheckForImplicitPackageReferenceOverrides" no projeto "RestSharpNetCoreTemplate.csproj".
+2022-04-21T13:48:55.9985340Z    2:4>Destino "ApplyImplicitVersions" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.Shared.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (o destino "CollectPackageReferences" depende dele):
+2022-04-21T13:48:55.9987860Z        Usando a tarefa "ApplyImplicitVersions" do assembly "C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\..\tools\net5.0/Microsoft.NET.Build.Tasks.dll".
+2022-04-21T13:48:55.9989363Z        Tarefa "ApplyImplicitVersions"
+2022-04-21T13:48:56.0014845Z        Tarefa em execução pronta "ApplyImplicitVersions".
+2022-04-21T13:48:56.0019277Z    2:4>Destino de compilação pronto"ApplyImplicitVersions" no projeto "RestSharpNetCoreTemplate.csproj".
+2022-04-21T13:48:56.0022417Z        Destino "CheckForImplicitPackageReferenceOverrides" ignorado. Compilado anteriormente com êxito.
+2022-04-21T13:48:56.0025010Z    2:4>Destino "AddWindowsSdkKnownFrameworkReferences" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (o destino "ProcessFrameworkReferences" depende dele):
+2022-04-21T13:48:56.0028531Z        Usando a tarefa "CreateWindowsSdkKnownFrameworkReferences" do assembly "C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\..\tools\net5.0/Microsoft.NET.Build.Tasks.dll".
+2022-04-21T13:48:56.0030695Z        Tarefa "CreateWindowsSdkKnownFrameworkReferences"
+2022-04-21T13:48:56.0065688Z        Tarefa em execução pronta "CreateWindowsSdkKnownFrameworkReferences".
+2022-04-21T13:48:56.0067101Z    2:4>Destino de compilação pronto"AddWindowsSdkKnownFrameworkReferences" no projeto "RestSharpNetCoreTemplate.csproj".
+2022-04-21T13:48:56.0069789Z        Destino "_NormalizeTargetPlatformVersion" ignorado devido à condição falsa; ('$(TargetPlatformVersion)' != '' and '$(TargetFrameworkIdentifier)' == '.NETCoreApp' and $([MSBuild]::VersionGreaterThanOrEquals($(TargetFrameworkVersion), 5.0)) and ('$(Language)' != 'C++' or '$(_EnablePackageReferencesInVCProjects)' == 'true')) foi avaliado como ('7.0' != '' and '.NETCoreApp' == '.NETCoreApp' and False and ('C#' != 'C++' or '' == 'true')).
+2022-04-21T13:48:56.0072824Z    2:4>Destino "_CheckForLanguageAndFeatureCombinationSupport" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.RuntimeIdentifierInference.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (o destino "ProcessFrameworkReferences" depende dele):
+2022-04-21T13:48:56.0075096Z        A tarefa "NETSdkError" foi ignorada devido a condição falsa; (('$(Language)' == 'C++' and '$(_EnablePackageReferencesInVCProjects)' != 'true') and $(OutputType) != 'library' and '$(TargetFrameworkIdentifier)' == '.NETCoreApp') foi avaliado como (('C#' == 'C++' and '' != 'true') and Library != 'library' and '.NETCoreApp' == '.NETCoreApp').
+2022-04-21T13:48:56.0077826Z        A tarefa "NETSdkError" foi ignorada devido a condição falsa; (('$(Language)' == 'C++' and '$(_EnablePackageReferencesInVCProjects)' != 'true') and $(EnableComHosting) == 'true') foi avaliado como (('C#' == 'C++' and '' != 'true') and  == 'true').
+2022-04-21T13:48:56.0079976Z        A tarefa "NETSdkError" foi ignorada devido a condição falsa; (('$(Language)' == 'C++' and '$(_EnablePackageReferencesInVCProjects)' != 'true') and $(SelfContained) == 'true') foi avaliado como (('C#' == 'C++' and '' != 'true') and  == 'true').
+2022-04-21T13:48:56.0081732Z    2:4>Destino de compilação pronto"_CheckForLanguageAndFeatureCombinationSupport" no projeto "RestSharpNetCoreTemplate.csproj".
+2022-04-21T13:48:56.0083602Z    2:4>Destino "ProcessFrameworkReferences" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (o destino "CollectPackageReferences" depende dele):
+2022-04-21T13:48:56.0085676Z        Usando a tarefa "CheckForDuplicateFrameworkReferences" do assembly "C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\..\tools\net5.0/Microsoft.NET.Build.Tasks.dll".
+2022-04-21T13:48:56.0086810Z        Tarefa "CheckForDuplicateFrameworkReferences"
+2022-04-21T13:48:56.0101615Z        Tarefa em execução pronta "CheckForDuplicateFrameworkReferences".
+2022-04-21T13:48:56.0103627Z        Usando a tarefa "ProcessFrameworkReferences" do assembly "C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\..\tools\net5.0/Microsoft.NET.Build.Tasks.dll".
+2022-04-21T13:48:56.0104813Z        Tarefa "ProcessFrameworkReferences"
+2022-04-21T13:48:56.0794524Z        Tarefa em execução pronta "ProcessFrameworkReferences".
+2022-04-21T13:48:56.0797150Z        Usando a tarefa "ResolveAppHosts" do assembly "C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\..\tools\net5.0/Microsoft.NET.Build.Tasks.dll".
+2022-04-21T13:48:56.0798284Z        Tarefa "ResolveAppHosts"
+2022-04-21T13:48:56.0841949Z        Tarefa em execução pronta "ResolveAppHosts".
+2022-04-21T13:48:56.0844244Z    2:4>Destino de compilação pronto"ProcessFrameworkReferences" no projeto "RestSharpNetCoreTemplate.csproj".
+2022-04-21T13:48:56.0848112Z        Destino "IncludeTargetingPackReference" ignorado devido à condição falsa; ('$(TargetFrameworkMoniker)' != '' and '$(TargetFrameworkIdentifier)' == '.NETFramework' and '$(AutomaticallyUseReferenceAssemblyPackages)' == 'true') foi avaliado como ('.NETCoreApp,Version=v3.1' != '' and '.NETCoreApp' == '.NETFramework' and 'true' == 'true').
+2022-04-21T13:48:56.0851294Z    2:4>Destino "_CheckForObsoleteDotNetCliToolReferences" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.ObsoleteReferences.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (o destino "CollectPackageReferences" depende dele):
+2022-04-21T13:48:56.0853916Z        A tarefa "NETSdkWarning" foi ignorada devido a condição falsa; ( '%(_ReferenceToObsoleteDotNetCliTool.Identity)' != '' ) foi avaliado como ( '' != '' ).
+2022-04-21T13:48:56.0855516Z    2:4>Destino de compilação pronto"_CheckForObsoleteDotNetCliToolReferences" no projeto "RestSharpNetCoreTemplate.csproj".
+2022-04-21T13:48:56.0857452Z    2:4>Destino "CollectPackageReferences" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\NuGet.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (o destino "_GetRestoreProjectStyle" depende dele):
+2022-04-21T13:48:56.0860011Z    2:4>Destino de compilação pronto"CollectPackageReferences" no projeto "RestSharpNetCoreTemplate.csproj".
+2022-04-21T13:48:56.0865676Z    2:4>Destino "_GetRestoreProjectStyle" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\NuGet.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (o destino "_GenerateRestoreSpecs" depende dele):
+2022-04-21T13:48:56.0869185Z        Usando a tarefa "GetRestoreProjectStyleTask" do assembly "C:\Program Files\dotnet\sdk\5.0.400\NuGet.Build.Tasks.dll".
+2022-04-21T13:48:56.0870435Z        Tarefa "GetRestoreProjectStyleTask"
+2022-04-21T13:48:56.0874151Z          (in) HasPackageReferenceItems 'True'
+2022-04-21T13:48:56.0877836Z          (in) MSBuildProjectDirectory 'C:\AzureDevOpsAgents\_work\1\s'
+2022-04-21T13:48:56.0879265Z          (in) MSBuildProjectName 'RestSharpNetCoreTemplate'
+2022-04-21T13:48:56.0879938Z          (in) ProjectJsonPath ''
+2022-04-21T13:48:56.0880557Z          (in) RestoreProjectStyle 'PackageReference'
+2022-04-21T13:48:56.0891536Z          (out) IsPackageReferenceCompatibleProjectStyle 'True'
+2022-04-21T13:48:56.0892707Z          (out) ProjectStyle 'PackageReference'
+2022-04-21T13:48:56.0893581Z        Tarefa em execução pronta "GetRestoreProjectStyleTask".
+2022-04-21T13:48:56.0895337Z    2:4>Destino de compilação pronto"_GetRestoreProjectStyle" no projeto "RestSharpNetCoreTemplate.csproj".
+2022-04-21T13:48:56.0897374Z    2:4>Destino "_GenerateRestoreSpecs" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\NuGet.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (o destino "_GenerateRestoreGraphProjectEntry" depende dele):
+2022-04-21T13:48:56.0899406Z        Usando a tarefa "Message" do assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+2022-04-21T13:48:56.0900713Z        Tarefa "Message"
+2022-04-21T13:48:56.0902182Z          Restore entry point C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj
+2022-04-21T13:48:56.0903489Z        Tarefa em execução pronta "Message".
+2022-04-21T13:48:56.0904987Z    2:4>Destino de compilação pronto"_GenerateRestoreSpecs" no projeto "RestSharpNetCoreTemplate.csproj".
+2022-04-21T13:48:56.0907369Z    2:4>Destino "_GetRestoreSettingsOverrides" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\NuGet.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (o destino "_GetRestoreSettings" depende dele):
+2022-04-21T13:48:56.0912349Z        A tarefa "MSBuild" foi ignorada devido a condição falsa; ( '$(RestorePackagesPath)' != '' ) foi avaliado como ( '' != '' ).
+2022-04-21T13:48:56.0914527Z        A tarefa "MSBuild" foi ignorada devido a condição falsa; ( '$(RestoreRepositoryPathOverride)' != '' ) foi avaliado como ( '' != '' ).
+2022-04-21T13:48:56.0916478Z        A tarefa "MSBuild" foi ignorada devido a condição falsa; ( '$(RestoreSources)' != '' ) foi avaliado como ( '' != '' ).
+2022-04-21T13:48:56.0919049Z        A tarefa "MSBuild" foi ignorada devido a condição falsa; ( '$(RestoreFallbackFolders)' != '' ) foi avaliado como ( '' != '' ).
+2022-04-21T13:48:56.0920694Z    2:4>Destino de compilação pronto"_GetRestoreSettingsOverrides" no projeto "RestSharpNetCoreTemplate.csproj".
+2022-04-21T13:48:56.0922848Z    2:4>Destino "_GetRestoreSettingsPerFramework" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\NuGet.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (o destino "_GetRestoreSettingsCurrentProject" depende dele):
+2022-04-21T13:48:56.0924833Z    2:4>Destino de compilação pronto"_GetRestoreSettingsPerFramework" no projeto "RestSharpNetCoreTemplate.csproj".
+2022-04-21T13:48:56.0926625Z    2:4>Destino "_GetRestoreSettingsCurrentProject" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\NuGet.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (o destino "_GetRestoreSettings" depende dele):
+2022-04-21T13:48:56.0929376Z    2:4>Destino de compilação pronto"_GetRestoreSettingsCurrentProject" no projeto "RestSharpNetCoreTemplate.csproj".
+2022-04-21T13:48:56.0931857Z        Destino "_GetRestoreSettingsAllFrameworks" ignorado devido à condição falsa; ( '$(TargetFrameworks)' != '' AND '$(PackageReferenceCompatibleProjectStyle)' == 'true' ) foi avaliado como ( '' != '' AND 'True' == 'true' ).
+2022-04-21T13:48:56.0934980Z    2:4>Destino "_GetRestoreSettings" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\NuGet.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (o destino "_GenerateDotnetCliToolReferenceSpecs" depende dele):
+2022-04-21T13:48:56.0937472Z        Usando a tarefa "GetRestoreSettingsTask" do assembly "C:\Program Files\dotnet\sdk\5.0.400\NuGet.Build.Tasks.dll".
+2022-04-21T13:48:56.0938825Z        Tarefa "GetRestoreSettingsTask"
+2022-04-21T13:48:56.0940059Z          (in) ProjectUniqueName 'C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj'
+2022-04-21T13:48:56.0941558Z          (in) RestoreSources ''
+2022-04-21T13:48:56.0942405Z          (in) RestorePackagesPath ''
+2022-04-21T13:48:56.0943082Z          (in) RestoreRepositoryPath ''
+2022-04-21T13:48:56.0943726Z          (in) RestoreFallbackFolders ''
+2022-04-21T13:48:56.0944604Z          (in) RestoreConfigFile 'C:\AzureDevOpsAgents\_work\1\Nuget\tempNuGet_15.config'
+2022-04-21T13:48:56.0945571Z          (in) RestoreSolutionDirectory ''
+2022-04-21T13:48:56.0946218Z          (in) RestoreRootConfigDirectory ''
+2022-04-21T13:48:56.0946772Z          (in) RestorePackagesPathOverride ''
+2022-04-21T13:48:56.0947359Z          (in) RestoreSourcesOverride ''
+2022-04-21T13:48:56.0947938Z          (in) RestoreFallbackFoldersOverride ''
+2022-04-21T13:48:56.0948509Z          (in) RestoreProjectStyle 'PackageReference'
+2022-04-21T13:48:56.0949145Z          (in) MSBuildStartupDirectory 'C:\AzureDevOpsAgents\_work\1\s'
+2022-04-21T13:48:56.1331202Z          (out) OutputPackagesPath 'C:\Users\leandroMatias\.nuget\packages\'
+2022-04-21T13:48:56.1332586Z          (out) OutputRepositoryPath ''
+2022-04-21T13:48:56.1333472Z          (out) OutputSources 'https://api.nuget.org/v3/index.json'
+2022-04-21T13:48:56.1334316Z          (out) OutputFallbackFolders ''
+2022-04-21T13:48:56.1336623Z          (out) OutputConfigFilePaths 'C:\AzureDevOpsAgents\_work\1\Nuget\tempNuGet_15.config'
+2022-04-21T13:48:56.1339807Z        Tarefa em execução pronta "GetRestoreSettingsTask".
+2022-04-21T13:48:56.1341489Z    2:4>Destino de compilação pronto"_GetRestoreSettings" no projeto "RestSharpNetCoreTemplate.csproj".
+2022-04-21T13:48:56.1343463Z    2:4>Destino "_GenerateDotnetCliToolReferenceSpecs" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\NuGet.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (o destino "_GenerateRestoreGraphProjectEntry" depende dele):
+2022-04-21T13:48:56.1346340Z        Usando a tarefa "GetRestoreDotnetCliToolsTask" do assembly "C:\Program Files\dotnet\sdk\5.0.400\NuGet.Build.Tasks.dll".
+2022-04-21T13:48:56.1349795Z        Tarefa "GetRestoreDotnetCliToolsTask"
+2022-04-21T13:48:56.1351236Z          (in) ProjectPath 'C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj'
+2022-04-21T13:48:56.1352136Z          (in) DotnetCliToolReferences ''
+2022-04-21T13:48:56.1352811Z          (in) RestoreSources 'https://api.nuget.org/v3/index.json'
+2022-04-21T13:48:56.1353627Z          (in) RestorePackagesPath 'C:\Users\leandroMatias\.nuget\packages\'
+2022-04-21T13:48:56.1354721Z          (in) RestoreConfigFilePaths 'C:\AzureDevOpsAgents\_work\1\Nuget\tempNuGet_15.config'
+2022-04-21T13:48:56.1355790Z        Tarefa em execução pronta "GetRestoreDotnetCliToolsTask".
+2022-04-21T13:48:56.1357008Z    2:4>Destino de compilação pronto"_GenerateDotnetCliToolReferenceSpecs" no projeto "RestSharpNetCoreTemplate.csproj".
+2022-04-21T13:48:56.1358820Z    2:4>Destino "_GenerateRestoreGraphProjectEntry" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\NuGet.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (ponto de entrada):
+2022-04-21T13:48:56.1360627Z    2:4>Destino de compilação pronto"_GenerateRestoreGraphProjectEntry" no projeto "RestSharpNetCoreTemplate.csproj".
+2022-04-21T13:48:56.1361965Z    2:4>Projeto de compilação pronto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (_GenerateRestoreGraphProjectEntry destino(s)).
+2022-04-21T13:48:56.1363140Z      1>Tarefa em execução pronta "MSBuild".
+2022-04-21T13:48:56.1364330Z        Tarefa "MSBuild"
+2022-04-21T13:48:56.1365395Z          Propriedades globais:
+2022-04-21T13:48:56.1366155Z            ExcludeRestorePackageImports=true
+2022-04-21T13:48:56.1366962Z            _RestoreSolutionFileUsed=true
+2022-04-21T13:48:56.1367713Z            SolutionDir=C:\AzureDevOpsAgents\_work\1\s\
+2022-04-21T13:48:56.1368450Z            SolutionName=RestSharpNetCoreTemplate
+2022-04-21T13:48:56.1369673Z            SolutionFileName=RestSharpNetCoreTemplate.sln
+2022-04-21T13:48:56.1370769Z            SolutionPath=C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.sln
+2022-04-21T13:48:56.1371697Z            SolutionExt=.sln
+2022-04-21T13:48:56.1372482Z          Propriedades adicionais do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj":
+2022-04-21T13:48:56.1373251Z            Configuration=Debug
+2022-04-21T13:48:56.1373895Z            Platform=AnyCPU
+2022-04-21T13:48:56.1375182Z      1>O projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.sln" (1) está compilando "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (2:5) no nó 1 (_GenerateProjectRestoreGraph destino(s)).
+2022-04-21T13:48:56.1376891Z    2:5>Compilando com a versão das ferramentas "Current".
+2022-04-21T13:48:56.1377766Z        Destino "_GetRestoreProjectStyle" ignorado. Compilado anteriormente com êxito.
+2022-04-21T13:48:56.1379135Z        Destino "_GetRestoreProjectStyle" ignorado. Compilado anteriormente com êxito.
+2022-04-21T13:48:56.1380193Z        Destino "_GetRestoreProjectStyle" ignorado. Compilado anteriormente com êxito.
+2022-04-21T13:48:56.1381581Z    2:5>Destino "_GetRestoreTargetFrameworksOutput" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\NuGet.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (o destino "_GenerateRestoreProjectSpec" depende dele):
+2022-04-21T13:48:56.1384204Z        Usando a tarefa "GetProjectTargetFrameworksTask" do assembly "C:\Program Files\dotnet\sdk\5.0.400\NuGet.Build.Tasks.dll".
+2022-04-21T13:48:56.1385442Z        Tarefa "GetProjectTargetFrameworksTask"
+2022-04-21T13:48:56.1386428Z          (in) ProjectPath 'C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj'
+2022-04-21T13:48:56.1387299Z          (in) TargetFrameworkMoniker '.NETCoreApp,Version=v3.1'
+2022-04-21T13:48:56.1388121Z          (in) TargetPlatformIdentifier 'Windows'
+2022-04-21T13:48:56.1388811Z          (in) TargetPlatformVersion '7.0'
+2022-04-21T13:48:56.1389541Z          (in) TargetPlatformMinVersion '7.0'
+2022-04-21T13:48:56.1390619Z          (in) TargetFrameworks ''
+2022-04-21T13:48:56.1391158Z          (in) TargetFramework 'netcoreapp3.1'
+2022-04-21T13:48:56.1391818Z          (out) ProjectTargetFrameworks 'netcoreapp3.1'
+2022-04-21T13:48:56.1392577Z        Tarefa em execução pronta "GetProjectTargetFrameworksTask".
+2022-04-21T13:48:56.1393549Z    2:5>Destino de compilação pronto"_GetRestoreTargetFrameworksOutput" no projeto "RestSharpNetCoreTemplate.csproj".
+2022-04-21T13:48:56.1394874Z        Destino "_GetRestoreSettings" ignorado. Compilado anteriormente com êxito.
+2022-04-21T13:48:56.1397533Z    2:5>Destino "_GenerateRestoreProjectSpec" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\NuGet.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (o destino "_GenerateProjectRestoreGraph" depende dele):
+2022-04-21T13:48:56.1399395Z        Tarefa "ConvertToAbsolutePath"
+2022-04-21T13:48:56.1400428Z        Tarefa em execução pronta "ConvertToAbsolutePath".
+2022-04-21T13:48:56.1402002Z    2:5>Destino de compilação pronto"_GenerateRestoreProjectSpec" no projeto "RestSharpNetCoreTemplate.csproj".
+2022-04-21T13:48:56.1403754Z        Destino "_GenerateProjectRestoreGraphAllFrameworks" ignorado devido à condição falsa; ( '$(TargetFrameworks)' != '' ) foi avaliado como ( '' != '' ).
+2022-04-21T13:48:56.1405097Z        Destino "_GetRestoreProjectStyle" ignorado. Compilado anteriormente com êxito.
+2022-04-21T13:48:56.1406166Z        Destino "CollectPackageReferences" ignorado. Compilado anteriormente com êxito.
+2022-04-21T13:48:56.1408009Z    2:5>Destino "CollectPackageDownloads" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\NuGet.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (o destino "_GenerateProjectRestoreGraphPerFramework" depende dele):
+2022-04-21T13:48:56.1409894Z    2:5>Destino de compilação pronto"CollectPackageDownloads" no projeto "RestSharpNetCoreTemplate.csproj".
+2022-04-21T13:48:56.1411471Z    2:5>Destino "CollectFrameworkReferences" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\NuGet.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (o destino "_GenerateProjectRestoreGraphPerFramework" depende dele):
+2022-04-21T13:48:56.1413381Z    2:5>Destino de compilação pronto"CollectFrameworkReferences" no projeto "RestSharpNetCoreTemplate.csproj".
+2022-04-21T13:48:56.1415005Z    2:5>Destino "CollectCentralPackageVersions" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\NuGet.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (o destino "_GenerateProjectRestoreGraphPerFramework" depende dele):
+2022-04-21T13:48:56.1416397Z    2:5>Destino de compilação pronto"CollectCentralPackageVersions" no projeto "RestSharpNetCoreTemplate.csproj".
+2022-04-21T13:48:56.1417403Z        Destino "PrepRestoreForStoreProjects" ignorado devido à condição falsa; ('$(StorePackageName)' != '') foi avaliado como ('' != '').
+2022-04-21T13:48:56.1419306Z    2:5>Destino "_GenerateProjectRestoreGraphPerFramework" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\NuGet.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (o destino "_GenerateProjectRestoreGraphCurrentProject" depende dele):
+2022-04-21T13:48:56.1421189Z        Usando a tarefa "GetRestoreProjectReferencesTask" do assembly "C:\Program Files\dotnet\sdk\5.0.400\NuGet.Build.Tasks.dll".
+2022-04-21T13:48:56.1422609Z        Tarefa "GetRestoreProjectReferencesTask"
+2022-04-21T13:48:56.1423318Z          (in) ProjectUniqueName 'C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj'
+2022-04-21T13:48:56.1424161Z          (in) TargetFrameworks 'netcoreapp3.1'
+2022-04-21T13:48:56.1425830Z          (in) ProjectReferences ''
+2022-04-21T13:48:56.1426887Z          (in) ParentProjectPath 'C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj'
+2022-04-21T13:48:56.1429500Z        Tarefa em execução pronta "GetRestoreProjectReferencesTask".
+2022-04-21T13:48:56.1431312Z        Usando a tarefa "GetRestorePackageReferencesTask" do assembly "C:\Program Files\dotnet\sdk\5.0.400\NuGet.Build.Tasks.dll".
+2022-04-21T13:48:56.1432433Z        Tarefa "GetRestorePackageReferencesTask"
+2022-04-21T13:48:56.1433303Z          (in) ProjectUniqueName 'C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj'
+2022-04-21T13:48:56.1434173Z          (in) TargetFrameworks 'netcoreapp3.1'
+2022-04-21T13:48:56.1435802Z          (in) PackageReferences 'ExtentReports.Core;Microsoft.Extensions.Configuration;Microsoft.Extensions.Configuration.FileExtensions;Microsoft.Extensions.Configuration.Json;Microsoft.NET.Test.Sdk;MySql.Data;Newtonsoft.Json;Npgsql;Npgsql.EntityFrameworkCore.PostgreSQL;NUnit;NUnit3TestAdapter;Oracle.ManagedDataAccess;RestSharp;System.Data.SqlClient;System.Text.Encoding.CodePages'
+2022-04-21T13:48:56.1437484Z        Tarefa em execução pronta "GetRestorePackageReferencesTask".
+2022-04-21T13:48:56.1438871Z        A tarefa "GetCentralPackageVersionsTask" foi ignorada devido a condição falsa; ( '$(PackageReferenceCompatibleProjectStyle)' == 'true' AND '$(_CentralPackageVersionsEnabled)' == 'true' ) foi avaliado como ( 'True' == 'true' AND '' == 'true' ).
+2022-04-21T13:48:56.1440757Z        Usando a tarefa "GetRestorePackageDownloadsTask" do assembly "C:\Program Files\dotnet\sdk\5.0.400\NuGet.Build.Tasks.dll".
+2022-04-21T13:48:56.1442097Z        Tarefa "GetRestorePackageDownloadsTask"
+2022-04-21T13:48:56.1443575Z          (in) ProjectUniqueName 'C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj'
+2022-04-21T13:48:56.1444805Z          (in) TargetFrameworks 'netcoreapp3.1'
+2022-04-21T13:48:56.1445567Z          (in) PackageDownloads ''
+2022-04-21T13:48:56.1446210Z        Tarefa em execução pronta "GetRestorePackageDownloadsTask".
+2022-04-21T13:48:56.1447040Z        Usando a tarefa "GetRestoreFrameworkReferencesTask" do assembly "C:\Program Files\dotnet\sdk\5.0.400\NuGet.Build.Tasks.dll".
+2022-04-21T13:48:56.1447798Z        Tarefa "GetRestoreFrameworkReferencesTask"
+2022-04-21T13:48:56.1448515Z          (in) ProjectUniqueName 'C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj'
+2022-04-21T13:48:56.1449294Z          (in) TargetFrameworks 'netcoreapp3.1'
+2022-04-21T13:48:56.1449925Z          (in) FrameworkReferences 'Microsoft.NETCore.App'
+2022-04-21T13:48:56.1450735Z        Tarefa em execução pronta "GetRestoreFrameworkReferencesTask".
+2022-04-21T13:48:56.1452744Z    2:5>Destino de compilação pronto"_GenerateProjectRestoreGraphPerFramework" no projeto "RestSharpNetCoreTemplate.csproj".
+2022-04-21T13:48:56.1454690Z    2:5>Destino "_GenerateProjectRestoreGraphCurrentProject" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\NuGet.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (o destino "_GenerateRestoreDependencies" depende dele):
+2022-04-21T13:48:56.1456985Z    2:5>Destino de compilação pronto"_GenerateProjectRestoreGraphCurrentProject" no projeto "RestSharpNetCoreTemplate.csproj".
+2022-04-21T13:48:56.1459116Z    2:5>Destino "_GenerateRestoreDependencies" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\NuGet.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (o destino "_GenerateProjectRestoreGraph" depende dele):
+2022-04-21T13:48:56.1461094Z    2:5>Destino de compilação pronto"_GenerateRestoreDependencies" no projeto "RestSharpNetCoreTemplate.csproj".
+2022-04-21T13:48:56.1464546Z    2:5>Destino "_GenerateProjectRestoreGraph" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\NuGet.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (ponto de entrada):
+2022-04-21T13:48:56.1466461Z    2:5>Destino de compilação pronto"_GenerateProjectRestoreGraph" no projeto "RestSharpNetCoreTemplate.csproj".
+2022-04-21T13:48:56.1468047Z    2:5>Projeto de compilação pronto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj" (_GenerateProjectRestoreGraph destino(s)).
+2022-04-21T13:48:56.1469540Z      1>Tarefa em execução pronta "MSBuild".
+2022-04-21T13:48:56.1471178Z      1>Destino de compilação pronto"_GenerateRestoreGraph" no projeto "RestSharpNetCoreTemplate.sln".
+2022-04-21T13:48:56.1472733Z      1>Destino "Restore" no arquivo "C:\Program Files\dotnet\sdk\5.0.400\NuGet.targets" do projeto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.sln" (ponto de entrada):
+2022-04-21T13:48:56.1473691Z        Tarefa "RemoveDuplicates"
+2022-04-21T13:48:56.1474775Z        Tarefa em execução pronta "RemoveDuplicates".
+2022-04-21T13:48:56.1475803Z        Usando a tarefa "RestoreTask" do assembly "C:\Program Files\dotnet\sdk\5.0.400\NuGet.Build.Tasks.dll".
+2022-04-21T13:48:56.1476909Z        Tarefa "RestoreTask"
+2022-04-21T13:48:56.1477632Z          (in) RestoreGraphItems Count '19'
+2022-04-21T13:48:56.1478459Z          (in) RestoreDisableParallel 'False'
+2022-04-21T13:48:56.1479293Z          (in) RestoreNoCache 'False'
+2022-04-21T13:48:56.1480100Z          (in) RestoreIgnoreFailedSources 'False'
+2022-04-21T13:48:56.1480936Z          (in) RestoreRecursive 'True'
+2022-04-21T13:48:56.1481972Z          (in) RestoreForce 'False'
+2022-04-21T13:48:56.1482879Z          (in) HideWarningsAndErrors 'False'
+2022-04-21T13:48:56.1483732Z          (in) RestoreForceEvaluate 'False'
+2022-04-21T13:48:56.1484576Z          (in) RestorePackagesConfig 'False'
+2022-04-21T13:48:56.3522259Z          Executando a restauração com 8 trabalhos simultâneos.
+2022-04-21T13:48:56.3561594Z          Lendo o arquivo de projeto C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj.
+2022-04-21T13:48:56.4651249Z          As entradas de restauração de 'RestSharpNetCoreTemplate' foram alteradas. Continuando a restauração.
+2022-04-21T13:48:56.4692706Z          Restaurando pacotes para C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj...
+2022-04-21T13:48:56.5217565Z          Restaurando pacotes para .NETCoreApp,Version=v3.1...
+2022-04-21T13:48:56.9238159Z          Resolvendo conflitos para .NETCoreApp,Version=v3.1...
+2022-04-21T13:48:57.1539899Z      1>C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj : warning NU1701: O pacote 'Oracle.ManagedDataAccess 19.11.0' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v3.1'. Esse pacote pode não ser totalmente compatível com o seu projeto. [C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.sln]
+2022-04-21T13:48:57.2596549Z          Verificando a compatibilidade dos pacotes em .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2608293Z          Verificando compatibilidade para RestSharpNetCoreTemplate 1.0.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2609761Z          Verificando compatibilidade para ExtentReports.Core 1.0.3 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2617143Z          Verificando compatibilidade para Microsoft.Extensions.Configuration 3.1.1 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2619270Z          Verificando compatibilidade para Microsoft.Extensions.Configuration.FileExtensions 3.1.1 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2620835Z          Verificando compatibilidade para Microsoft.Extensions.Configuration.Json 3.1.1 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2622212Z          Verificando compatibilidade para Microsoft.NET.Test.Sdk 16.4.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2624229Z          Verificando compatibilidade para MySql.Data 8.0.28 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2625451Z          Verificando compatibilidade para Newtonsoft.Json 12.0.3 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2626661Z          Verificando compatibilidade para Npgsql 5.0.7 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2627958Z          Verificando compatibilidade para Npgsql.EntityFrameworkCore.PostgreSQL 5.0.7 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2629304Z          Verificando compatibilidade para NUnit 3.12.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2630842Z          Verificando compatibilidade para NUnit3TestAdapter 3.16.1 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2632141Z          Verificando compatibilidade para Oracle.ManagedDataAccess 19.11.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2633474Z          Verificando compatibilidade para RestSharp 106.10.1 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2634733Z          Verificando compatibilidade para System.Data.SqlClient 4.8.2 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2636047Z          Verificando compatibilidade para System.Text.Encoding.CodePages 6.0.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2637329Z          Verificando compatibilidade para MongoDB.Bson 2.8.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2638800Z          Verificando compatibilidade para MongoDB.Driver 2.8.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2640401Z          Verificando compatibilidade para MongoDB.Driver.Core 2.8.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2642109Z          Verificando compatibilidade para RazorEngine.NetCore 2.2.6 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2643667Z          Verificando compatibilidade para System.Configuration.ConfigurationManager 4.5.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2645147Z          Verificando compatibilidade para Microsoft.Extensions.FileProviders.Physical 3.1.1 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2647079Z          Verificando compatibilidade para Microsoft.TestPlatform.TestHost 16.4.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2648796Z          Verificando compatibilidade para Microsoft.CodeCoverage 16.4.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2650828Z          Verificando compatibilidade para BouncyCastle.NetCore 1.8.5 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2652374Z          Verificando compatibilidade para Google.Protobuf 3.14.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2653823Z          Verificando compatibilidade para K4os.Compression.LZ4.Streams 1.2.6 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2655420Z          Verificando compatibilidade para System.Buffers 4.5.1 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2656829Z          Verificando compatibilidade para System.Security.Permissions 4.7.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2658602Z          Verificando compatibilidade para Microsoft.EntityFrameworkCore 5.0.7 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2660089Z          Verificando compatibilidade para Microsoft.EntityFrameworkCore.Abstractions 5.0.7 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2661619Z          Verificando compatibilidade para Microsoft.EntityFrameworkCore.Relational 5.0.7 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2662973Z          Verificando compatibilidade para NETStandard.Library 2.0.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2664426Z          Verificando compatibilidade para Microsoft.DotNet.InternalAbstractions 1.0.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2675512Z          Verificando compatibilidade para System.ComponentModel.EventBasedAsync 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2677221Z          Verificando compatibilidade para System.ComponentModel.TypeConverter 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2678767Z          Verificando compatibilidade para System.Diagnostics.Process 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2682360Z          Verificando compatibilidade para System.Reflection 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2683690Z          Verificando compatibilidade para System.Runtime.InteropServices.RuntimeInformation 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2687144Z          Verificando compatibilidade para System.Threading.Thread 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2688502Z          Verificando compatibilidade para System.Xml.XmlDocument 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2691198Z          Verificando compatibilidade para System.Xml.XPath.XmlDocument 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2694391Z          Verificando compatibilidade para Microsoft.Win32.Registry 4.7.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2696217Z          Verificando compatibilidade para runtime.native.System.Data.SqlClient.sni 4.7.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2697652Z          Verificando compatibilidade para System.Security.Principal.Windows 4.7.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2698877Z          Verificando compatibilidade para System.Runtime.CompilerServices.Unsafe 6.0.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2700074Z          Verificando compatibilidade para System.Reflection.Emit.Lightweight 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2701209Z          Verificando compatibilidade para System.Linq.Queryable 4.0.1 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2702261Z          Verificando compatibilidade para DnsClient 1.2.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2703454Z          Verificando compatibilidade para System.Diagnostics.TextWriterTraceListener 4.0.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2704678Z          Verificando compatibilidade para System.Diagnostics.TraceSource 4.0.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2705802Z          Verificando compatibilidade para System.Net.NameResolution 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2706908Z          Verificando compatibilidade para System.Net.Security 4.3.2 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2708013Z          Verificando compatibilidade para System.Security.SecureString 4.0.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2709292Z          Verificando compatibilidade para Microsoft.AspNetCore.Razor 2.2.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2711346Z          Verificando compatibilidade para Microsoft.AspNetCore.Razor.Language 2.2.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2718189Z          Verificando compatibilidade para Microsoft.AspNetCore.Razor.Runtime 2.2.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2719809Z          Verificando compatibilidade para Microsoft.CSharp 4.5.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2721675Z          Verificando compatibilidade para Microsoft.CodeAnalysis.CSharp 2.8.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2723501Z          Verificando compatibilidade para System.Reflection.Emit 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2724862Z          Verificando compatibilidade para System.Security.Cryptography.ProtectedData 4.5.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2726341Z          Verificando compatibilidade para Microsoft.Extensions.FileProviders.Abstractions 3.1.1 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2727969Z          Verificando compatibilidade para Microsoft.Extensions.FileSystemGlobbing 3.1.1 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2729327Z          Verificando compatibilidade para Microsoft.TestPlatform.ObjectModel 16.4.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2732509Z          Verificando compatibilidade para K4os.Compression.LZ4 1.2.6 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2733942Z          Verificando compatibilidade para K4os.Hash.xxHash 1.0.6 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2735725Z          Verificando compatibilidade para System.Security.AccessControl 4.7.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2736977Z          Verificando compatibilidade para System.Windows.Extensions 4.7.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2738379Z          Verificando compatibilidade para Microsoft.EntityFrameworkCore.Analyzers 5.0.7 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2739664Z          Verificando compatibilidade para Microsoft.Extensions.Caching.Memory 5.0.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2741139Z          Verificando compatibilidade para Microsoft.Extensions.DependencyInjection 5.0.1 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2743132Z          Verificando compatibilidade para Microsoft.Extensions.Logging 5.0.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2744612Z          Verificando compatibilidade para System.Collections.Immutable 5.0.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2745979Z          Verificando compatibilidade para System.ComponentModel.Annotations 5.0.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2747381Z          Verificando compatibilidade para System.Diagnostics.DiagnosticSource 5.0.1 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2748836Z          Verificando compatibilidade para Microsoft.Extensions.Configuration.Abstractions 5.0.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2750129Z          Verificando compatibilidade para System.Resources.ResourceManager 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2751341Z          Verificando compatibilidade para System.Runtime 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2752545Z          Verificando compatibilidade para System.Threading 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2753886Z          Verificando compatibilidade para System.Threading.Tasks 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2755246Z          Verificando compatibilidade para System.Collections 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2756400Z          Verificando compatibilidade para System.Collections.NonGeneric 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2757527Z          Verificando compatibilidade para System.Collections.Specialized 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2758886Z          Verificando compatibilidade para System.ComponentModel 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2760310Z          Verificando compatibilidade para System.ComponentModel.Primitives 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2761664Z          Verificando compatibilidade para System.Globalization 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2762893Z          Verificando compatibilidade para System.Linq 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2764152Z          Verificando compatibilidade para System.Reflection.Extensions 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2765330Z          Verificando compatibilidade para System.Reflection.Primitives 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2766582Z          Verificando compatibilidade para System.Reflection.TypeExtensions 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2767775Z          Verificando compatibilidade para System.Runtime.Extensions 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2768952Z          Verificando compatibilidade para Microsoft.Win32.Primitives 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2770113Z          Verificando compatibilidade para runtime.native.System 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2771399Z          Verificando compatibilidade para System.Diagnostics.Debug 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2772640Z          Verificando compatibilidade para System.IO 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2773857Z          Verificando compatibilidade para System.IO.FileSystem 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2775025Z          Verificando compatibilidade para System.IO.FileSystem.Primitives 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2776812Z          Verificando compatibilidade para System.Runtime.Handles 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2778129Z          Verificando compatibilidade para System.Runtime.InteropServices 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2779403Z          Verificando compatibilidade para System.Text.Encoding 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2780591Z          Verificando compatibilidade para System.Text.Encoding.Extensions 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2782260Z          Verificando compatibilidade para System.Threading.ThreadPool 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2783802Z          Verificando compatibilidade para Microsoft.NETCore.Targets 1.1.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2785208Z          Verificando compatibilidade para System.Xml.ReaderWriter 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2786667Z          Verificando compatibilidade para System.Xml.XPath 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2787994Z          Verificando compatibilidade para runtime.win-arm64.runtime.native.System.Data.SqlClient.sni 4.4.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2789484Z          Verificando compatibilidade para runtime.win-x64.runtime.native.System.Data.SqlClient.sni 4.4.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2790917Z          Verificando compatibilidade para runtime.win-x86.runtime.native.System.Data.SqlClient.sni 4.4.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2792317Z          Verificando compatibilidade para System.Reflection.Emit.ILGeneration 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2793655Z          Verificando compatibilidade para System.Diagnostics.Tracing 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2794899Z          Verificando compatibilidade para System.Net.Primitives 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2796204Z          Verificando compatibilidade para runtime.native.System.Net.Security 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2797566Z          Verificando compatibilidade para runtime.native.System.Security.Cryptography.OpenSsl 4.3.2 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2798980Z          Verificando compatibilidade para System.Collections.Concurrent 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2800191Z          Verificando compatibilidade para System.Globalization.Extensions 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2801462Z          Verificando compatibilidade para System.Security.Claims 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2802865Z          Verificando compatibilidade para System.Security.Cryptography.Algorithms 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2804386Z          Verificando compatibilidade para System.Security.Cryptography.Encoding 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2806300Z          Verificando compatibilidade para System.Security.Cryptography.OpenSsl 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2807680Z          Verificando compatibilidade para System.Security.Cryptography.Primitives 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2808900Z          Verificando compatibilidade para System.Security.Cryptography.X509Certificates 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2809988Z          Verificando compatibilidade para System.Security.Principal 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2811007Z          Verificando compatibilidade para Microsoft.AspNetCore.Html.Abstractions 2.2.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2812012Z          Verificando compatibilidade para Microsoft.CodeAnalysis.Common 2.8.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2812946Z          Verificando compatibilidade para NuGet.Frameworks 5.0.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2814358Z          Verificando compatibilidade para System.Memory 4.5.4 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2815302Z          Verificando compatibilidade para Microsoft.NETCore.Platforms 3.1.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2816245Z          Verificando compatibilidade para System.Drawing.Common 4.7.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2817497Z          Verificando compatibilidade para Microsoft.Extensions.Caching.Abstractions 5.0.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2818656Z          Verificando compatibilidade para Microsoft.Extensions.DependencyInjection.Abstractions 5.0.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2820469Z          Verificando compatibilidade para Microsoft.Extensions.Logging.Abstractions 5.0.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2821694Z          Verificando compatibilidade para Microsoft.Extensions.Options 5.0.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2822882Z          Verificando compatibilidade para Microsoft.Extensions.Primitives 5.0.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2824009Z          Verificando compatibilidade para System.Text.RegularExpressions 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2825012Z          Verificando compatibilidade para System.Threading.Tasks.Extensions 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2826091Z          Verificando compatibilidade para runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl 4.3.2 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2827322Z          Verificando compatibilidade para runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl 4.3.2 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2828534Z          Verificando compatibilidade para runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl 4.3.2 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2829976Z          Verificando compatibilidade para runtime.opensuse.13.2-x64.runtime.native.System.Security.Cryptography.OpenSsl 4.3.2 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2832429Z          Verificando compatibilidade para runtime.opensuse.42.1-x64.runtime.native.System.Security.Cryptography.OpenSsl 4.3.2 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2834723Z          Verificando compatibilidade para runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl 4.3.2 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2836237Z          Verificando compatibilidade para runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl 4.3.2 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2838047Z          Verificando compatibilidade para runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl 4.3.2 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2839852Z          Verificando compatibilidade para runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl 4.3.2 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2842369Z          Verificando compatibilidade para runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl 4.3.2 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2846461Z          Verificando compatibilidade para runtime.native.System.Security.Cryptography.Apple 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2850249Z          Verificando compatibilidade para System.Runtime.Numerics 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2851778Z          Verificando compatibilidade para runtime.native.System.Net.Http 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2853173Z          Verificando compatibilidade para System.Globalization.Calendars 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2854700Z          Verificando compatibilidade para System.Security.Cryptography.Cng 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2856790Z          Verificando compatibilidade para System.Security.Cryptography.Csp 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2859365Z          Verificando compatibilidade para System.Text.Encodings.Web 4.5.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2860635Z          Verificando compatibilidade para Microsoft.CodeAnalysis.Analyzers 1.1.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2861675Z          Verificando compatibilidade para System.AppContext 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2862718Z          Verificando compatibilidade para System.Console 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2863796Z          Verificando compatibilidade para System.Diagnostics.FileVersionInfo 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2865245Z          Verificando compatibilidade para System.Diagnostics.StackTrace 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2866358Z          Verificando compatibilidade para System.Diagnostics.Tools 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2867582Z          Verificando compatibilidade para System.Dynamic.Runtime 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2869117Z          Verificando compatibilidade para System.IO.Compression 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2870868Z          Verificando compatibilidade para System.Linq.Expressions 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2872298Z          Verificando compatibilidade para System.Reflection.Metadata 1.4.2 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2873678Z          Verificando compatibilidade para System.Threading.Tasks.Parallel 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2874920Z          Verificando compatibilidade para System.ValueTuple 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2876189Z          Verificando compatibilidade para System.Xml.XDocument 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2877492Z          Verificando compatibilidade para System.Xml.XPath.XDocument 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2878656Z          Verificando compatibilidade para Microsoft.Win32.SystemEvents 4.7.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2880053Z          Verificando compatibilidade para runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.Apple 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2881429Z          Verificando compatibilidade para System.ObjectModel 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2882634Z          Verificando compatibilidade para runtime.native.System.IO.Compression 4.3.0 com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.2884326Z          Todos os pacotes e projetos são compatíveis com .NETCoreApp,Version=v3.1.
+2022-04-21T13:48:57.3314106Z          Confirmando restauração...
+2022-04-21T13:48:57.3362796Z          Gerando arquivo do MSBuild C:\AzureDevOpsAgents\_work\1\s\obj\RestSharpNetCoreTemplate.csproj.nuget.g.props.
+2022-04-21T13:48:57.3548574Z          Gravando o arquivo de ativos no disco. Caminho: C:\AzureDevOpsAgents\_work\1\s\obj\project.assets.json
+2022-04-21T13:48:57.3867205Z          Gravando arquivo de cache no disco. Caminho: C:\AzureDevOpsAgents\_work\1\s\obj\project.nuget.cache
+2022-04-21T13:48:57.3952333Z          Persisting dg to C:\AzureDevOpsAgents\_work\1\s\obj\RestSharpNetCoreTemplate.csproj.nuget.dgspec.json
+2022-04-21T13:48:57.4024756Z          C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj restaurado (em 970 ms).
+2022-04-21T13:48:57.4075125Z          
+2022-04-21T13:48:57.4076245Z          Arquivos de configuração NuGet usados:
+2022-04-21T13:48:57.4077044Z              C:\AzureDevOpsAgents\_work\1\Nuget\tempNuGet_15.config
+2022-04-21T13:48:57.4077574Z          
+2022-04-21T13:48:57.4077954Z          Feeds usados:
+2022-04-21T13:48:57.4078481Z              https://api.nuget.org/v3/index.json
+2022-04-21T13:48:57.4095749Z        Tarefa em execução pronta "RestoreTask".
+2022-04-21T13:48:57.4100920Z      1>Destino de compilação pronto"Restore" no projeto "RestSharpNetCoreTemplate.sln".
+2022-04-21T13:48:57.4114435Z      1>Projeto de compilação pronto "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.sln" (Restore destino(s)).
+2022-04-21T13:48:57.4183462Z 
+2022-04-21T13:48:57.4184553Z Compilação com êxito.
+2022-04-21T13:48:57.4189991Z 
+2022-04-21T13:48:57.4191929Z        "C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.sln" (Restore destino) (1) ->
+2022-04-21T13:48:57.4193211Z        (Restore destino) -> 
+2022-04-21T13:48:57.4195876Z          C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj : warning NU1701: O pacote 'Oracle.ManagedDataAccess 19.11.0' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v3.1'. Esse pacote pode não ser totalmente compatível com o seu projeto. [C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.sln]
+2022-04-21T13:48:57.4197911Z 
+2022-04-21T13:48:57.4198600Z     1 Aviso(s)
+2022-04-21T13:48:57.4199438Z     0 Erro(s)
+2022-04-21T13:48:57.4199865Z 
+2022-04-21T13:48:57.4200467Z Tempo Decorrido 00:00:02.11
+2022-04-21T13:48:57.5250861Z Info: Azure Pipelines hosted agents have been updated and now contain .Net 5.x SDK/Runtime along with the older .Net Core version which are currently lts. Unless you have locked down a SDK version for your project(s), 5.x SDK might be picked up which might have breaking behavior as compared to previous versions. You can learn more about the breaking changes here: https://docs.microsoft.com/en-us/dotnet/core/tools/ and https://docs.microsoft.com/en-us/dotnet/core/compatibility/ . To learn about more such changes and troubleshoot, refer here: https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/build/dotnet-core-cli?view=azure-devops#troubleshooting
+2022-04-21T13:48:57.5377262Z ##[section]Finishing: Restore
+2022-04-21T13:48:57.5424133Z ##[section]Starting: Build
+2022-04-21T13:48:57.5794191Z ==============================================================================
+2022-04-21T13:48:57.5795290Z Task         : .NET Core
+2022-04-21T13:48:57.5795981Z Description  : Build, test, package, or publish a dotnet application, or run a custom dotnet command
+2022-04-21T13:48:57.5796784Z Version      : 2.198.0
+2022-04-21T13:48:57.5797244Z Author       : Microsoft Corporation
+2022-04-21T13:48:57.5797932Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/build/dotnet-core-cli
+2022-04-21T13:48:57.5798699Z ==============================================================================
+2022-04-21T13:48:58.3689313Z [command]C:\Windows\system32\chcp.com 65001
+2022-04-21T13:48:58.3977608Z P�gina de c�digo ativa: 65001
+2022-04-21T13:48:58.4200425Z Info: .NET Core SDK/runtime 2.2 and 3.0 are now End of Life(EOL) and have been removed from all hosted agents. If you're using these SDK/runtimes on hosted agents, kindly upgrade to newer versions which are not EOL, or else use UseDotNet task to install the required version.
+2022-04-21T13:48:58.4231734Z [command]"C:\Program Files\dotnet\dotnet.exe" build "-dl:CentralLogger,\"C:\AzureDevOpsAgents\_work\_tasks\DotNetCoreCLI_5541a522-603c-47ad-91fc-a4b1d163081b\2.198.0\dotnet-build-helpers\Microsoft.TeamFoundation.DistributedTask.MSBuild.Logger.dll\"*ForwardingLogger,\"C:\AzureDevOpsAgents\_work\_tasks\DotNetCoreCLI_5541a522-603c-47ad-91fc-a4b1d163081b\2.198.0\dotnet-build-helpers\Microsoft.TeamFoundation.DistributedTask.MSBuild.Logger.dll\"" --configuration Release
+2022-04-21T13:48:59.1251858Z Microsoft(R) Build Engine versão 16.11.0+0538acc04 para .NET 
+2022-04-21T13:48:59.1253654Z Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+2022-04-21T13:48:59.1254400Z 
+2022-04-21T13:48:59.8228640Z   Determinando os projetos a serem restaurados...
+2022-04-21T13:49:00.9043433Z ##[warning]RestSharpNetCoreTemplate.csproj(0,0): Warning NU1701: O pacote 'Oracle.ManagedDataAccess 19.11.0' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v3.1'. Esse pacote pode não ser totalmente compatível com o seu projeto.
+2022-04-21T13:49:00.9077505Z C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj : warning NU1701: O pacote 'Oracle.ManagedDataAccess 19.11.0' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v3.1'. Esse pacote pode não ser totalmente compatível com o seu projeto. [C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.sln]
+2022-04-21T13:49:01.1041132Z   C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj restaurado (em 932 ms).
+2022-04-21T13:49:01.6910772Z ##[warning]RestSharpNetCoreTemplate.csproj(0,0): Warning NU1701: O pacote 'Oracle.ManagedDataAccess 19.11.0' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v3.1'. Esse pacote pode não ser totalmente compatível com o seu projeto.
+2022-04-21T13:49:01.6925911Z C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj : warning NU1701: O pacote 'Oracle.ManagedDataAccess 19.11.0' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v3.1'. Esse pacote pode não ser totalmente compatível com o seu projeto.
+2022-04-21T13:49:04.4703421Z ##[warning]Bases\RequestBase.cs(51,47): Warning CS0612: "RestSharpHelpers.ExecuteRequest(string, string, Method, IDictionary<string, string>, IDictionary<string, string>, IDictionary<string, string>, bool, string, bool, bool)" está obsoleto
+2022-04-21T13:49:04.4708847Z C:\AzureDevOpsAgents\_work\1\s\Bases\RequestBase.cs(51,47): warning CS0612: "RestSharpHelpers.ExecuteRequest(string, string, Method, IDictionary<string, string>, IDictionary<string, string>, IDictionary<string, string>, bool, string, bool, bool)" está obsoleto [C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj]
+2022-04-21T13:49:04.4719838Z ##[warning]Bases\RequestBase.cs(59,47): Warning CS0612: "RestSharpHelpers.ExecuteFileRequest(string, string, Method, IDictionary<string, string>, IDictionary<string, string>, IDictionary<string, string>, bool, string, bool, bool, Enum)" está obsoleto
+2022-04-21T13:49:04.4724853Z C:\AzureDevOpsAgents\_work\1\s\Bases\RequestBase.cs(59,47): warning CS0612: "RestSharpHelpers.ExecuteFileRequest(string, string, Method, IDictionary<string, string>, IDictionary<string, string>, IDictionary<string, string>, bool, string, bool, bool, Enum)" está obsoleto [C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj]
+2022-04-21T13:49:04.8278479Z   RestSharpNetCoreTemplate -> C:\AzureDevOpsAgents\_work\1\s\bin\Release\netcoreapp3.1\RestSharpNetCoreTemplate.dll
+2022-04-21T13:49:04.8531321Z 
+2022-04-21T13:49:04.8533051Z Compilação com êxito.
+2022-04-21T13:49:04.8533766Z 
+2022-04-21T13:49:04.8538990Z C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj : warning NU1701: O pacote 'Oracle.ManagedDataAccess 19.11.0' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v3.1'. Esse pacote pode não ser totalmente compatível com o seu projeto. [C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.sln]
+2022-04-21T13:49:04.8543211Z C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj : warning NU1701: O pacote 'Oracle.ManagedDataAccess 19.11.0' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v3.1'. Esse pacote pode não ser totalmente compatível com o seu projeto.
+2022-04-21T13:49:04.8546652Z C:\AzureDevOpsAgents\_work\1\s\Bases\RequestBase.cs(51,47): warning CS0612: "RestSharpHelpers.ExecuteRequest(string, string, Method, IDictionary<string, string>, IDictionary<string, string>, IDictionary<string, string>, bool, string, bool, bool)" está obsoleto [C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj]
+2022-04-21T13:49:04.8548936Z C:\AzureDevOpsAgents\_work\1\s\Bases\RequestBase.cs(59,47): warning CS0612: "RestSharpHelpers.ExecuteFileRequest(string, string, Method, IDictionary<string, string>, IDictionary<string, string>, IDictionary<string, string>, bool, string, bool, bool, Enum)" está obsoleto [C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj]
+2022-04-21T13:49:04.8550312Z     4 Aviso(s)
+2022-04-21T13:49:04.8550790Z     0 Erro(s)
+2022-04-21T13:49:04.8551173Z 
+2022-04-21T13:49:04.8551931Z Tempo Decorrido 00:00:05.61
+2022-04-21T13:49:04.9099039Z Info: Azure Pipelines hosted agents have been updated and now contain .Net 5.x SDK/Runtime along with the older .Net Core version which are currently lts. Unless you have locked down a SDK version for your project(s), 5.x SDK might be picked up which might have breaking behavior as compared to previous versions. You can learn more about the breaking changes here: https://docs.microsoft.com/en-us/dotnet/core/tools/ and https://docs.microsoft.com/en-us/dotnet/core/compatibility/ . To learn about more such changes and troubleshoot, refer here: https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/build/dotnet-core-cli?view=azure-devops#troubleshooting
+2022-04-21T13:49:04.9272873Z ##[section]Finishing: Build
+2022-04-21T13:49:04.9320999Z ##[section]Starting: Test
+2022-04-21T13:49:04.9684766Z ==============================================================================
+2022-04-21T13:49:04.9685537Z Task         : .NET Core
+2022-04-21T13:49:04.9686044Z Description  : Build, test, package, or publish a dotnet application, or run a custom dotnet command
+2022-04-21T13:49:04.9686547Z Version      : 2.198.0
+2022-04-21T13:49:04.9686898Z Author       : Microsoft Corporation
+2022-04-21T13:49:04.9687413Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/build/dotnet-core-cli
+2022-04-21T13:49:04.9688110Z ==============================================================================
+2022-04-21T13:49:05.9004991Z [command]C:\Windows\system32\chcp.com 65001
+2022-04-21T13:49:05.9259467Z P�gina de c�digo ativa: 65001
+2022-04-21T13:49:05.9430717Z Info: .NET Core SDK/runtime 2.2 and 3.0 are now End of Life(EOL) and have been removed from all hosted agents. If you're using these SDK/runtimes on hosted agents, kindly upgrade to newer versions which are not EOL, or else use UseDotNet task to install the required version.
+2022-04-21T13:49:05.9542349Z [command]"C:\Program Files\dotnet\dotnet.exe" test --logger trx --results-directory C:\AzureDevOpsAgents\_work\_temp --configuration Release
+2022-04-21T13:49:07.2377404Z   Determinando os projetos a serem restaurados...
+2022-04-21T13:49:07.7218482Z C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj : warning NU1701: O pacote 'Oracle.ManagedDataAccess 19.11.0' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v3.1'. Esse pacote pode não ser totalmente compatível com o seu projeto. [C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.sln]
+2022-04-21T13:49:07.7247428Z   Todos os projetos estão atualizados para restauração.
+2022-04-21T13:49:07.9752436Z C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj : warning NU1701: O pacote 'Oracle.ManagedDataAccess 19.11.0' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v3.1'. Esse pacote pode não ser totalmente compatível com o seu projeto.
+2022-04-21T13:49:08.3647835Z   RestSharpNetCoreTemplate -> C:\AzureDevOpsAgents\_work\1\s\bin\Release\netcoreapp3.1\RestSharpNetCoreTemplate.dll
+2022-04-21T13:49:08.3847396Z Execução de teste para C:\AzureDevOpsAgents\_work\1\s\bin\Release\netcoreapp3.1\RestSharpNetCoreTemplate.dll (.NETCoreApp,Version=v3.1)
+2022-04-21T13:49:08.5940508Z Ferramenta de Linha de Comando de Execução de Teste da Microsoft (R) Versão 16.11.0
+2022-04-21T13:49:08.5942828Z Copyright (c) Microsoft Corporation. Todos os direitos reservados.
+2022-04-21T13:49:08.5943765Z 
+2022-04-21T13:49:08.8501760Z Iniciando execução de teste, espere...
+2022-04-21T13:49:08.9731887Z 1 arquivos de teste no total corresponderam ao padrão especificado.
+2022-04-21T13:49:27.6335971Z Arquivo de resultados: C:\AzureDevOpsAgents\_work\_temp\leandroMatias_PAT-0513_2022-04-21_10_49_12.trx
+2022-04-21T13:49:27.6400116Z 
+2022-04-21T13:49:27.6445940Z Aprovado!  – Com falha:     0, Aprovado:    52, Ignorado:     0, Total:    52, Duração: 17 s - RestSharpNetCoreTemplate.dll (netcoreapp3.1)
+2022-04-21T13:49:28.7655573Z Result Attachments will be stored in LogStore
+2022-04-21T13:49:28.8053257Z Run Attachments will be stored in LogStore
+2022-04-21T13:49:28.9196931Z Info: Azure Pipelines hosted agents have been updated and now contain .Net 5.x SDK/Runtime along with the older .Net Core version which are currently lts. Unless you have locked down a SDK version for your project(s), 5.x SDK might be picked up which might have breaking behavior as compared to previous versions. You can learn more about the breaking changes here: https://docs.microsoft.com/en-us/dotnet/core/tools/ and https://docs.microsoft.com/en-us/dotnet/core/compatibility/ . To learn about more such changes and troubleshoot, refer here: https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/build/dotnet-core-cli?view=azure-devops#troubleshooting
+2022-04-21T13:49:28.9235572Z ##[section]Async Command Start: Publish test results
+2022-04-21T13:49:29.3654963Z Publishing test results to test run '24'.
+2022-04-21T13:49:29.3690890Z TestResults To Publish 52, Test run id:24
+2022-04-21T13:49:29.3739018Z Test results publishing 52, remaining: 0. Test run id: 24
+2022-04-21T13:49:30.5940278Z Published Test Run : https://dev.azure.com/leandroms165/DesafioBase2_RestSharp/_TestManagement/Runs?runId=24&_a=runCharts
+2022-04-21T13:49:30.7661063Z ##[section]Async Command End: Publish test results
+2022-04-21T13:49:30.7663690Z ##[section]Finishing: Test
+2022-04-21T13:49:30.7710666Z ##[section]Starting: Publish Artifact
+2022-04-21T13:49:30.8064380Z ==============================================================================
+2022-04-21T13:49:30.8065219Z Task         : Publish build artifacts
+2022-04-21T13:49:30.8065672Z Description  : Publish build artifacts to Azure Pipelines or a Windows file share
+2022-04-21T13:49:30.8066108Z Version      : 1.200.0
+2022-04-21T13:49:30.8066437Z Author       : Microsoft Corporation
+2022-04-21T13:49:30.8066951Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/publish-build-artifacts
+2022-04-21T13:49:30.8067540Z ==============================================================================
+2022-04-21T13:49:31.8335342Z ##[section]Async Command Start: Upload Artifact
+2022-04-21T13:49:31.8335928Z Uploading 18 files
+2022-04-21T13:49:31.8336220Z Max dedup parallelism: 192
+2022-04-21T13:49:31.8336512Z Building file tree
+2022-04-21T13:49:32.3572791Z Uploaded 0 out of 2,029,258 bytes.
+2022-04-21T13:49:35.4368685Z Uploaded 2,029,258 out of 2,029,258 bytes.
+2022-04-21T13:49:35.4388893Z Associating files
+2022-04-21T13:49:35.4389472Z Total files: 18 ---- Associated files: 0 (0%)
+2022-04-21T13:49:36.9676569Z File upload succeed.
+2022-04-21T13:49:36.9678538Z Upload 'C:\AzureDevOpsAgents\_work\1\s\bin\Release\netcoreapp3.1\Reports' to file container: '#/18925392/drop'
+2022-04-21T13:49:37.0366184Z Associated artifact 4 with build 15
+2022-04-21T13:49:37.0367096Z ##[section]Async Command End: Upload Artifact
+2022-04-21T13:49:37.0369254Z ##[section]Finishing: Publish Artifact
+2022-04-21T13:49:37.0415500Z ##[section]Starting: Checkout Leandroms165/Desafio_ApiRestSharp@master to s
+2022-04-21T13:49:37.0679770Z ==============================================================================
+2022-04-21T13:49:37.0680458Z Task         : Get sources
+2022-04-21T13:49:37.0680962Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.
+2022-04-21T13:49:37.0681403Z Version      : 1.0.0
+2022-04-21T13:49:37.0681706Z Author       : Microsoft
+2022-04-21T13:49:37.0682135Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199)
+2022-04-21T13:49:37.0682698Z ==============================================================================
+2022-04-21T13:49:37.5659533Z Cleaning any cached credential from repository: Leandroms165/Desafio_ApiRestSharp (GitHub)
+2022-04-21T13:49:37.5797114Z ##[section]Finishing: Checkout Leandroms165/Desafio_ApiRestSharp@master to s
+2022-04-21T13:49:37.5868964Z ##[section]Starting: Finalize Job
+2022-04-21T13:49:37.5903129Z TestResultLogParser: JasmineTestResultParser : Starting jasmine test result parser.
+2022-04-21T13:49:37.5903633Z TestResultLogParser: JestTestResultParser : Starting jest test result parser.
+2022-04-21T13:49:37.5904117Z TestResultLogParser: MochaTestResultParser : Starting mocha test result parser.
+2022-04-21T13:49:37.5904597Z TestResultLogParser: PythonTestResultParser : Starting python test result parser.
+2022-04-21T13:49:37.8461762Z TestResultLogParser: Waiting for log plugin to finish, pending process 2 log lines.
+2022-04-21T13:49:37.8484982Z Cleaning up task key
+2022-04-21T13:49:37.8488961Z Start cleaning up orphan processes.
+2022-04-21T13:49:37.8662677Z Terminate orphan process: pid (23068) (dotnet)
+2022-04-21T13:49:37.8684197Z Terminate orphan process: pid (16480) (conhost)
+2022-04-21T13:49:37.8689241Z ##[section]Finishing: Finalize Job
+2022-04-21T13:49:37.8765007Z ##[section]Finishing: Agent job 1

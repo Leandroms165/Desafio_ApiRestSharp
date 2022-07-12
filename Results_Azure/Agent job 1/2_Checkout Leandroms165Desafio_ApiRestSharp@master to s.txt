@@ -1,0 +1,32 @@
+2022-04-21T13:48:46.7027700Z ##[section]Starting: Checkout Leandroms165/Desafio_ApiRestSharp@master to s
+2022-04-21T13:48:46.7926432Z ==============================================================================
+2022-04-21T13:48:46.7929015Z Task         : Get sources
+2022-04-21T13:48:46.7930430Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.
+2022-04-21T13:48:46.7931581Z Version      : 1.0.0
+2022-04-21T13:48:46.7932639Z Author       : Microsoft
+2022-04-21T13:48:46.7934203Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199)
+2022-04-21T13:48:46.7935293Z ==============================================================================
+2022-04-21T13:48:47.4982053Z Syncing repository: Leandroms165/Desafio_ApiRestSharp (GitHub)
+2022-04-21T13:48:47.4990635Z Prepending Path environment variable with directory containing 'git.exe'.
+2022-04-21T13:48:47.5001312Z ##[command]git version
+2022-04-21T13:48:47.6485669Z git version 2.30.2.windows.1
+2022-04-21T13:48:47.6517158Z ##[command]git lfs version
+2022-04-21T13:48:47.9141278Z git-lfs/2.13.3 (GitHub; windows amd64; go 1.16.2; git a5e65851)
+2022-04-21T13:48:47.9186498Z ##[command]git config --get remote.origin.url
+2022-04-21T13:48:48.0348086Z ##[command]git clean -ffdx
+2022-04-21T13:48:48.1531396Z Removing bin/Release/netcoreapp3.1/Reports/CSharpNetCoreReport_21-04-2022_10-40/
+2022-04-21T13:48:48.1607983Z ##[command]git reset --hard HEAD
+2022-04-21T13:48:48.9709186Z HEAD is now at 755f536 atualizar
+2022-04-21T13:48:48.9805331Z ##[command]git config gc.auto 0
+2022-04-21T13:48:49.0950250Z ##[command]git config --get-all http.https://github.com/Leandroms165/Desafio_ApiRestSharp.extraheader
+2022-04-21T13:48:49.1971061Z ##[command]git config --get-all http.extraheader
+2022-04-21T13:48:49.3504370Z ##[command]git config --get-regexp .*extraheader
+2022-04-21T13:48:49.5349437Z ##[command]git config --get-all http.proxy
+2022-04-21T13:48:49.6643693Z ##[command]git config http.version HTTP/1.1
+2022-04-21T13:48:49.8062082Z ##[command]git -c http.extraheader="AUTHORIZATION: basic ***" fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin
+2022-04-21T13:48:50.6920195Z ##[command]git -c http.extraheader="AUTHORIZATION: basic ***" fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin  +755f5369262d57b71b533c70ab3ecf0e2fcbb4c1
+2022-04-21T13:48:51.3044470Z From https://github.com/Leandroms165/Desafio_ApiRestSharp
+2022-04-21T13:48:51.3048586Z  * branch            755f5369262d57b71b533c70ab3ecf0e2fcbb4c1 -> FETCH_HEAD
+2022-04-21T13:48:51.3985229Z ##[command]git checkout --progress --force 755f5369262d57b71b533c70ab3ecf0e2fcbb4c1
+2022-04-21T13:48:52.1378575Z HEAD is now at 755f536 atualizar
+2022-04-21T13:48:52.1593370Z ##[section]Finishing: Checkout Leandroms165/Desafio_ApiRestSharp@master to s

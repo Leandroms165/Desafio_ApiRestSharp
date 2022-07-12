@@ -1,0 +1,10 @@
+2022-04-21T13:49:37.0415461Z ##[section]Starting: Checkout Leandroms165/Desafio_ApiRestSharp@master to s
+2022-04-21T13:49:37.0679748Z ==============================================================================
+2022-04-21T13:49:37.0680450Z Task         : Get sources
+2022-04-21T13:49:37.0680955Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.
+2022-04-21T13:49:37.0681397Z Version      : 1.0.0
+2022-04-21T13:49:37.0681700Z Author       : Microsoft
+2022-04-21T13:49:37.0682129Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199)
+2022-04-21T13:49:37.0682693Z ==============================================================================
+2022-04-21T13:49:37.5659455Z Cleaning any cached credential from repository: Leandroms165/Desafio_ApiRestSharp (GitHub)
+2022-04-21T13:49:37.5797091Z ##[section]Finishing: Checkout Leandroms165/Desafio_ApiRestSharp@master to s

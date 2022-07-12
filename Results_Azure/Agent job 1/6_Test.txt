@@ -1,0 +1,36 @@
+2022-04-21T13:49:04.9320909Z ##[section]Starting: Test
+2022-04-21T13:49:04.9684726Z ==============================================================================
+2022-04-21T13:49:04.9685530Z Task         : .NET Core
+2022-04-21T13:49:04.9686023Z Description  : Build, test, package, or publish a dotnet application, or run a custom dotnet command
+2022-04-21T13:49:04.9686541Z Version      : 2.198.0
+2022-04-21T13:49:04.9686892Z Author       : Microsoft Corporation
+2022-04-21T13:49:04.9687406Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/build/dotnet-core-cli
+2022-04-21T13:49:04.9688103Z ==============================================================================
+2022-04-21T13:49:05.9004924Z [command]C:\Windows\system32\chcp.com 65001
+2022-04-21T13:49:05.9259371Z P�gina de c�digo ativa: 65001
+2022-04-21T13:49:05.9430177Z Info: .NET Core SDK/runtime 2.2 and 3.0 are now End of Life(EOL) and have been removed from all hosted agents. If you're using these SDK/runtimes on hosted agents, kindly upgrade to newer versions which are not EOL, or else use UseDotNet task to install the required version.
+2022-04-21T13:49:05.9542280Z [command]"C:\Program Files\dotnet\dotnet.exe" test --logger trx --results-directory C:\AzureDevOpsAgents\_work\_temp --configuration Release
+2022-04-21T13:49:07.2377315Z   Determinando os projetos a serem restaurados...
+2022-04-21T13:49:07.7218404Z C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj : warning NU1701: O pacote 'Oracle.ManagedDataAccess 19.11.0' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v3.1'. Esse pacote pode não ser totalmente compatível com o seu projeto. [C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.sln]
+2022-04-21T13:49:07.7247340Z   Todos os projetos estão atualizados para restauração.
+2022-04-21T13:49:07.9752291Z C:\AzureDevOpsAgents\_work\1\s\RestSharpNetCoreTemplate.csproj : warning NU1701: O pacote 'Oracle.ManagedDataAccess 19.11.0' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v3.1'. Esse pacote pode não ser totalmente compatível com o seu projeto.
+2022-04-21T13:49:08.3647744Z   RestSharpNetCoreTemplate -> C:\AzureDevOpsAgents\_work\1\s\bin\Release\netcoreapp3.1\RestSharpNetCoreTemplate.dll
+2022-04-21T13:49:08.3847324Z Execução de teste para C:\AzureDevOpsAgents\_work\1\s\bin\Release\netcoreapp3.1\RestSharpNetCoreTemplate.dll (.NETCoreApp,Version=v3.1)
+2022-04-21T13:49:08.5940426Z Ferramenta de Linha de Comando de Execução de Teste da Microsoft (R) Versão 16.11.0
+2022-04-21T13:49:08.5942783Z Copyright (c) Microsoft Corporation. Todos os direitos reservados.
+2022-04-21T13:49:08.5943618Z 
+2022-04-21T13:49:08.8501658Z Iniciando execução de teste, espere...
+2022-04-21T13:49:08.9731826Z 1 arquivos de teste no total corresponderam ao padrão especificado.
+2022-04-21T13:49:27.6335886Z Arquivo de resultados: C:\AzureDevOpsAgents\_work\_temp\leandroMatias_PAT-0513_2022-04-21_10_49_12.trx
+2022-04-21T13:49:27.6400013Z 
+2022-04-21T13:49:27.6445869Z Aprovado!  – Com falha:     0, Aprovado:    52, Ignorado:     0, Total:    52, Duração: 17 s - RestSharpNetCoreTemplate.dll (netcoreapp3.1)
+2022-04-21T13:49:28.7655516Z Result Attachments will be stored in LogStore
+2022-04-21T13:49:28.8053173Z Run Attachments will be stored in LogStore
+2022-04-21T13:49:28.9194411Z Info: Azure Pipelines hosted agents have been updated and now contain .Net 5.x SDK/Runtime along with the older .Net Core version which are currently lts. Unless you have locked down a SDK version for your project(s), 5.x SDK might be picked up which might have breaking behavior as compared to previous versions. You can learn more about the breaking changes here: https://docs.microsoft.com/en-us/dotnet/core/tools/ and https://docs.microsoft.com/en-us/dotnet/core/compatibility/ . To learn about more such changes and troubleshoot, refer here: https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/build/dotnet-core-cli?view=azure-devops#troubleshooting
+2022-04-21T13:49:28.9235545Z ##[section]Async Command Start: Publish test results
+2022-04-21T13:49:29.3654918Z Publishing test results to test run '24'.
+2022-04-21T13:49:29.3690829Z TestResults To Publish 52, Test run id:24
+2022-04-21T13:49:29.3738958Z Test results publishing 52, remaining: 0. Test run id: 24
+2022-04-21T13:49:30.5940218Z Published Test Run : https://dev.azure.com/leandroms165/DesafioBase2_RestSharp/_TestManagement/Runs?runId=24&_a=runCharts
+2022-04-21T13:49:30.7661020Z ##[section]Async Command End: Publish test results
+2022-04-21T13:49:30.7663675Z ##[section]Finishing: Test
