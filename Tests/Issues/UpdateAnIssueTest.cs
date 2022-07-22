@@ -17,12 +17,12 @@ namespace RestSharpNetCoreTemplate.Issues
         public void DadosValidos()
         {
             List<string> id = SolicitacaoDBSteps.RetornaIdProblemaDB();
-           
+
             string issue_id = id[0];
 
             string summary = "teste api";
 
-            string description = "novo erro encontrado";
+           string description = "novo erro encontrado";
 
             UpdateAnIssueResquest updateAnIssueResquest = new UpdateAnIssueResquest(issue_id);
             updateAnIssueResquest.SetJsonBody(summary, description);
@@ -43,7 +43,7 @@ namespace RestSharpNetCoreTemplate.Issues
 
             string summary = "teste api";
 
-            string description = "novo erro encontrado";
+           string description = "novo erro encontrado";
 
             UpdateAnIssueResquest updateAnIssueResquest = new UpdateAnIssueResquest(issue_id);
             updateAnIssueResquest.SetJsonBody(summary, description);

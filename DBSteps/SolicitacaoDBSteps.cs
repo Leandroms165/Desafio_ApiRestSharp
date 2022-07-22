@@ -73,8 +73,6 @@ namespace RestSharpNetCoreTemplate.DBSteps
         }
 
 
-
-
         public static void InsereTodosRegistrosDB()
         {
             string query = File.ReadAllText(GeneralHelpers.ReturnProjectPath() + "Queries/inserirTodosRegistrosTabela.sql", Encoding.UTF8);

@@ -15,9 +15,9 @@ namespace RestSharpNetCoreTemplate.Bases
         [OneTimeSetUp]
         public void OneTimeSetUp()
         {
+            SolicitacaoDBSteps.DeleteDadosDB();
             SolicitacaoDBSteps.InsereTodosRegistrosDB();
             ExtentReportHelpers.CreateReport();
-            SolicitacaoDBSteps.DeleteDadosDB();
         }
 
         [SetUp]
@@ -36,6 +36,7 @@ namespace RestSharpNetCoreTemplate.Bases
         [OneTimeTearDown]
         public void OneTimeTearDown()
         {
+            
             ExtentReportHelpers.GenerateReport();
             
         }

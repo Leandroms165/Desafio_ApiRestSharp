@@ -2,7 +2,6 @@ C:\Users\leandroMatias\Desktop\DesafioBase2\bin\Release\netcoreapp3.1\NUnit3.Tes
 C:\Users\leandroMatias\Desktop\DesafioBase2\bin\Release\netcoreapp3.1\NUnit3.TestAdapter.pdb
 C:\Users\leandroMatias\Desktop\DesafioBase2\bin\Release\netcoreapp3.1\nunit.engine.dll
 C:\Users\leandroMatias\Desktop\DesafioBase2\bin\Release\netcoreapp3.1\nunit.engine.api.dll
-C:\Users\leandroMatias\Desktop\DesafioBase2\bin\Release\netcoreapp3.1\appsettings.json
 C:\Users\leandroMatias\Desktop\DesafioBase2\bin\Release\netcoreapp3.1\RestSharpNetCoreTemplate.deps.json
 C:\Users\leandroMatias\Desktop\DesafioBase2\bin\Release\netcoreapp3.1\RestSharpNetCoreTemplate.runtimeconfig.json
 C:\Users\leandroMatias\Desktop\DesafioBase2\bin\Release\netcoreapp3.1\RestSharpNetCoreTemplate.runtimeconfig.dev.json
@@ -161,3 +160,4 @@ C:\Users\leandroMatias\Desktop\DesafioBase2\obj\Release\netcoreapp3.1\RestSharpN
 C:\Users\leandroMatias\Desktop\DesafioBase2\obj\Release\netcoreapp3.1\RestSharpNetCoreTemplate.dll
 C:\Users\leandroMatias\Desktop\DesafioBase2\obj\Release\netcoreapp3.1\RestSharpNetCoreTemplate.pdb
 C:\Users\leandroMatias\Desktop\DesafioBase2\obj\Release\netcoreapp3.1\RestSharpNetCoreTemplate.genruntimeconfig.cache
+C:\Users\leandroMatias\Desktop\DesafioBase2\bin\Release\netcoreapp3.1\appsettings.json

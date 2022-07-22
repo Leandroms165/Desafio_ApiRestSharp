@@ -1,3 +1,3 @@
-﻿SELECT ID FROM mantis_bug_table
-ORDER BY ID DESC
+﻿SELECT ID,NAME FROM mantis_project_table
+ORDER BY ID ASC
 LIMIT 1

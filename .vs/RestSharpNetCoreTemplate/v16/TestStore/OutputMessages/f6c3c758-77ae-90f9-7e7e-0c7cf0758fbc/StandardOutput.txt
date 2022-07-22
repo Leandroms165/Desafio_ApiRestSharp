@@ -1,0 +1,322 @@
+{
+  "projects": [
+    {
+      "id": 1106,
+      "name": "$nameProject7",
+      "status": {
+        "id": 10,
+        "name": "development",
+        "label": "development"
+      },
+      "description": "Open Baking",
+      "enabled": true,
+      "view_state": {
+        "id": 10,
+        "name": "public",
+        "label": "public"
+      },
+      "access_level": {
+        "id": 90,
+        "name": "administrator",
+        "label": "administrator"
+      },
+      "custom_fields": [],
+      "versions": [
+        {
+          "id": 278,
+          "name": "v1.0.1",
+          "description": "Teste invalido",
+          "released": true,
+          "obsolete": true,
+          "timestamp": "2019-12-19T11:08:51-03:00"
+        }
+      ],
+      "categories": [
+        {
+          "id": 1,
+          "name": "General",
+          "project": {
+            "id": 0,
+            "name": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 1179,
+      "name": "1Santander56",
+      "status": {
+        "id": 10,
+        "name": "development",
+        "label": "development"
+      },
+      "description": "Open Baking",
+      "enabled": true,
+      "view_state": {
+        "id": 10,
+        "name": "public",
+        "label": "public"
+      },
+      "access_level": {
+        "id": 90,
+        "name": "administrator",
+        "label": "administrator"
+      },
+      "custom_fields": [],
+      "versions": [
+        {
+          "id": 278,
+          "name": "v1.0.1",
+          "description": "Teste invalido",
+          "released": true,
+          "obsolete": true,
+          "timestamp": "2019-12-19T11:08:51-03:00"
+        }
+      ],
+      "categories": [
+        {
+          "id": 1,
+          "name": "General",
+          "project": {
+            "id": 0,
+            "name": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 1205,
+      "name": "1Santander65",
+      "status": {
+        "id": 10,
+        "name": "development",
+        "label": "development"
+      },
+      "description": "Open Baking",
+      "enabled": true,
+      "view_state": {
+        "id": 10,
+        "name": "public",
+        "label": "public"
+      },
+      "access_level": {
+        "id": 90,
+        "name": "administrator",
+        "label": "administrator"
+      },
+      "custom_fields": [],
+      "versions": [
+        {
+          "id": 278,
+          "name": "v1.0.1",
+          "description": "Teste invalido",
+          "released": true,
+          "obsolete": true,
+          "timestamp": "2019-12-19T11:08:51-03:00"
+        }
+      ],
+      "categories": [
+        {
+          "id": 1,
+          "name": "General",
+          "project": {
+            "id": 0,
+            "name": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 1006,
+      "name": "1Santander66",
+      "status": {
+        "id": 10,
+        "name": "development",
+        "label": "development"
+      },
+      "description": "Open Baking",
+      "enabled": true,
+      "view_state": {
+        "id": 10,
+        "name": "public",
+        "label": "public"
+      },
+      "access_level": {
+        "id": 90,
+        "name": "administrator",
+        "label": "administrator"
+      },
+      "custom_fields": [],
+      "versions": [
+        {
+          "id": 154,
+          "name": "v.3.0",
+          "description": "Major new version",
+          "released": true,
+          "obsolete": false,
+          "timestamp": "2020-02-19T13:00:00-03:00"
+        },
+        {
+          "id": 176,
+          "name": "v.3.9",
+          "description": "Major new version",
+          "released": true,
+          "obsolete": false,
+          "timestamp": "2020-02-19T13:00:00-03:00"
+        },
+        {
+          "id": 278,
+          "name": "v1.0.1",
+          "description": "Teste invalido",
+          "released": true,
+          "obsolete": true,
+          "timestamp": "2019-12-19T11:08:51-03:00"
+        }
+      ],
+      "categories": [
+        {
+          "id": 1,
+          "name": "General",
+          "project": {
+            "id": 0,
+            "name": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 119,
+      "name": "1Santander94",
+      "status": {
+        "id": 10,
+        "name": "development",
+        "label": "development"
+      },
+      "description": "Open Baking",
+      "enabled": true,
+      "view_state": {
+        "id": 10,
+        "name": "public",
+        "label": "public"
+      },
+      "access_level": {
+        "id": 90,
+        "name": "administrator",
+        "label": "administrator"
+      },
+      "custom_fields": [],
+      "versions": [
+        {
+          "id": 249,
+          "name": "v.3.6",
+          "description": "Major new version",
+          "released": true,
+          "obsolete": false,
+          "timestamp": "2020-02-19T13:00:00-03:00"
+        },
+        {
+          "id": 278,
+          "name": "v1.0.1",
+          "description": "Teste invalido",
+          "released": true,
+          "obsolete": true,
+          "timestamp": "2019-12-19T11:08:51-03:00"
+        }
+      ],
+      "categories": [
+        {
+          "id": 1,
+          "name": "General",
+          "project": {
+            "id": 0,
+            "name": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 1033,
+      "name": "1Santander96",
+      "status": {
+        "id": 10,
+        "name": "development",
+        "label": "development"
+      },
+      "description": "Open Baking",
+      "enabled": true,
+      "view_state": {
+        "id": 10,
+        "name": "public",
+        "label": "public"
+      },
+      "access_level": {
+        "id": 90,
+        "name": "administrator",
+        "label": "administrator"
+      },
+      "custom_fields": [],
+      "versions": [
+        {
+          "id": 278,
+          "name": "v1.0.1",
+          "description": "Teste invalido",
+          "released": true,
+          "obsolete": true,
+          "timestamp": "2019-12-19T11:08:51-03:00"
+        }
+      ],
+      "categories": [
+        {
+          "id": 1,
+          "name": "General",
+          "project": {
+            "id": 0,
+            "name": null
+          }
+        }
+      ]
+    },
+    {
+      "id": 1207,
+      "name": "Test OBJ Project",
+      "status": {
+        "id": 10,
+        "name": "development",
+        "label": "development"
+      },
+      "description": "Novo dado",
+      "enabled": true,
+      "view_state": {
+        "id": 10,
+        "name": "public",
+        "label": "public"
+      },
+      "access_level": {
+        "id": 90,
+        "name": "administrator",
+        "label": "administrator"
+      },
+      "custom_fields": [],
+      "versions": [
+        {
+          "id": 278,
+          "name": "v1.0.1",
+          "description": "Teste invalido",
+          "released": true,
+          "obsolete": true,
+          "timestamp": "2019-12-19T11:08:51-03:00"
+        }
+      ],
+      "categories": [
+        {
+          "id": 1,
+          "name": "General",
+          "project": {
+            "id": 0,
+            "name": null
+          }
+        }
+      ]
+    }
+  ]
+}

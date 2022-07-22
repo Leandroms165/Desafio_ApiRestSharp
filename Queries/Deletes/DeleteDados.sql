@@ -1,20 +1,16 @@
-﻿--DELETE TBL.MANTIS_PROJECT_TABLE
-DELETE FROM mantis_project_table WHERE ID = 908;
+﻿
+DELETE FROM mantis_project_table WHERE description = 'Novo dado';
 
---DELETE TBL.mantis_bug_table
-DELETE FROM mantis_bug_table WHERE ID = 13;
+DELETE FROM mantis_bug_table where bug_text_id = 128;
 
---DELETE TBL.mantis_filters_table
-DELETE FROM mantis_filters_table WHERE ID = 1;
+DELETE FROM mantis_filters_table WHERE USER_ID = 10;
 
---DELETE TBL.mantis_user_table
-DELETE FROM mantis_user_table WHERE ID = 46;
+DELETE FROM mantis_user_table WHERE EMAIL = 'tales@teste09.com';
 
---DELETE TBL.mantis_bug_history_table
-DELETE FROM mantis_bug_history_table WHERE ID = 58;
+DELETE FROM mantis_bug_history_table WHERE BUG_ID = 13;
 
---DELETE TBL.mantis_project_version_table
-DELETE FROM mantis_project_version_table WHERE date_order = 1576764531;
+DELETE FROM mantis_bugnote_table WHERE bugnote_text_id = 65;
 
---DELETE TBL.mantis_user_table
+DELETE  FROM mantis_project_version_table WHERE DESCRIPTION =  'Teste invalido';
+
 DELETE FROM mantis_user_table where email = "jair_melo@hotmail.com";

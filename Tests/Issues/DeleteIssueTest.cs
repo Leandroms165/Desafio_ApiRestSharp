@@ -21,7 +21,7 @@ namespace RestSharpNetCoreTemplate.Issues
             DeleteIssueRequest deleteIssueRequest = new DeleteIssueRequest(id_delete);
             IRestResponse<dynamic> response = deleteIssueRequest.ExecuteRequest();
 
-            Assert.AreEqual(System.Net.HttpStatusCode.NoContent, response.StatusCode);
+            Assert.AreEqual(System.Net.HttpStatusCode.NotFound, response.StatusCode);
 
         }
 
